@@ -89,9 +89,12 @@ const resources = {
 }
 i18n.use(initReactI18next).init({
     resources,
+    fallbackLng:'en',
     lng: localStorage.getItem('lng'),
     interpolation: {
         escapeValue:false,
-    }
+    },
+    debug:true,
+    initImmediate:false,
 })
 export default i18n;

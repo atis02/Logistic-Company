@@ -114,17 +114,19 @@ const Home = () => {
                 left: "580px",
                 position: "absolute",
               }}
-              alt=""
+              alt="aa"
             />
           </Stack>
           <Stack
             sx={{
-              width: 320,
-              height: 250,
               ...(isMobile ? { display: "block" } : { display: "none" }),
             }}
           >
-            <img src="/images/Home.png" alt="" />
+            <img
+              src="/images/Home.png"
+              style={{ width: 320, height: 250 }}
+              alt="bb"
+            />
           </Stack>
         </Stack>
       </Box>

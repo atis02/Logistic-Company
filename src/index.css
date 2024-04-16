@@ -37,8 +37,8 @@
   text-decoration: underline;
 }
 .title{
-  background-image: linear-gradient(to right,  #DBB45A, #FFF6AC) ;
-  background-clip: text;
+  background: linear-gradient(to right,  #DBB45A, #FFF6AC) ;
+  background-clip:text;
   -webkit-text-fill-color: transparent;
   /* color: #dbb45a; */
 }

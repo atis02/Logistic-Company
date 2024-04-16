@@ -126,7 +126,6 @@ const Missions = () => {
           flexWrap="wrap"
         >
           <Stack
-            mt={{ xs: 6, lg: 0 }}
             spacing={2}
             style={{ width: 140, height: 110 }}
             alignItems="center"
@@ -155,6 +154,7 @@ const Missions = () => {
             <Typography textAlign="center">{t("export")}</Typography>
           </Stack>
           <Stack
+            mt={{ xs: 6, lg: 0, md: 0 }}
             spacing={2}
             style={{ width: 140, height: 110 }}
             data-aos="fade-up"
@@ -169,7 +169,7 @@ const Missions = () => {
             <Typography textAlign="center">{t("tranzit")}</Typography>
           </Stack>
           <Stack
-            mt={{ xs: 6, lg: 0 }}
+            mt={{ xs: 6, lg: 0, md: 0 }}
             alignItems="center"
             spacing={2}
             style={{ width: 140, height: 110 }}
