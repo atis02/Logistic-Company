@@ -1,0 +1,97 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+
+const resources = {
+    en: {
+        translation: {
+            aboutCompany:'About the Company',
+            pages:'Pages',
+            advantages:'Advantages',
+            goals:'Missions and goals',
+            services:'Our services',
+            licences:'Licences',
+            ourWorks:'Our works',
+            contacts:'Contacts',
+            read: 'Read More',
+            nameCompany:'“Altyn Miras”',
+            company:'Our company',
+            description: ' was founded in 2021. We are professionals in the field of transportation organization and at  present we provide a full spectrum of cargo delivery services from any location in the world.',
+            hideDesc:'Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and professional. YOUR PARTNER IN THE FIELD OF LOGISTICS!',
+            aboutCompanyText: 'We are experts in the field of transportation organization and today we provide a full range of cargo delivery services from anywhere in the world. We offer “ door to door “ delivery services, as well as other operations included within this service. All stages of the supply chain are carefully controlled by our specialists. Experienced specialists of ',
+            aboutCompanyText2: ' company are always ready to calculate various transportation options, provide information about the cargo location, planned delivery date, and provide assistance in registration of all necessary permits.',
+            advantages:'Advantages',
+            advText1:'Our specialists have more than 10 years of experience in international cargo transportation.',
+            advText2:'Extensive geography. We deliver goods throughout Europe and Asia.',
+            advText3:'Individual approach. We will select the best delivery method based on the characteristics of your cargo.',
+            advText4:'Our team knows how to find new solutions to logistics processes, which is especially important in the modern realities.',
+            advText5:'We optimize the routes to speed up transportation as much as possible and reduce delivery costs. We always strive to preserve our clients’ financial resources.',
+            advText6:'Qualitative service. We pay special attention to careful loading, unloading and securing the cargo. We guarantee the top safety and absence of damage.',
+            advText7:'Well qualified assistance in the preparation of customs documents.',
+            missionsGoals: 'Mission and goals',
+            missionsCompany:'Mission',
+            missionText: 'Organization of highly efficient business processes :',
+            missionText2: '- Correct organization of the sequency of logistics operations, which makes it possible to achieve the transportations estimate and its settings specified for the planned period.',
+           goals:'Goals',
+           goalsText1:"- Srengthening the export potential and logistics communications of Turkmenistan in the world stage.",
+           goalsText2: "- Export of domestic goods to world markets thanks to the efficient logistics.",
+           export:'Export',
+            tranzit:'Transit',
+            soprowozden:'Logistics support',
+            import: 'Import',
+            multiModal:'MULTIMODAL TRANSPORTATION',
+            multiModalText: 'Multimodal transportation is the calculation of shipment by combining several modes of transport. It helps to significantly reduce the overall costs of transportation.<1/> As part of multimodal transportation, we use railways, roads and sea shipping. <1/>We cooperate with warehouse terminals from all around the world for rail/sea/road logistics from Turkmenistan, which helps in the efficient calculation of the best transportation options.',
+           railway:'ЖЕЛЕЗНОДОРОЖНЫЕ ПЕРЕВОЗКИ',
+            
+        }
+    },
+    ru: {
+        translation: {
+            aboutCompany: 'О компании',
+            pages: 'Страницы',
+            advantages: 'Преимущества',
+            goals: 'Миссия и цели',
+            services: 'Услуги компании',
+            licences: 'Лицензии',
+            ourWorks: 'Наши работы',
+            contacts: 'Контакты',
+            nameCompany:'“Алтын Мирас”',
+            read: 'Читать',
+            company: 'Компания',
+            description: ' была основана в 2021 году. Мы являемся профессионалами в области организации перевозки и на сегодняшний  день  оказываем  полный  спектр услуг по доставке грузов из любой точки мира. ',
+            hideDesc: 'Несмотря на то, что мы являемся молодой и развивающейся компанией, мы с уверенностью можем зарекомендовать себя, как ответственного, добросовестного, надеждого и профессионального - Вашего партнёра в сфере логистики!',
+            aboutCompanyText: 'Мы предлагаем услуги по доставке  “ от двери до двери “ а также отдельные операции, входящие в данный сервис. Все этапы логистической цепи  тщательно контролируются нашими специалистами. Опытные    специалисты   компании  ',
+            aboutCompanyText2: '  всегда   готовы рассчитать различные варианты перевозок, предоставлять информацию о  местонахождении  груза,  о  планируемой  дате  доставки,  помощь  в оформлении всех необходимых разрешительных документов.',
+            advantages: 'Преимущества',
+            advText1:'У наших специалистов более 10 лет опыта в международных грузоперевозках.',
+            advText2:'Обширная география. Достовляем грузы по странам Европы и Азии .',
+            advText3:'Индивидуальный подход. Подберем наилучший способ доставки , исходя из особенностей вашего груза. ',
+            advText4:'Умеем находить новые решения логистических процессов, что особенно актуально в современных реалиях.',
+            advText5:'Оптимизируем маршрут, чтобы максимально ускорить перевозку и снизить стоимость доставки. Мы всегда стремимся сохранить ресурсы наших клиентов.',
+            advText6:'Качественный сервис. Уделяем особое внимание аккуратной загрузке, выгрузке и креплению грузов. Гарантируем сохранность и отсутствие повреждений.',
+            advText7: 'Квалифицированная помощь в оформлении таможенных документов.',
+            missionsGoals: 'Миссии и цели',
+            missionsCompany: 'Миссия компании',
+            missionText: 'Организация высокоэффективных бизнес процессов :',
+            missionText2: '- правильная организация последовательности выполнения логистических операций, что позволяет достичь заданных на плановый период логистической сметы и ее настройки.',
+            goals: 'Цели компании',
+            goalsText1: '- Усиление экспортного потенциала, логистических коммуникаций Туркменистана на международной арене.',
+            goalsText2: '- Вывоз товаров отечественной продукции на мировые рынки благодаря эффективной логистике.',
+            export:'Экспорт',
+            tranzit:'Транзит',
+            soprowozden:'Сопровождение',
+            import: 'Импорт',
+            multiModal: 'МУЛЬТИМОДАЛЬНЫЕ ПЕРЕВОЗКИ',
+            multiModalText: ' Мультимодальные перевозки – расчет перевозок комбинированием нескольких видов транспорта помогает существенно снизить стоимость перевозок.<1/> В рамках мультимодальных перевозок мы используем железнодорожный, автомобильный и морской транспорт. <1/> Мы сотрудничаем со складскими терминалами по всему миру для железнодорожныx / морских / авто транспортировок Туркменистана, что помогает в эффективном расчете перевозок.',
+           railway:'ЖЕЛЕЗНОДОРОЖНЫЕ ПЕРЕВОЗКИ',
+        }
+    },
+    
+}
+i18n.use(initReactI18next).init({
+    resources,
+    lng: localStorage.getItem('lng'),
+    interpolation: {
+        escapeValue:false,
+    }
+})
+export default i18n;

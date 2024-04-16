@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #1E1E1E;
+}
+
+.MuiPaper-root.MuiMenu-paper { 
+  background-color: #2F2F2F; 
+  color: #fff;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom,  #DBB45A, #FFF6AC) ;
+  border-radius: 10px;
+}
+.nav-links{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  /* scroll-behavior: smooth; */
+  
+}
+.nav-links2{
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.active{
+  color: aqua;
+  text-decoration: underline;
+}
+.title{
+  background-image: linear-gradient(to right,  #DBB45A, #FFF6AC) ;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: #dbb45a; */
+}
+.swiper-pagination-bullet-active {
+  background-color: #dbb45a;
+}
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+  background-color: #fff; 
+}
