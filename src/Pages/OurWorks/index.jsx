@@ -15,12 +15,14 @@ import {
   Grid,
 } from "@mui/material";
 import Aos from "aos";
+import { Trans, useTranslation } from "react-i18next";
 
 const OurWorks = () => {
   Aos.init({
     duration: 1500,
     offset: 0,
   });
+  const { t } = useTranslation();
   return (
     <Box
       sx={{
@@ -30,9 +32,11 @@ const OurWorks = () => {
         alignItems: "center",
         justifyContent: "space-between",
         flexDirection: "column",
-        pt: "80px",
-        pb: "100px",
+        pt: "50px",
+        pb: "60px",
+        scrollMarginTop: "50px",
       }}
+      id="OurWorks"
     >
       <Typography
         textAlign="center"
@@ -42,7 +46,7 @@ const OurWorks = () => {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        Наши работы
+        {t("ourWorks")}
       </Typography>
       <Container
         sx={{
@@ -76,9 +80,9 @@ const OurWorks = () => {
               textAlign="center"
               mt={2}
               fontSize={16}
-              p="5px"
+              p="5px 25px 5px 25px"
             >
-              Перевозка медикоментов (Европа Туркменистан)
+              {t("medicaments")}
             </Typography>
           </Stack>
           <Stack
@@ -98,9 +102,9 @@ const OurWorks = () => {
               textAlign="center"
               mt={2}
               fontSize={16}
-              p="5px"
+              p="5px 55px 5px 55px"
             >
-              Перевозка мебели (Европа Туркменистан)
+              {t("mebels")}
             </Typography>
           </Stack>
           <Stack
@@ -120,9 +124,9 @@ const OurWorks = () => {
               textAlign="center"
               mt={2}
               fontSize={16}
-              p="5px"
+              p="5px 25px 5px 25px"
             >
-              Огнеупорные кирпичи (Германия-Туркменистан)
+              {t("warn")}
             </Typography>
           </Stack>
           <Stack
@@ -144,7 +148,7 @@ const OurWorks = () => {
               mt={2}
               fontSize={16}
             >
-              Железнодорожные перевозки
+              {t("railw")}
             </Typography>
           </Stack>
           <Stack
@@ -166,33 +170,31 @@ const OurWorks = () => {
               mt={2}
               fontSize={16}
             >
-              Автоперевозки
+              {t("automobile")}
             </Typography>
           </Stack>
         </Stack>
         <Stack
           mt="80px"
           backgroundColor="#2F2F2F"
-          p={{ lg: "30px 60px", md: "20px 40px", xs: "15px 20px" }}
+          p={{ lg: "30px 80px", md: "20px 40px", xs: "15px 20px" }}
         >
           <Typography
             data-aos="fade-up"
             fontSize={{ lg: 16, md: 15, xs: 14 }}
             data-aos-delay="300"
           >
-            Наша компания{" "}
-            <span style={{ color: "#dbb45a" }}> “ Алтын Мирас “</span> -
-            предлагает оптимальные решения в области логистики.
-            <br /> Мы накопили опыт во многих промышленных и масштабных проектах
-            страны с достойным успехом.
-            <br /> Мы будем рады встретиться для проведения детальных
-            переговоров и обсудить варианты сотрудничества вместе с Вами.
+            {t("ourCompany")}
+            <span style={{ color: "#dbb45a" }}> {t("nameCompany")}</span> -
+            <Trans i18nKey="ourCompnanyText" components={{ 1: <br /> }} />
           </Typography>
           <Stack
             direction="row"
             flexWrap="wrap"
+            alignItems="center"
+            justifyContent="center"
             mt={5}
-            spacing={{ lg: 1, md: 0, xs: 0 }}
+            spacing={{ lg: 6, md: 0, xs: 0 }}
           >
             <Stack style={{ width: 290, height: 170 }}>
               <img

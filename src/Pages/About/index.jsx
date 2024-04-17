@@ -27,7 +27,7 @@ const About = () => {
       id="aboutCompany"
       sx={{
         background: "#2F2F2F",
-        height: "500px",
+        height: "400px",
         backgroundImage: "url('/images/AboutHorizontal.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -35,6 +35,8 @@ const About = () => {
         display: "flex",
         alignItems: { lg: "center" },
         transition: " all ease 0.3s",
+        pt: { lg: "60px", md: "30px", xs: "10px" },
+        scrollMarginTop: "70px",
       }}
     >
       <Container
@@ -53,8 +55,8 @@ const About = () => {
         <Stack
           width={560}
           height={145}
-          spacing={4}
-          mt={{ lg: 8, md: 5, xs: 5 }}
+          spacing={2}
+          mt={{ lg: 3, md: 1, xs: 1 }}
         >
           <Typography
             fontSize={24}

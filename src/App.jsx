@@ -11,11 +11,15 @@ import Licence from "./Pages/Licences";
 import OurWorks from "./Pages/OurWorks";
 import Footer from "./Pages/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import { useEffect } from "react";
 function App() {
   AOS.init({
     duration: 1800,
     offset: 0,
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Box

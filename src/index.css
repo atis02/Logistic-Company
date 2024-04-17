@@ -3,6 +3,9 @@
   padding: 0;
   font-family: sans-serif;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+
 
 }
 ::-webkit-scrollbar {
@@ -15,7 +18,9 @@
   color: #fff;
   
 }
-
+.input-label:focus{
+  color: #000;
+}
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(to bottom,  #DBB45A, #FFF6AC) ;
   border-radius: 10px;
@@ -24,7 +29,6 @@
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  /* scroll-behavior: smooth; */
   
 }
 .nav-links2{

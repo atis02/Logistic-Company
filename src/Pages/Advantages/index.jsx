@@ -22,7 +22,10 @@ const Advantages = () => {
   });
   const { t } = useTranslation();
   return (
-    <Box sx={{ pt: "80px", color: "#fff" }} id="Advantages">
+    <Box
+      sx={{ pt: { lg: "80px", md: "40px", xs: "10px" }, color: "#fff" }}
+      id="Advantages"
+    >
       <Container
         sx={{
           display: "flex",
@@ -67,7 +70,7 @@ const Advantages = () => {
                 color="#dbb45a"
                 mr={2}
               >
-                01.
+                1
               </Typography>
               {t("advText1")}
             </Stack>
@@ -83,7 +86,7 @@ const Advantages = () => {
                 color="#dbb45a"
                 mr={2}
               >
-                02.
+                2
               </Typography>
               {t("advText2")}
             </Stack>
@@ -99,7 +102,7 @@ const Advantages = () => {
                 color="#dbb45a"
                 mr={2}
               >
-                03.
+                3
               </Typography>
               {t("advText3")}
             </Stack>
@@ -115,7 +118,7 @@ const Advantages = () => {
                 color="#dbb45a"
                 mr={2}
               >
-                04.
+                4
               </Typography>
               {t("advText4")}
             </Stack>
@@ -131,7 +134,7 @@ const Advantages = () => {
                 color="#dbb45a"
                 mr={2}
               >
-                05.
+                5
               </Typography>
               {t("advText5")}
             </Stack>
@@ -147,7 +150,7 @@ const Advantages = () => {
                 color="#dbb45a"
                 mr={2}
               >
-                06.
+                6
               </Typography>
               {t("advText6")}
             </Stack>
@@ -163,7 +166,7 @@ const Advantages = () => {
                 color="#dbb45a"
                 mr={2}
               >
-                07.
+                7
               </Typography>
               {t("advText7")}
             </Stack>

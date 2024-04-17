@@ -22,7 +22,15 @@ const Missions = () => {
   });
   const { t } = useTranslation();
   return (
-    <Box id="Goals" sx={{ pt: "80px", color: "#fff", height: "130vh" }}>
+    <Box
+      id="Goals"
+      sx={{
+        pt: { lg: "60px", md: "30px", xs: "10px" },
+        color: "#fff",
+        height: "100vh",
+        scrollMarginTop: "50px",
+      }}
+    >
       <Typography
         textAlign="center"
         className="title"
@@ -97,7 +105,7 @@ const Missions = () => {
           mt={15}
           position="absolute"
           minHeight="260px"
-          top={{ lg: 2100, md: 2300, xs: 2450 }}
+          top={{ lg: 2000, md: 2300, xs: 2450 }}
           sx={{
             width: { lg: "785px", md: "685px", xs: "330px" },
             opacity: "0.2",
@@ -106,84 +114,90 @@ const Missions = () => {
         >
           <img width="100%" src="/images/Map.png" alt="" />
         </Stack>
-
-        <Typography
-          textAlign="center"
-          fontWeight={700}
-          className="title"
-          fontSize={{ lg: 30, md: 28, xs: 25 }}
-          mt="60px"
-          data-aos="fade-up"
-          data-aos-delay="800"
+        <Box
+          id="Services"
+          sx={{
+            scrollMarginTop: "50px",
+          }}
         >
-          {t("services")}
-        </Typography>
-        <Stack
-          alignItems="center"
-          justifyContent="center"
-          direction="row"
-          mt={6}
-          flexWrap="wrap"
-        >
-          <Stack
-            spacing={2}
-            style={{ width: 140, height: 110 }}
-            alignItems="center"
+          <Typography
+            textAlign="center"
+            fontWeight={700}
+            className="title"
+            fontSize={{ lg: 30, md: 28, xs: 25 }}
+            mt="60px"
             data-aos="fade-up"
-            data-aos-delay="1200"
+            data-aos-delay="800"
           >
-            <img
-              style={{ width: 110, height: 110 }}
-              src="/images/Frame 29 (1).png"
-              alt=""
-            />
-            <Typography textAlign="center">{t("import")}</Typography>
-          </Stack>
+            {t("services")}
+          </Typography>
           <Stack
-            style={{ width: 140, height: 110 }}
-            spacing={2}
             alignItems="center"
-            data-aos="fade-up"
-            data-aos-delay="900"
+            justifyContent="center"
+            direction="row"
+            mt={6}
+            flexWrap="wrap"
           >
-            <img
-              style={{ width: 110, height: 110 }}
-              src="/images/Frame 29.png"
-              alt=""
-            />
-            <Typography textAlign="center">{t("export")}</Typography>
+            <Stack
+              spacing={2}
+              style={{ width: 140, height: 110 }}
+              alignItems="center"
+              data-aos="fade-up"
+              data-aos-delay="1200"
+            >
+              <img
+                style={{ width: 110, height: 110 }}
+                src="/images/Frame 29 (1).png"
+                alt=""
+              />
+              <Typography textAlign="center">{t("import")}</Typography>
+            </Stack>
+            <Stack
+              style={{ width: 140, height: 110 }}
+              spacing={2}
+              alignItems="center"
+              data-aos="fade-up"
+              data-aos-delay="900"
+            >
+              <img
+                style={{ width: 110, height: 110 }}
+                src="/images/Frame 29.png"
+                alt=""
+              />
+              <Typography textAlign="center">{t("export")}</Typography>
+            </Stack>
+            <Stack
+              mt={{ xs: 6, lg: 0, md: 0 }}
+              spacing={2}
+              style={{ width: 140, height: 110 }}
+              data-aos="fade-up"
+              alignItems="center"
+              data-aos-delay="1000"
+            >
+              <img
+                style={{ width: 110, height: 110 }}
+                src="/images/Frame 34.png"
+                alt=""
+              />
+              <Typography textAlign="center">{t("tranzit")}</Typography>
+            </Stack>
+            <Stack
+              mt={{ xs: 6, lg: 0, md: 0 }}
+              alignItems="center"
+              spacing={2}
+              style={{ width: 140, height: 110 }}
+              data-aos="fade-up"
+              data-aos-delay="1100"
+            >
+              <img
+                style={{ width: 110, height: 110 }}
+                src="/images/Frame 30.png"
+                alt=""
+              />
+              <Typography textAlign="center">{t("soprowozden")}</Typography>
+            </Stack>
           </Stack>
-          <Stack
-            mt={{ xs: 6, lg: 0, md: 0 }}
-            spacing={2}
-            style={{ width: 140, height: 110 }}
-            data-aos="fade-up"
-            alignItems="center"
-            data-aos-delay="1000"
-          >
-            <img
-              style={{ width: 110, height: 110 }}
-              src="/images/Frame 34.png"
-              alt=""
-            />
-            <Typography textAlign="center">{t("tranzit")}</Typography>
-          </Stack>
-          <Stack
-            mt={{ xs: 6, lg: 0, md: 0 }}
-            alignItems="center"
-            spacing={2}
-            style={{ width: 140, height: 110 }}
-            data-aos="fade-up"
-            data-aos-delay="1100"
-          >
-            <img
-              style={{ width: 110, height: 110 }}
-              src="/images/Frame 30.png"
-              alt=""
-            />
-            <Typography textAlign="center">{t("soprowozden")}</Typography>
-          </Stack>
-        </Stack>
+        </Box>
       </Container>
     </Box>
   );

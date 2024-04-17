@@ -37,7 +37,7 @@ const Home = () => {
       <Box
         sx={{
           pt: "25px",
-          height: "100vh",
+          height: "85vh",
         }}
       >
         <Stack

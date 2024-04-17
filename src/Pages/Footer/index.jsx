@@ -13,12 +13,15 @@ import {
   TextField,
 } from "@mui/material";
 import Aos from "aos";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   Aos.init({
     duration: 1500,
     offset: 0,
   });
+  const { t } = useTranslation();
   return (
     <Box
       sx={{
@@ -31,6 +34,7 @@ const Footer = () => {
         display: "flex",
         alignItems: "center",
       }}
+      id="Footer"
     >
       <Container
         sx={{
@@ -61,9 +65,7 @@ const Footer = () => {
                 style={{ width: 25, height: 25 }}
                 alt=""
               />
-              <Typography>
-                Центральный офис пр. Нурмухаммета Андалиба №: 70/2, Па: 747017 .
-              </Typography>
+              <Typography>{t("location")}</Typography>
             </Stack>
             <Stack
               data-aos="fade-down"

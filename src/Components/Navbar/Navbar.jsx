@@ -15,6 +15,8 @@ import {
   useMediaQuery,
   useTheme,
   TextField,
+  FormLabel,
+  Menu,
 } from "@mui/material";
 import Language from "../../Components/Language/Language";
 import { t } from "i18next";
@@ -22,11 +24,14 @@ import { useTranslation } from "react-i18next";
 import MenuIcon from "@mui/icons-material/Menu";
 import zIndex from "@mui/material/styles/zIndex";
 import Aos from "aos";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Navbar = () => {
   const [age, setAge] = useState("");
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(false);
+  const open = Boolean(anchorEl);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -51,7 +56,13 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
 
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <Stack
       direction="row"
@@ -83,36 +94,136 @@ const Navbar = () => {
         }}
         spacing={2}
       >
-        <a
-          className="nav-links"
-          style={{ scrollBehavior: "smooth" }}
-          href="#aboutCompany"
-        >
+        <a className="nav-links" href="#aboutCompany">
           {t("aboutCompany")}
         </a>
         <Box sx={{ minWidth: 130 }}>
-          <FormControl fullWidth>
+          <Stack
+            cursor="pointer"
+            variant="text"
+            direction="row"
+            alignItems="center"
+            onClick={handleClick}
+            sx={{
+              cursor: "pointer",
+              color: "#000",
+              gap: { lg: "5px", md: "3px", xs: 0 },
+            }}
+            p={{ lg: "0 25px ", xs: "0" }}
+            minHeight="32px"
+          >
+            <Typography color="#fff" fontSize={18}>
+              {t("pages")}
+            </Typography>
+            <KeyboardArrowDownIcon
+              sx={{
+                color: "#fff",
+                ...(open ? { transform: "rotate(180deg)" } : ""),
+                width: { lg: 24, md: 20, xs: 18 },
+                height: { lg: 24, md: 20, xs: 18 },
+              }}
+            />
+          </Stack>
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            sx={{ zIndex: "100000", position: "fixed" }}
+            MenuListProps={{
+              "aris-labelledby": "basic-button",
+              sx: {
+                backgroundColor: "#2F2F2F",
+                color: "#fff",
+                "&& .Mui-selected": {
+                  backgroundColor: "#666666",
+                  zIndex: "10000",
+                },
+              },
+            }}
+          >
+            <MenuItem
+              sx={{
+                "&:hover": { backgroundColor: "#666666" },
+              }}
+              value="Преимущества"
+            >
+              <a className="nav-links" href="#Advantages">
+                {t("advantages")}
+              </a>
+            </MenuItem>
+            <MenuItem
+              sx={{
+                "&:hover": { backgroundColor: "#666666" },
+              }}
+              value="Миссия и цели"
+            >
+              <a className="nav-links" href="#Goals">
+                {t("goals")}
+              </a>
+            </MenuItem>
+            <MenuItem
+              sx={{
+                "&:hover": { backgroundColor: "#666666" },
+              }}
+              value="Услуги компании"
+            >
+              <a className="nav-links" href="#Services">
+                {t("services")}
+              </a>
+            </MenuItem>
+            <MenuItem
+              sx={{
+                "&:hover": { backgroundColor: "#666666" },
+              }}
+              value="Лицензии"
+            >
+              <a className="nav-links" href="#Licences">
+                {t("licences")}
+              </a>
+            </MenuItem>
+            <MenuItem
+              sx={{
+                "&:hover": { backgroundColor: "#666666" },
+              }}
+              value="Наши работы"
+            >
+              <a className="nav-links" href="#OurWorks">
+                {t("ourWorks")}
+              </a>
+            </MenuItem>
+          </Menu>
+          {/* <FormControl fullWidth>
             {age ? (
               ""
             ) : (
-              <InputLabel
+              <FormLabel
+                focused={false}
                 id="demo-simple-select-label"
-                // focused={{ color: "#fff" }}
+                // focused={{ color: "#1E1E1E" }}
                 sx={{
                   color: "#fff",
-                  "&:focus": { color: "transparent" },
+                  "&:focus": { color: "#red" },
                   fontSize: 18,
+                  pl: 2,
                 }}
+                className="input-label"
               >
                 {t("pages")}
-              </InputLabel>
+              </FormLabel>
+
+              // <InputLabel
+
+              // >
+              //   {t("pages")}
+              // </InputLabel>
             )}
             <Select
               // IconComponent={() => <ArrowDown />}
               labelId="demo-simple-select-label"
               id="demo-simple-select"
               value={age}
-              // label="Страницы"
+              label="Страницы"
               onChange={handleChange}
               sx={{
                 fontSize: 18,
@@ -146,54 +257,14 @@ const Navbar = () => {
                 },
               }}
             >
-              <MenuItem
-                sx={{
-                  "&:hover": { backgroundColor: "#666666" },
-                }}
-                value="Преимущества"
-              >
-                <a className="nav-links" href="#Advantages">
-                  {t("advantages")}
-                </a>
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  "&:hover": { backgroundColor: "#666666" },
-                }}
-                value="Миссия и цели"
-              >
-                <a className="nav-links" href="#Goals">
-                  {t("goals")}
-                </a>
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  "&:hover": { backgroundColor: "#666666" },
-                }}
-                value="Услуги компании"
-              >
-                {t("services")}
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  "&:hover": { backgroundColor: "#666666" },
-                }}
-                value="Лицензии"
-              >
-                {t("licences")}
-              </MenuItem>
-              <MenuItem
-                sx={{
-                  "&:hover": { backgroundColor: "#666666" },
-                }}
-                value="Наши работы"
-              >
-                {t("ourWorks")}
-              </MenuItem>
+              
+             
             </Select>
-          </FormControl>
+          </FormControl> */}
         </Box>
-        <a className="nav-links">{t("contacts")}</a>
+        <a className="nav-links" href="#Footer">
+          {t("contacts")}
+        </a>
         <Language />
       </Stack>
       <Stack
@@ -232,13 +303,13 @@ const Navbar = () => {
           sx={{
             bg: "#fff",
             height: "100%",
-            mt: "300px",
+            mt: "220px",
             padding: "16px 0",
           }}
         >
           <Stack
             spacing={2}
-            pt={1}
+            // pt={1}
             direction="column"
             height="35px"
             alignItems="center"

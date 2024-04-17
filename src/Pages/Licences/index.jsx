@@ -13,12 +13,14 @@ import {
   TextField,
 } from "@mui/material";
 import Aos from "aos";
+import { useTranslation } from "react-i18next";
 
 const Licence = () => {
   Aos.init({
     duration: 1500,
     offset: 0,
   });
+  const { t } = useTranslation();
   return (
     <Box
       sx={{
@@ -31,8 +33,10 @@ const Licence = () => {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        mt: "80px",
+        pt: "50px",
+        scrollMarginTop: 50,
       }}
+      id="Licences"
     >
       <Typography
         textAlign="center"
@@ -42,7 +46,7 @@ const Licence = () => {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        Лицензии на транспортные услуги
+        {t("licence")}
       </Typography>
       <Container
         sx={{
@@ -59,7 +63,7 @@ const Licence = () => {
           justifyContent="center"
           spacing={{ lg: 3, xs: 6.5 }}
           // spacing={3}
-          ml={{ lg: 5, md: 3, xs: 2 }}
+          ml={{ lg: 5, md: 3, xs: 1 }}
         >
           <Typography
             data-aos="fade-up"
@@ -106,9 +110,9 @@ const Licence = () => {
         <Stack
           alignItems="center"
           justifyContent="center"
-          spacing={7}
-          ml={{ lg: 6, md: 3, xs: 2 }}
-          mt={{ lg: "-15px", xs: 0 }}
+          spacing={{ lg: 7, md: 7, xs: 6 }}
+          ml={{ lg: 6, md: 3, xs: 1 }}
+          mt={{ lg: "-15px", xs: -1 }}
         >
           <Typography
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
@@ -117,39 +121,39 @@ const Licence = () => {
             data-aos-delay="300"
             color="#dbb45a"
           >
-            Наименование
+            {t("licenceDesc")}
           </Typography>
           <Typography
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             data-aos="fade-up"
             data-aos-delay="350"
             textAlign="center"
           >
-            Авто экспедирование
+            {t("licenceDesc2")}
           </Typography>
           <Typography
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             data-aos="fade-up"
             data-aos-delay="400"
             textAlign="center"
           >
-            Морское экспедирование
+            {t("licenceDesc3")}
           </Typography>
           <Typography
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             data-aos="fade-up"
             data-aos-delay="450"
             textAlign="center"
           >
-            Авиа экспедирование
+            {t("licenceDesc4")}
           </Typography>
         </Stack>
         <Stack
           alignItems="center"
           justifyContent="center"
-          spacing={7}
-          ml={{ lg: 6, md: 3, xs: 2 }}
-          mt={{ lg: "-15px", xs: 0 }}
+          spacing={{ lg: 7, xs: 3.7 }}
+          ml={{ lg: 6, md: 3, xs: 1 }}
+          mt={{ lg: "-15px", xs: 0.4 }}
         >
           <Typography
             data-aos="fade-up"
@@ -157,13 +161,14 @@ const Licence = () => {
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             textAlign="center"
             color="#dbb45a"
+            pb={{ lg: 0, xs: 1.5 }}
           >
-            Серия
+            {t("series")}
           </Typography>
           <Typography
             data-aos="fade-up"
             data-aos-delay="400"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
           >
             №: 1-22-16-182
@@ -171,7 +176,7 @@ const Licence = () => {
           <Typography
             data-aos="fade-up"
             data-aos-delay="500"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
           >
             №: 1-22-16-216
@@ -179,7 +184,7 @@ const Licence = () => {
           <Typography
             data-aos="fade-up"
             data-aos-delay="600"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
           >
             №: 1-22-16-318
@@ -188,9 +193,9 @@ const Licence = () => {
         <Stack
           alignItems="center"
           justifyContent="center"
-          spacing={{ lg: 7, md: 8, xs: 8.8 }}
-          ml={{ lg: 6, md: 3, xs: 2 }}
-          mt={{ lg: "-15px", xs: 0 }}
+          spacing={{ lg: 7, md: 8, xs: 6 }}
+          ml={{ lg: 6, md: 3, xs: 1 }}
+          mt={{ lg: "-15px", xs: -1.2 }}
         >
           <Typography
             data-aos="fade-up"
@@ -199,12 +204,12 @@ const Licence = () => {
             textAlign="center"
             color="#dbb45a"
           >
-            Период
+            {t("period")}
           </Typography>
           <Typography
             data-aos="fade-up"
             data-aos-delay="400"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
           >
             2023-2026
@@ -212,7 +217,7 @@ const Licence = () => {
           <Typography
             data-aos="fade-up"
             data-aos-delay="500"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
           >
             2023-2026
@@ -220,16 +225,16 @@ const Licence = () => {
           <Typography
             data-aos="fade-up"
             data-aos-delay="600"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
           >
             2024-2027
           </Typography>
         </Stack>
         <Stack
-          spacing={{ lg: 6.3, md: 6, xs: 5 }}
-          ml={{ lg: 6, md: 3, xs: 2 }}
-          mt={{ lg: "70px", md: "60px", xs: "52px" }}
+          spacing={{ lg: 6.3, md: 6, xs: 3 }}
+          ml={{ lg: 6, md: 3, xs: 1 }}
+          mt={{ lg: "70px", md: "60px", xs: "49px" }}
           width={262}
         >
           <Typography
@@ -239,16 +244,16 @@ const Licence = () => {
             textAlign="center"
             color="#dbb45a"
           >
-            Выдавший орган
+            {t("permit")}
           </Typography>
           <Typography
             data-aos="fade-up"
             data-aos-delay="500"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 10 } }}
+            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
+            width={{ lg: "100%", xs: "75px" }}
           >
-            Агентство транспорта и коммуникаций при Кабинете Министров
-            Туркменистана
+            {t("permit2")}
           </Typography>
         </Stack>
       </Container>
