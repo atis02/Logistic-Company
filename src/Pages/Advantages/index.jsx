@@ -11,7 +11,12 @@ const Advantages = () => {
   const { t } = useTranslation();
   return (
     <Box
-      sx={{ pt: { lg: "80px", md: "40px", xs: "10px" }, color: "#fff" }}
+      sx={{
+        pt: { lg: "80px", md: "40px", xs: "5px" },
+        width: "100%",
+        height: "auto",
+        color: "#fff",
+      }}
       id="Advantages"
     >
       <Container
@@ -21,6 +26,8 @@ const Advantages = () => {
           alignItems: "center",
           mt: "30px",
           gap: "30px",
+
+          width: "100%",
         }}
       >
         <Stack>
@@ -35,17 +42,35 @@ const Advantages = () => {
             {t("advantages")}
           </Typography>
         </Stack>
-        <Stack direction={{ lg: "row", md: "row", xs: "column" }}>
+        <Stack
+          width="100%"
+          height="auto"
+          direction={{ lg: "row", md: "row", xs: "column" }}
+          justifyContent="center"
+          alignItems="center"
+        >
           <Stack
             sx={{
-              width: { lg: "617px", md: "517px", xs: "360px" },
-              height: { lg: "356px", md: "256px", xs: "156px" },
+              width: "80%",
+              height: "80%",
               zIndex: "100",
             }}
           >
-            <img src="/images/Map.png" alt="" />
+            <img
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+              src="/images/Map.png"
+              alt=""
+            />
           </Stack>
-          <Stack spacing={1} mt={{ xs: 6 }} p={{ lg: 0, md: 0, xs: 3 }}>
+          <Stack
+            width={{ lg: "60%", md: "70%", sm: "75%", xs: "100%" }}
+            spacing={1}
+            mt={{ xs: 2 }}
+            p={{ lg: 0, md: 0, xs: 1 }}
+          >
             <Stack
               fontSize={15}
               direction="row"

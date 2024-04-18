@@ -17,15 +17,16 @@ import { Trans, useTranslation } from "react-i18next";
 
 const Services = () => {
   const { t } = useTranslation();
+
   return (
     <Box
       sx={{
         background: "#2F2F2F",
-        height: { lg: 600, md: 600, xs: 700 },
+        height: "100%",
+        p: "15px 6px",
         color: "#fff",
         display: "flex",
         alignItems: "center",
-        mt: { lg: 0, md: 0, xs: "100px" },
       }}
     >
       <Container
@@ -49,10 +50,11 @@ const Services = () => {
               justifyContent="space-between"
               spacing={{ lg: 6, md: 4, xs: 3 }}
               mb={5}
+              width="100%"
             >
               <Stack
                 sx={{
-                  width: { lg: 590, md: 490, xs: 320 },
+                  width: "100%",
                   height: { lg: 490, md: 390, xs: 280 },
                   justifyContent: "center",
                   alignItems: "center",
@@ -69,10 +71,7 @@ const Services = () => {
                   alt=""
                 />
               </Stack>
-              <Stack
-                width={{ lg: "665px", md: "465px", xs: "325px" }}
-                p={{ lg: 0, md: 0, xs: 2 }}
-              >
+              <Stack width="auto">
                 <Typography
                   fontSize={18}
                   fontWeight={700}
@@ -97,7 +96,8 @@ const Services = () => {
             >
               <Stack
                 sx={{
-                  width: { lg: 590, md: 490, xs: 320 },
+                  width: "100%",
+
                   height: { lg: 490, md: 390, xs: 280 },
                   justifyContent: "center",
                   alignItems: "center",
@@ -116,11 +116,7 @@ const Services = () => {
                 />
               </Stack>
 
-              <Stack
-                width={{ lg: "665px", md: "465px", xs: "325px" }}
-                flexWrap="wrap"
-                p={{ lg: 0, md: 0, xs: 2 }}
-              >
+              <Stack width="auto" flexWrap="wrap">
                 <Typography
                   fontSize={18}
                   fontWeight={700}
@@ -146,7 +142,7 @@ const Services = () => {
             >
               <Stack
                 sx={{
-                  width: { lg: 590, md: 490, xs: 320 },
+                  width: "100%",
                   height: { lg: 490, md: 390, xs: 280 },
                   justifyContent: "center",
                   alignItems: "center",
@@ -165,10 +161,7 @@ const Services = () => {
                 />
               </Stack>
 
-              <Stack
-                width={{ lg: "665px", md: "465px", xs: "325px" }}
-                p={{ lg: 0, md: 0, xs: 2 }}
-              >
+              <Stack width="auto">
                 <Typography
                   fontSize={18}
                   fontWeight={700}
@@ -202,7 +195,7 @@ const Services = () => {
             >
               <Stack
                 sx={{
-                  width: { lg: 590, md: 490, xs: 320 },
+                  width: "100%",
                   height: { lg: 490, md: 390, xs: 280 },
                   justifyContent: "center",
                   alignItems: "center",
@@ -221,10 +214,7 @@ const Services = () => {
                 />
               </Stack>
 
-              <Stack
-                width={{ lg: "665px", md: "465px", xs: "325px" }}
-                p={{ lg: 0, md: 0, xs: 2 }}
-              >
+              <Stack width="auto">
                 <Typography
                   fontSize={18}
                   fontWeight={700}
@@ -250,7 +240,7 @@ const Services = () => {
             >
               <Stack
                 sx={{
-                  width: { lg: 590, md: 490, xs: 320 },
+                  width: "100%",
                   height: { lg: 490, md: 390, xs: 280 },
                   justifyContent: "center",
                   alignItems: "center",
@@ -269,10 +259,7 @@ const Services = () => {
                 />
               </Stack>
 
-              <Stack
-                width={{ lg: "665px", md: "465px", xs: "325px" }}
-                p={{ lg: 0, md: 0, xs: 2 }}
-              >
+              <Stack width="auto">
                 <Typography
                   fontSize={18}
                   fontWeight={700}

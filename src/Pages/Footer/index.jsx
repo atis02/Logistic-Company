@@ -20,6 +20,7 @@ const Footer = () => {
         color: "#fff",
         display: "flex",
         alignItems: "center",
+        width: "100%",
       }}
       id="Footer"
     >
@@ -27,22 +28,34 @@ const Footer = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-between",
+          justifyContent: {
+            lg: "space-between",
+            md: "space-between",
+            sm: "space-between",
+            xs: "start",
+          },
+
+          width: "100%",
         }}
       >
         <Stack
           direction="row"
           flexWrap="wrap"
           spacing={{ lg: 7.4, xs: 0 }}
+          width={{ lg: "60%", md: "60%", sm: "70%", xs: "100%" }}
           mt={2}
         >
-          <Stack spacing={3}>
+          <Stack
+            spacing={3}
+            width={{ lg: "62%", md: "72%", sm: "82%", xs: "100%" }}
+          >
             <Stack
               direction="row"
               data-aos="fade-down"
               data-aos-delay="300"
-              width={{ lg: 420, md: 400, xs: 320 }}
+              // width={{ lg: 420, md: 400, xs: 320 }}
               alignItems="center"
+              width="100%"
               spacing={1}
             >
               <img
@@ -50,13 +63,14 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography>{t("location")}</Typography>
+              <Typography width="auto">{t("location")}</Typography>
             </Stack>
             <Stack
               data-aos="fade-down"
               data-aos-delay="400"
               direction="row"
-              width={{ lg: 420, md: 400, xs: 320 }}
+              // width={{ lg: 420, md: 400, xs: 320 }}
+              width="100%"
               alignItems="center"
               spacing={1}
             >
@@ -76,7 +90,8 @@ const Footer = () => {
               data-aos="fade-down"
               data-aos-delay="500"
               direction="row"
-              width={{ lg: 420, md: 400, xs: 320 }}
+              // width={{ lg: 420, md: 400, xs: 320 }}
+              width="100%"
               alignItems="center"
               spacing={1}
               pb={{ lg: 0, xs: 3 }}
@@ -86,7 +101,7 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography>+993 12 471577</Typography>
+              <Typography width="auto">+993 12 471577</Typography>
             </Stack>
           </Stack>
           <Stack spacing={3}>
@@ -94,7 +109,7 @@ const Footer = () => {
               direction="row"
               data-aos="fade-down"
               data-aos-delay="600"
-              width={220}
+              width="auto"
               alignItems="center"
               spacing={1}
             >
@@ -109,7 +124,7 @@ const Footer = () => {
               data-aos="fade-down"
               data-aos-delay="700"
               direction="row"
-              width={220}
+              width="auto"
               alignItems="center"
               spacing={1}
             >
@@ -126,8 +141,9 @@ const Footer = () => {
           direction="row"
           mt={{ xs: 4, lg: 0 }}
           flexWrap="wrap"
-          spacing={7}
+          spacing={{ lg: 7, md: 5, sm: 3, xs: 1 }}
           alignItems="center"
+          justifyContent="center"
         >
           <Stack
             sx={{

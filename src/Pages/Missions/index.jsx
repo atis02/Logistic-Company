@@ -13,10 +13,12 @@ const Missions = () => {
     <Box
       id="Goals"
       sx={{
-        pt: { lg: "60px", md: "30px", xs: "10px" },
+        pt: { lg: "60px", md: "30px", sm: "30px", xs: "30px" },
         color: "#fff",
-        height: "100vh",
+        height: "100%",
         scrollMarginTop: "50px",
+        width: "100%",
+        mb: "80px",
       }}
     >
       <Typography
@@ -33,6 +35,8 @@ const Missions = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
+          width: "100%",
+          height: "100%",
         }}
       >
         <Stack
@@ -43,12 +47,13 @@ const Missions = () => {
           data-aos="fade-up"
           data-aos-delay="500"
           spacing={2}
+          width="100%"
         >
           <img
             src="/images/goal.png"
             style={{
-              width: 104,
-              height: 104,
+              width: { lg: 104, md: 95, sm: 90, xs: 80 },
+              height: { lg: 104, md: 95, sm: 90, xs: 80 },
             }}
             alt=""
           />
@@ -70,6 +75,8 @@ const Missions = () => {
           ml={{ lg: 35, md: 20, xs: 0 }}
           alignItems="center"
           spacing={2}
+          width="auto"
+          // height="100%"
         >
           <Stack maxWidth={725}>
             <Typography fontSize={18} textAlign="center" fontWeight={600}>
@@ -83,30 +90,43 @@ const Missions = () => {
           </Stack>
           <img
             src="/images/goal2.png"
-            style={{ width: 104, height: 104 }}
+            style={{
+              width: { lg: 104, md: 95, sm: 90, xs: 80 },
+              height: { lg: 104, md: 95, sm: 90, xs: 80 },
+            }}
             alt=""
           />
         </Stack>
         <Stack
           alignItems="center"
-          ml={{ lg: 24, md: 14, xs: 0 }}
+          ml={{ lg: 15, md: 14, xs: 0 }}
           mt={15}
           position="absolute"
           minHeight="260px"
-          top={{ lg: 2000, md: 2300, xs: 2550 }}
+          top={{ lg: 1850, md: 1800, sm: 1900, xs: 2050 }}
+          // top="auto"
+          left={{ lg: 120 }}
+          width="auto"
+          height={{ xl: "100%", lg: "100%", md: "90%", sm: "80%", xs: "40%" }}
+          // width: { lg: "785px", md: "685px", xs: "350px" },
           sx={{
-            width: { lg: "785px", md: "685px", xs: "350px" },
             opacity: "0.2",
-            height: { lg: "488px", md: "388px", xs: "250px" },
+            // height: { lg: "488px", md: "388px", xs: "250px" },
           }}
         >
-          <img width="100%" src="/images/Map.png" alt="" />
+          <img
+            style={{ width: "100%", height: "90%" }}
+            src="/images/Map.png"
+            alt=""
+          />
         </Stack>
         <Box
           id="Services"
           sx={{
             scrollMarginTop: "50px",
           }}
+          width="100%"
+          height="100%"
         >
           <Typography
             textAlign="center"
@@ -155,7 +175,7 @@ const Missions = () => {
               <Typography textAlign="center">{t("export")}</Typography>
             </Stack>
             <Stack
-              mt={{ xs: 6, lg: 0, md: 0 }}
+              mt={{ xs: 6, lg: 0, md: 0, sm: 0 }}
               spacing={2}
               style={{ width: 140, height: 125 }}
               data-aos="fade-up"
@@ -170,7 +190,7 @@ const Missions = () => {
               <Typography textAlign="center">{t("tranzit")}</Typography>
             </Stack>
             <Stack
-              mt={{ xs: 6, lg: 0, md: 0 }}
+              mt={{ xs: 6, lg: 0, md: 0, sm: 0 }}
               alignItems="center"
               spacing={2}
               style={{ width: 140, height: 125 }}

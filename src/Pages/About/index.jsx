@@ -15,7 +15,8 @@ const About = () => {
       id="aboutCompany"
       sx={{
         background: "#2F2F2F",
-        height: "400px",
+        height: { lg: "400px", md: "360px", sm: "300px", xs: "460px" },
+        width: "100%",
         backgroundImage: "url('/images/AboutHorizontal.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -31,6 +32,8 @@ const About = () => {
         sx={{
           display: "flex",
           justifyContent: "space-between",
+          width: "100%",
+          height: "auto",
         }}
       >
         <Stack sx={{ display: { lg: "block", md: "block", xs: "none" } }}>

@@ -18,16 +18,17 @@ const OurWorks = () => {
         alignItems: "center",
         justifyContent: "space-between",
         flexDirection: "column",
-        pt: "50px",
+        pt: "70px",
         pb: "60px",
         scrollMarginTop: "50px",
+        width: "100%",
       }}
       id="OurWorks"
     >
       <Typography
         textAlign="center"
         className="title"
-        fontSize={30}
+        fontSize={{ lg: 30, md: 28, sm: 26, xs: 25 }}
         fontWeight={700}
         data-aos="fade-up"
         data-aos-delay="300"
@@ -47,91 +48,97 @@ const OurWorks = () => {
           direction="row"
           alignItems="center"
           justifyContent="center"
+          height="100%"
+          width="100%"
           style={{ flexWrap: "wrap", gap: "30px" }}
         >
           <Stack
             backgroundColor="#2F2F2F"
-            width={320}
-            height={410}
+            height="100%"
+            width="300px"
             data-aos="fade-up"
             data-aos-delay="300"
           >
             <img
               src="/images/Rectangle 13.png"
-              style={{ width: 320, height: 320 }}
+              style={{ height: "100%", width: "100%" }}
               alt=""
             />
             <Typography
               fontWeight={600}
               textAlign="center"
-              mt={2}
+              mt={1}
+              mb={1}
               fontSize={16}
               p="5px 30px 5px 30px"
             >
-              {t("medicaments")}
+              <Trans i18nKey="medicaments" components={{ 1: <br /> }} />
             </Typography>
           </Stack>
           <Stack
             data-aos="fade-up"
             data-aos-delay="400"
             backgroundColor="#2F2F2F"
-            width={320}
-            height={410}
+            height="375px"
+            width="300px"
           >
             <img
               src="/images/Rectangle 13 (1).png"
-              style={{ width: 320, height: 320 }}
+              style={{ width: "100%", height: "100%" }}
               alt=""
             />
             <Typography
               fontWeight={600}
               textAlign="center"
-              mt={2}
               fontSize={16}
-              p="5px 57px 5px 57px"
+              mt={1}
+              mb={1}
+              p="5px 30px 5px 30px"
             >
-              {t("mebels")}
+              <Trans i18nKey="mebels" components={{ 1: <br /> }} />
             </Typography>
           </Stack>
           <Stack
             data-aos="fade-up"
             data-aos-delay="500"
             backgroundColor="#2F2F2F"
-            width={320}
-            height={410}
+            height="375px"
+            width="300px"
           >
             <img
               src="/images/Rectangle 13 (2).png"
-              style={{ width: 320, height: 320 }}
+              style={{ width: "100%", height: "100%" }}
               alt=""
             />
             <Typography
               fontWeight={600}
               textAlign="center"
-              mt={2}
+              mt={1}
+              mb={1}
               fontSize={16}
-              p="5px 45px 5px 45px"
+              p="5px 30px 5px 30px"
             >
-              {t("warn")}
+              <Trans i18nKey="warn" components={{ 1: <br /> }} />
             </Typography>
           </Stack>
           <Stack
             data-aos="fade-up"
             data-aos-delay="600"
             backgroundColor="#2F2F2F"
-            width={320}
-            height={410}
+            height="375px"
+            width="300px"
           >
             <img
               src="/images/Rectangle 13 (3).png"
-              style={{ width: 320, height: 320 }}
+              style={{ width: "100%", height: "100%" }}
               alt=""
             />
             <Typography
               fontWeight={600}
-              p="5px"
+              p="5px 30px 5px 30px"
+              mt={1}
+              mb={1}
               textAlign="center"
-              mt={3}
               fontSize={16}
             >
               {t("railw")}
@@ -141,19 +148,20 @@ const OurWorks = () => {
             data-aos="fade-up"
             data-aos-delay="700"
             backgroundColor="#2F2F2F"
-            width={320}
-            height={410}
+            height="375px"
+            width="300px"
           >
             <img
               src="/images/Rectangle 13 (4).png"
-              style={{ width: 320, height: 320 }}
+              style={{ width: "100%", height: "100%" }}
               alt=""
             />
             <Typography
               fontWeight={600}
-              p="5px"
+              p="15px 30px 15px 30px"
+              mt={1}
+              mb={1}
               textAlign="center"
-              mt={3}
               fontSize={16}
             >
               {t("automobile")}
@@ -180,7 +188,7 @@ const OurWorks = () => {
             alignItems="center"
             justifyContent="center"
             mt={5}
-            spacing={{ lg: 6, md: 0, xs: 0 }}
+            spacing={{ lg: 6, md: 4, sm: 3, xs: 0 }}
           >
             <Stack style={{ width: 290, height: 170 }}>
               <img

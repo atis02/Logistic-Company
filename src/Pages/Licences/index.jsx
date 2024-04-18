@@ -29,7 +29,7 @@ const Licence = () => {
       <Typography
         textAlign="center"
         className="title"
-        fontSize={30}
+        fontSize={{ lg: 30, md: 28, sm: 26, xs: 25 }}
         fontWeight={700}
         data-aos="fade-up"
         data-aos-delay="300"
@@ -41,17 +41,17 @@ const Licence = () => {
           display: "flex",
           justifyContent: "center",
           height: 435,
+          gap: { lg: 10, md: 8, sm: 4, xs: 0.5 },
           width: "100%",
           background: "#2F2F2F",
           mt: "30px",
+          p: "80px",
         }}
       >
         <Stack
           alignItems="center"
-          justifyContent="center"
-          spacing={{ lg: 3, xs: 6.5 }}
-          // spacing={3}
-          ml={{ lg: 5, md: 3, xs: 1 }}
+          // spacing={{ lg: 3, xs: 6.5 }}
+          // ml={{ lg: 5, md: 3, xs: 1 }}
         >
           <Typography
             data-aos="fade-up"
@@ -59,53 +59,79 @@ const Licence = () => {
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             textAlign="center"
             color="#dbb45a"
+            height={76}
             mr={2}
           >
             №
           </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="350"
-            fontSize={{ lg: 40, md: 33, xs: 23 }}
-            textAlign="center"
-            color="#dbb45a"
-            mr={2}
-            pt={{ lg: 2, md: 1, xs: 0 }}
+          <Stack
+            width="100%"
+            height={76}
+            alignItems="center"
+            justifyContent="center"
           >
-            1
-          </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="400"
-            fontSize={{ lg: 40, md: 33, xs: 23 }}
-            textAlign="center"
-            color="#dbb45a"
-            mr={2}
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="350"
+              fontSize={{ lg: 40, md: 33, xs: 23 }}
+              textAlign="center"
+              color="#dbb45a"
+              mr={2}
+              // height={76}
+              // pt={{ lg: 2, md: 1, xs: 0 }}
+            >
+              1
+            </Typography>
+          </Stack>
+          <Stack
+            width="100%"
+            height={76}
+            alignItems="center"
+            justifyContent="center"
           >
-            2
-          </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="450"
-            fontSize={{ lg: 40, md: 33, xs: 23 }}
-            textAlign="center"
-            color="#dbb45a"
-            mr={2}
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="400"
+              fontSize={{ lg: 40, md: 33, xs: 23 }}
+              textAlign="center"
+              color="#dbb45a"
+              // height={76}
+              mr={2}
+            >
+              2
+            </Typography>
+          </Stack>
+          <Stack
+            width="100%"
+            height={76}
+            alignItems="center"
+            justifyContent="center"
           >
-            3
-          </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="450"
+              fontSize={{ lg: 40, md: 33, xs: 23 }}
+              textAlign="center"
+              color="#dbb45a"
+              // height={76}
+              mr={2}
+            >
+              3
+            </Typography>
+          </Stack>
         </Stack>
         <Stack
           alignItems="center"
-          justifyContent="center"
-          spacing={{ lg: 7, md: 7, xs: 6 }}
-          ml={{ lg: 6, md: 3, xs: 1 }}
-          mt={{
-            lg: "-15px",
-            ...(i18n.language === "ru" ? { xs: -1 } : { xs: -3 }),
-          }}
+          // spacing={{ lg: 7, md: 7, xs: 6 }}
+          // ml={{ lg: 6, md: 3, xs: 1 }}
+          // mt={{
+          //   lg: "-15px",
+          //   ...(i18n.language === "ru" ? { xs: -1 } : { xs: -3 }),
+          // }}
+          width={220}
         >
           <Typography
+            height={76}
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             textAlign="center"
             data-aos="fade-up"
@@ -114,37 +140,62 @@ const Licence = () => {
           >
             {t("licenceDesc")}
           </Typography>
-          <Typography
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            data-aos="fade-up"
-            data-aos-delay="350"
-            textAlign="center"
+          <Stack
+            width="100%"
+            height={76}
+            alignItems="center"
+            justifyContent="center"
           >
-            {t("licenceDesc2")}
-          </Typography>
-          <Typography
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            data-aos="fade-up"
-            data-aos-delay="400"
-            textAlign="center"
+            <Typography
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              data-aos="fade-up"
+              data-aos-delay="350"
+              width="auto"
+              direction="row"
+              alignItems="center"
+              justifyContent="center"
+              textAlign="center"
+            >
+              {t("licenceDesc2")}
+            </Typography>
+          </Stack>
+          <Stack
+            width="100%"
+            height={76}
+            alignItems="center"
+            justifyContent="center"
           >
-            {t("licenceDesc3")}
-          </Typography>
-          <Typography
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            data-aos="fade-up"
-            data-aos-delay="450"
-            textAlign="center"
+            <Typography
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              data-aos="fade-up"
+              data-aos-delay="400"
+              textAlign="center"
+            >
+              {t("licenceDesc3")}
+            </Typography>
+          </Stack>
+          <Stack
+            width="100%"
+            height={76}
+            alignItems="center"
+            justifyContent="center"
           >
-            {t("licenceDesc4")}
-          </Typography>
+            <Typography
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              data-aos="fade-up"
+              data-aos-delay="450"
+              textAlign="center"
+            >
+              {t("licenceDesc4")}
+            </Typography>
+          </Stack>
         </Stack>
         <Stack
           alignItems="center"
-          justifyContent="center"
-          spacing={{ lg: 7, xs: 5.9 }}
-          ml={{ lg: 6, md: 3, xs: 1 }}
-          mt={{ lg: "-15px", xs: 0.4 }}
+          // spacing={{ lg: 7, xs: 5.9 }}
+          // ml={{ lg: 6, md: 3, xs: 1 }}
+          // mt={{ lg: "-15px", xs: 0.4 }}
+          width={140}
         >
           <Typography
             data-aos="fade-up"
@@ -152,112 +203,171 @@ const Licence = () => {
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             textAlign="center"
             color="#dbb45a"
-            pb={{ lg: 0, xs: 1.5 }}
+            height={76}
+
+            // pb={{ lg: 0, xs: 1.5 }}
           >
             {t("series")}
           </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="400"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            textAlign="center"
-            // pt={{ lg: 0, md: 0, xs: -4 }}
+          <Stack
+            height={76}
+            width="100%"
+            alignItems="center"
+            justifyContent="center"
           >
-            №: 1-22-16-182
-          </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="500"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            textAlign="center"
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="400"
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              textAlign="center"
+              width="auto"
+
+              // pt={{ lg: 0, md: 0, xs: -4 }}
+            >
+              №: 1-22-16-182
+            </Typography>
+          </Stack>
+          <Stack
+            height={76}
+            width="100%"
+            alignItems="center"
+            justifyContent="center"
           >
-            №: 1-22-16-216
-          </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="600"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            textAlign="center"
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="500"
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              width="auto"
+              textAlign="center"
+            >
+              №: 1-22-16-216
+            </Typography>
+          </Stack>
+          <Stack
+            height={76}
+            width="100%"
+            alignItems="center"
+            justifyContent="center"
           >
-            №: 1-22-16-318
-          </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="600"
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              width="auto"
+              textAlign="center"
+            >
+              №: 1-22-16-318
+            </Typography>
+          </Stack>
         </Stack>
         <Stack
           alignItems="center"
-          justifyContent="center"
-          spacing={{ lg: 7, md: 8, xs: 6 }}
-          ml={{ lg: 6, md: 3, xs: 1 }}
-          mt={{ lg: "-15px", xs: -1.2 }}
+          // spacing={{ lg: 7, md: 8, xs: 6 }}
+          // ml={{ lg: 6, md: 3, xs: 1 }}
+          width={90}
+          // mt={{ lg: "-15px", xs: -1.2 }}
         >
           <Typography
             data-aos="fade-up"
             data-aos-delay="300"
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             textAlign="center"
+            height={76}
             color="#dbb45a"
           >
             {t("period")}
           </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="400"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            textAlign="center"
+          <Stack
+            height={76}
+            width="100%"
+            alignItems="center"
+            justifyContent="center"
           >
-            2023-2026
-          </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="500"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            textAlign="center"
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="400"
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              textAlign="center"
+              width="auto"
+            >
+              2023-2026
+            </Typography>
+          </Stack>
+          <Stack
+            height={76}
+            width="100%"
+            alignItems="center"
+            justifyContent="center"
           >
-            2023-2026
-          </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="600"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            textAlign="center"
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="500"
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              textAlign="center"
+              width="auto"
+            >
+              2023-2026
+            </Typography>
+          </Stack>
+          <Stack
+            height={76}
+            width="100%"
+            alignItems="center"
+            justifyContent="center"
           >
-            2024-2027
-          </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="600"
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              textAlign="center"
+              width="auto"
+            >
+              2024-2027
+            </Typography>
+          </Stack>
         </Stack>
         <Stack
-          spacing={{
-            lg: 6.3,
-            md: 6,
-            ...(i18n.language === "en" ? { xs: 5.5 } : { xs: 4 }),
-          }}
-          ml={{ lg: 6, md: 3, xs: 1 }}
-          mt={{
-            lg: "70px",
-            md: "60px",
-            ...(i18n.language === "ru" ? { xs: "50px" } : { xs: "70px" }),
-          }}
-          width={{ lg: 262, md: 232, xs: 122 }}
-          // width="100%"
+          // spacing={{
+          //   lg: 6.3,
+          //   md: 6,
+          //   ...(i18n.language === "en" ? { xs: 5.5 } : { xs: 4 }),
+          // }}
+          // ml={{ lg: 6, md: 3, xs: 1 }}
+          // mt={{
+          //   lg: "70px",
+          //   md: "60px",
+          //   ...(i18n.language === "ru" ? { xs: "50px" } : { xs: "70px" }),
+          // }}
+          // width={{ lg: 262, md: 232, xs: 122 }}
+          width={190}
           alignItems="center"
         >
-          {console.log(i18n.language)}
           <Typography
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             data-aos="fade-up"
             data-aos-delay="300"
             textAlign="center"
+            height={105}
             color="#dbb45a"
           >
             {t("permit")}
           </Typography>
-          <Typography
-            data-aos="fade-up"
-            data-aos-delay="500"
-            sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-            textAlign="center"
-            maxWidth={{ lg: "100%", xs: "125px" }}
+          <Stack
+            height={76}
+            alignItems="center"
+            width={"100%"}
+            justifyContent="center"
           >
-            {t("permit2")}
-          </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="500"
+              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              textAlign="center"
+              width={{ lg: "auto", md: "auto", sm: "auto", xs: 75 }}
+            >
+              {t("permit2")}
+            </Typography>
+          </Stack>
         </Stack>
       </Container>
     </Box>

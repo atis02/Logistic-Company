@@ -73,9 +73,18 @@ const Navbar = () => {
           : { boxShadow: "0" }),
       }}
     >
-      <a>
-        <img src="/images/Logo.png" alt="" />
-      </a>
+      <Stack
+        width={{ lg: 86, md: 80, sm: 70, xs: 50 }}
+        height={{ lg: 80, md: 75, sm: 70, xs: 55 }}
+      >
+        <a>
+          <img
+            src="/images/Logo.png"
+            style={{ width: "100%", height: "100%", pt: 5 }}
+            alt=""
+          />
+        </a>
+      </Stack>
       <Stack
         direction="row"
         alignItems="center"
@@ -87,19 +96,19 @@ const Navbar = () => {
         <a className="nav-links" href="#aboutCompany">
           {t("aboutCompany")}
         </a>
-        <Box sx={{ minWidth: 130 }}>
+        <Box sx={{ minWidth: 90 }}>
           <Stack
             cursor="pointer"
             variant="text"
             direction="row"
             alignItems="center"
+            justifyContent="center"
             onClick={handleClick}
             sx={{
               cursor: "pointer",
               color: "#000",
-              gap: { lg: "5px", md: "3px", xs: 0 },
+              gap: { lg: "2px", md: "3px", xs: 0 },
             }}
-            p={{ lg: "0 25px ", xs: "0" }}
             minHeight="32px"
           >
             <Typography color="#fff" fontSize={18}>
@@ -119,7 +128,7 @@ const Navbar = () => {
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
-            sx={{ zIndex: "100000", position: "fixed" }}
+            sx={{ zIndex: "100000", position: "fixed", width: "100%" }}
             MenuListProps={{
               "aris-labelledby": "basic-button",
               sx: {
