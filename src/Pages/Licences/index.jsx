@@ -8,7 +8,7 @@ const Licence = () => {
     duration: 1500,
     offset: 0,
   });
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <Box
       sx={{
@@ -100,7 +100,10 @@ const Licence = () => {
           justifyContent="center"
           spacing={{ lg: 7, md: 7, xs: 6 }}
           ml={{ lg: 6, md: 3, xs: 1 }}
-          mt={{ lg: "-15px", xs: -1 }}
+          mt={{
+            lg: "-15px",
+            ...(i18n.language === "ru" ? { xs: -1 } : { xs: -3 }),
+          }}
         >
           <Typography
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
@@ -139,7 +142,7 @@ const Licence = () => {
         <Stack
           alignItems="center"
           justifyContent="center"
-          spacing={{ lg: 7, xs: 3.7 }}
+          spacing={{ lg: 7, xs: 5.9 }}
           ml={{ lg: 6, md: 3, xs: 1 }}
           mt={{ lg: "-15px", xs: 0.4 }}
         >
@@ -158,6 +161,7 @@ const Licence = () => {
             data-aos-delay="400"
             sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
+            // pt={{ lg: 0, md: 0, xs: -4 }}
           >
             №: 1-22-16-182
           </Typography>
@@ -220,11 +224,22 @@ const Licence = () => {
           </Typography>
         </Stack>
         <Stack
-          spacing={{ lg: 6.3, md: 6, xs: 5.5 }}
+          spacing={{
+            lg: 6.3,
+            md: 6,
+            ...(i18n.language === "en" ? { xs: 5.5 } : { xs: 4 }),
+          }}
           ml={{ lg: 6, md: 3, xs: 1 }}
-          mt={{ lg: "70px", md: "60px", xs: "50px" }}
-          width={262}
+          mt={{
+            lg: "70px",
+            md: "60px",
+            ...(i18n.language === "ru" ? { xs: "50px" } : { xs: "70px" }),
+          }}
+          width={{ lg: 262, md: 232, xs: 122 }}
+          // width="100%"
+          alignItems="center"
         >
+          {console.log(i18n.language)}
           <Typography
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             data-aos="fade-up"
