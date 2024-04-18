@@ -1,17 +1,5 @@
 import React from "react";
-import {
-  MenuItem,
-  Box,
-  Button,
-  Divider,
-  Container,
-  Select,
-  Stack,
-  InputLabel,
-  FormControl,
-  Typography,
-  TextField,
-} from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import Aos from "aos";
 import { useTranslation } from "react-i18next";
 
@@ -232,9 +220,9 @@ const Licence = () => {
           </Typography>
         </Stack>
         <Stack
-          spacing={{ lg: 6.3, md: 6, xs: 3 }}
+          spacing={{ lg: 6.3, md: 6, xs: 5.5 }}
           ml={{ lg: 6, md: 3, xs: 1 }}
-          mt={{ lg: "70px", md: "60px", xs: "49px" }}
+          mt={{ lg: "70px", md: "60px", xs: "50px" }}
           width={262}
         >
           <Typography
@@ -251,7 +239,7 @@ const Licence = () => {
             data-aos-delay="500"
             sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
             textAlign="center"
-            width={{ lg: "100%", xs: "75px" }}
+            maxWidth={{ lg: "100%", xs: "125px" }}
           >
             {t("permit2")}
           </Typography>

@@ -1,17 +1,5 @@
 import React from "react";
-import {
-  MenuItem,
-  Box,
-  Button,
-  Divider,
-  Container,
-  Select,
-  Stack,
-  InputLabel,
-  FormControl,
-  Typography,
-  TextField,
-} from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import Aos from "aos";
 import { useTranslation } from "react-i18next";
 
@@ -105,9 +93,9 @@ const Missions = () => {
           mt={15}
           position="absolute"
           minHeight="260px"
-          top={{ lg: 2000, md: 2300, xs: 2450 }}
+          top={{ lg: 2000, md: 2300, xs: 2550 }}
           sx={{
-            width: { lg: "785px", md: "685px", xs: "330px" },
+            width: { lg: "785px", md: "685px", xs: "350px" },
             opacity: "0.2",
             height: { lg: "488px", md: "388px", xs: "250px" },
           }}
@@ -140,27 +128,27 @@ const Missions = () => {
           >
             <Stack
               spacing={2}
-              style={{ width: 140, height: 110 }}
+              style={{ width: 140, height: 125 }}
               alignItems="center"
               data-aos="fade-up"
               data-aos-delay="1200"
             >
               <img
-                style={{ width: 110, height: 110 }}
+                style={{ width: 125, height: 125 }}
                 src="/images/Frame 29 (1).png"
                 alt=""
               />
               <Typography textAlign="center">{t("import")}</Typography>
             </Stack>
             <Stack
-              style={{ width: 140, height: 110 }}
+              style={{ width: 140, height: 125 }}
               spacing={2}
               alignItems="center"
               data-aos="fade-up"
               data-aos-delay="900"
             >
               <img
-                style={{ width: 110, height: 110 }}
+                style={{ width: 125, height: 125 }}
                 src="/images/Frame 29.png"
                 alt=""
               />
@@ -169,13 +157,13 @@ const Missions = () => {
             <Stack
               mt={{ xs: 6, lg: 0, md: 0 }}
               spacing={2}
-              style={{ width: 140, height: 110 }}
+              style={{ width: 140, height: 125 }}
               data-aos="fade-up"
               alignItems="center"
               data-aos-delay="1000"
             >
               <img
-                style={{ width: 110, height: 110 }}
+                style={{ width: 125, height: 125 }}
                 src="/images/Frame 34.png"
                 alt=""
               />
@@ -185,12 +173,12 @@ const Missions = () => {
               mt={{ xs: 6, lg: 0, md: 0 }}
               alignItems="center"
               spacing={2}
-              style={{ width: 140, height: 110 }}
+              style={{ width: 140, height: 125 }}
               data-aos="fade-up"
               data-aos-delay="1100"
             >
               <img
-                style={{ width: 110, height: 110 }}
+                style={{ width: 125, height: 125 }}
                 src="/images/Frame 30.png"
                 alt=""
               />

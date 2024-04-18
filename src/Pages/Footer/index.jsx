@@ -1,19 +1,6 @@
 import React from "react";
-import {
-  MenuItem,
-  Box,
-  Button,
-  Divider,
-  Container,
-  Select,
-  Stack,
-  InputLabel,
-  FormControl,
-  Typography,
-  TextField,
-} from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import Aos from "aos";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -40,15 +27,13 @@ const Footer = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          // xs: { flexDirection: "column" },
           justifyContent: "space-between",
-          // height: "100%",
         }}
       >
         <Stack
           direction="row"
           flexWrap="wrap"
-          spacing={{ lg: 7, xs: 0 }}
+          spacing={{ lg: 7.4, xs: 0 }}
           mt={2}
         >
           <Stack spacing={3}>
@@ -62,7 +47,7 @@ const Footer = () => {
             >
               <img
                 src="/images/Location.png"
-                style={{ width: 25, height: 25 }}
+                style={{ width: 24, height: 24 }}
                 alt=""
               />
               <Typography>{t("location")}</Typography>
@@ -77,7 +62,7 @@ const Footer = () => {
             >
               <img
                 src="/images/Call.png"
-                style={{ width: 25, height: 25 }}
+                style={{ width: 24, height: 24 }}
                 alt=""
               />
               <a
@@ -98,7 +83,7 @@ const Footer = () => {
             >
               <img
                 src="/images/Fax.png"
-                style={{ width: 25, height: 25 }}
+                style={{ width: 24, height: 24 }}
                 alt=""
               />
               <Typography>+993 12 471577</Typography>
@@ -115,7 +100,7 @@ const Footer = () => {
             >
               <img
                 src="/images/Mail.png"
-                style={{ width: 25, height: 25 }}
+                style={{ width: 24, height: 24 }}
                 alt=""
               />
               <Typography>info@altynmiras.com</Typography>
@@ -130,7 +115,7 @@ const Footer = () => {
             >
               <img
                 src="/images/Info.png"
-                style={{ width: 25, height: 25 }}
+                style={{ width: 24, height: 24 }}
                 alt=""
               />
               <Typography>www.altynmiras.com</Typography>
@@ -171,6 +156,15 @@ const Footer = () => {
             />
           </Stack>
         </Stack>
+        <Typography
+          width="100%"
+          data-aos="fade-down"
+          data-aos-delay="1000"
+          fontSize={16}
+          textAlign="center"
+        >
+          © Alem Tilsimat {new Date().getFullYear()}
+        </Typography>
       </Container>
     </Box>
   );

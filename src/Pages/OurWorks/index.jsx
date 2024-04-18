@@ -1,19 +1,5 @@
 import React from "react";
-
-import {
-  MenuItem,
-  Box,
-  Button,
-  Divider,
-  Container,
-  Select,
-  Stack,
-  InputLabel,
-  FormControl,
-  Typography,
-  TextField,
-  Grid,
-} from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import Aos from "aos";
 import { Trans, useTranslation } from "react-i18next";
 
@@ -80,7 +66,7 @@ const OurWorks = () => {
               textAlign="center"
               mt={2}
               fontSize={16}
-              p="5px 25px 5px 25px"
+              p="5px 30px 5px 30px"
             >
               {t("medicaments")}
             </Typography>
@@ -102,7 +88,7 @@ const OurWorks = () => {
               textAlign="center"
               mt={2}
               fontSize={16}
-              p="5px 55px 5px 55px"
+              p="5px 60px 5px 60px"
             >
               {t("mebels")}
             </Typography>
@@ -124,7 +110,7 @@ const OurWorks = () => {
               textAlign="center"
               mt={2}
               fontSize={16}
-              p="5px 25px 5px 25px"
+              p="5px 30px 5px 30px"
             >
               {t("warn")}
             </Typography>
@@ -145,7 +131,7 @@ const OurWorks = () => {
               fontWeight={600}
               p="5px"
               textAlign="center"
-              mt={2}
+              mt={3}
               fontSize={16}
             >
               {t("railw")}
@@ -167,7 +153,7 @@ const OurWorks = () => {
               fontWeight={600}
               p="5px"
               textAlign="center"
-              mt={2}
+              mt={3}
               fontSize={16}
             >
               {t("automobile")}

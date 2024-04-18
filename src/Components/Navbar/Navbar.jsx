@@ -3,27 +3,17 @@ import {
   MenuItem,
   Box,
   Button,
-  Divider,
-  Container,
-  Select,
   Stack,
-  InputLabel,
-  FormControl,
   Typography,
   IconButton,
   Drawer,
   useMediaQuery,
   useTheme,
-  TextField,
-  FormLabel,
   Menu,
 } from "@mui/material";
 import Language from "../../Components/Language/Language";
-import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 import MenuIcon from "@mui/icons-material/Menu";
-import zIndex from "@mui/material/styles/zIndex";
-import Aos from "aos";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Navbar = () => {
@@ -193,74 +183,6 @@ const Navbar = () => {
               </a>
             </MenuItem>
           </Menu>
-          {/* <FormControl fullWidth>
-            {age ? (
-              ""
-            ) : (
-              <FormLabel
-                focused={false}
-                id="demo-simple-select-label"
-                // focused={{ color: "#1E1E1E" }}
-                sx={{
-                  color: "#fff",
-                  "&:focus": { color: "#red" },
-                  fontSize: 18,
-                  pl: 2,
-                }}
-                className="input-label"
-              >
-                {t("pages")}
-              </FormLabel>
-
-              // <InputLabel
-
-              // >
-              //   {t("pages")}
-              // </InputLabel>
-            )}
-            <Select
-              // IconComponent={() => <ArrowDown />}
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={age}
-              label="Страницы"
-              onChange={handleChange}
-              sx={{
-                fontSize: 18,
-
-                color: "#fff",
-                ".MuiOutlinedInput-notchedOutline": {
-                  borderColor: "transparent",
-                },
-                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "transparent",
-                },
-                "&:hover .MuiOutlinedInput-notchedOutline": {
-                  borderColor: "transparent",
-                },
-                ".MuiSvgIcon-root ": {
-                  fill: "#fff !important",
-                },
-              }}
-              inputProps={{
-                MenuProps: {
-                  MenuListProps: {
-                    sx: {
-                      backgroundColor: "#2F2F2F",
-                      color: "#fff",
-                      "&& .Mui-selected": {
-                        backgroundColor: "#666666",
-                        zIndex: "10000",
-                      },
-                    },
-                  },
-                },
-              }}
-            >
-              
-             
-            </Select>
-          </FormControl> */}
         </Box>
         <a className="nav-links" href="#Footer">
           {t("contacts")}
@@ -296,7 +218,6 @@ const Navbar = () => {
             width: "100%",
           },
         }}
-        // zIndex="10000000"
       >
         <Box
           className="mobile-menu"
@@ -309,11 +230,9 @@ const Navbar = () => {
         >
           <Stack
             spacing={2}
-            // pt={1}
             direction="column"
             height="35px"
             alignItems="center"
-            // p="0 0 10px 10px"
           >
             <Button sx={{ color: "currentColor" }} onClick={toggleMobileMenu}>
               <svg

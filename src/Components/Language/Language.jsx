@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Menu,
   MenuItem,
   Stack,
@@ -89,7 +88,6 @@ export default function Language() {
           <Stack direction="row" spacing={1}>
             <Typography
               textTransform="capitalize"
-              // fontSize={{ ...(isMobile ? 14 : 16) }}
               sx={{ ...(isMobile ? { fontSize: 15 } : { fontSize: 16 }) }}
               color="#fff"
             >

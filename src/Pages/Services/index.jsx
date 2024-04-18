@@ -1,18 +1,5 @@
 import React from "react";
-import {
-  MenuItem,
-  Box,
-  Button,
-  Divider,
-  Container,
-  Select,
-  Stack,
-  InputLabel,
-  FormControl,
-  Typography,
-  TextField,
-  easing,
-} from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import {
   Navigation,
   Pagination,
@@ -20,7 +7,7 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
@@ -38,7 +25,7 @@ const Services = () => {
         color: "#fff",
         display: "flex",
         alignItems: "center",
-        mt: { lg: 0, md: 0, xs: "170px" },
+        mt: { lg: 0, md: 0, xs: "100px" },
       }}
     >
       <Container
@@ -51,8 +38,9 @@ const Services = () => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           loop={true}
-          // autoplay={{ delay: 3000, disableOnInteraction: false }}
-          modules={[Pagination, Autoplay, Scrollbar, A11y]}
+          navigation
+          autoplay={{ delay: 6000, disableOnInteraction: false }}
+          modules={[Pagination, Autoplay, Navigation, Scrollbar, A11y]}
         >
           <SwiperSlide sx={{ paddingBottom: "40px" }}>
             <Stack
@@ -192,7 +180,6 @@ const Services = () => {
                 </Typography>
                 <Typography fontSize={{ lg: 18, md: 14, xs: 12 }}>
                   <Trans i18nKey="autoDeliverText" components={{ 1: <br /> }} />
-                  {/* {t("autoDeliverText")} */}
                   <br />
                   <span className="title" style={{ fontWeight: "600" }}>
                     {t("nameCompany")}
@@ -201,7 +188,6 @@ const Services = () => {
                     i18nKey="autoDeliverText2"
                     components={{ 1: <br /> }}
                   />
-                  {/* {t("")} */}
                 </Typography>
               </Stack>
             </Stack>
@@ -297,7 +283,10 @@ const Services = () => {
                   {t("planeDelivery")}
                 </Typography>
                 <Typography fontSize={{ lg: 18, md: 14, xs: 12 }}>
-                  {t("planeDeliveryText")}
+                  <Trans
+                    i18nKey="planeDeliveryText"
+                    components={{ 1: <br /> }}
+                  />
                   <span className="title" style={{ fontWeight: "600" }}>
                     {t("nameCompany")}
                   </span>{" "}
