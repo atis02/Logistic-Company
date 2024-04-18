@@ -88,7 +88,7 @@ const OurWorks = () => {
               textAlign="center"
               mt={2}
               fontSize={16}
-              p="5px 60px 5px 60px"
+              p="5px 57px 5px 57px"
             >
               {t("mebels")}
             </Typography>
@@ -110,7 +110,7 @@ const OurWorks = () => {
               textAlign="center"
               mt={2}
               fontSize={16}
-              p="5px 30px 5px 30px"
+              p="5px 45px 5px 45px"
             >
               {t("warn")}
             </Typography>
