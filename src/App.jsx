@@ -12,7 +12,6 @@ import OurWorks from "./Pages/OurWorks";
 import Footer from "./Pages/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import { Suspense, useEffect } from "react";
-import CanvasLoader from "./Components/Loader/CanvasLoader";
 function App() {
   AOS.init({
     duration: 1800,
@@ -23,7 +22,7 @@ function App() {
   }, []);
   return (
     <>
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={<CircularProgress />}>
         <Box
           sx={{
             background: "#1E1E1E",
