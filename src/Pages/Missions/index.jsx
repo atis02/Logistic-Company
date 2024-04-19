@@ -76,7 +76,6 @@ const Missions = () => {
           alignItems="center"
           spacing={2}
           width="auto"
-          // height="100%"
         >
           <Stack maxWidth={725}>
             <Typography fontSize={18} textAlign="center" fontWeight={600}>
@@ -104,14 +103,11 @@ const Missions = () => {
           position="absolute"
           minHeight="260px"
           top={{ lg: 1850, md: 1800, sm: 1900, xs: 2050 }}
-          // top="auto"
           left={{ lg: 120 }}
           width="auto"
           height={{ xl: "100%", lg: "100%", md: "90%", sm: "80%", xs: "40%" }}
-          // width: { lg: "785px", md: "685px", xs: "350px" },
           sx={{
             opacity: "0.2",
-            // height: { lg: "488px", md: "388px", xs: "250px" },
           }}
         >
           <img

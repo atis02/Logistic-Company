@@ -6,8 +6,6 @@ import {
   Container,
   Stack,
   Typography,
-  useMediaQuery,
-  useTheme,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import Aos from "aos";
@@ -15,8 +13,6 @@ import "aos/dist/aos.css";
 
 const Home = () => {
   const [hiddenText, setHiddenText] = useState(false);
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const { t } = useTranslation();
   Aos.init({
@@ -45,7 +41,6 @@ const Home = () => {
         >
           <Stack
             alignItems="start"
-            // minWidth={{ lg: 480, md: 400, xs: 330 }}
             spacing={3}
             color="#fff"
             width={{ lg: "65%", md: "85%", xs: "100%" }}
@@ -71,9 +66,11 @@ const Home = () => {
               </Typography>
 
               <Divider
+                data-aos="fade-up"
+                data-aos-delay="100"
                 sx={{ width: "1px", height: "100%", background: "#fff" }}
               />
-              <Typography data-aos="fade-up" data-aos-delay="600" fontSize={12}>
+              <Typography data-aos="fade-up" data-aos-delay="100" fontSize={12}>
                 logistic company
               </Typography>
             </Stack>
@@ -81,7 +78,7 @@ const Home = () => {
               fontSize={14}
               width="auto"
               data-aos="fade-up"
-              data-aos-delay="700"
+              data-aos-delay="100"
             >
               {t("company")}
               <span className="title" style={{ fontWeight: "600" }}>
@@ -113,27 +110,12 @@ const Home = () => {
             <img
               src="/images/Home.png"
               style={{
-                // ...(isMobile ? { display: "none" } : { display: "block" }),
-                // top: "100px",
-                // left: "580px",
-                // position: "absolute",
                 width: "100%",
                 height: "100%",
               }}
               alt="aa"
             />
           </Stack>
-          {/* <Stack
-            sx={{
-              ...(isMobile ? { display: "block" } : { display: "none" }),
-            }}
-          >
-            <img
-              src="/images/Home.png"
-              style={{ width: 320, height: 250 }}
-              alt="bb"
-            />
-          </Stack> */}
         </Stack>
       </Box>
     </Container>

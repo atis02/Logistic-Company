@@ -17,7 +17,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const Navbar = () => {
-  const [age, setAge] = useState("");
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(false);
@@ -77,7 +76,7 @@ const Navbar = () => {
         width={{ lg: 86, md: 80, sm: 70, xs: 50 }}
         height={{ lg: 80, md: 75, sm: 70, xs: 55 }}
       >
-        <a>
+        <a href="/">
           <img
             src="/images/Logo.png"
             style={{ width: "100%", height: "100%", pt: 5 }}

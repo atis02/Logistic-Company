@@ -18,7 +18,7 @@ const OurWorks = () => {
         alignItems: "center",
         justifyContent: "space-between",
         flexDirection: "column",
-        pt: "70px",
+        pt: "100px",
         pb: "60px",
         scrollMarginTop: "50px",
         width: "100%",
@@ -190,7 +190,7 @@ const OurWorks = () => {
             mt={5}
             spacing={{ lg: 6, md: 4, sm: 3, xs: 0 }}
           >
-            <Stack style={{ width: 290, height: 170 }}>
+            <Stack style={{ width: 280, height: 170 }}>
               <img
                 src="/images/Rectangle 18.png"
                 alt=""
@@ -198,7 +198,7 @@ const OurWorks = () => {
                 data-aos-delay="300"
               />
             </Stack>
-            <Stack style={{ width: 290, height: 170 }}>
+            <Stack style={{ width: 280, height: 170 }}>
               <img
                 src="/images/Rectangle 16.png"
                 alt=""
@@ -206,7 +206,7 @@ const OurWorks = () => {
                 data-aos-delay="500"
               />
             </Stack>
-            <Stack style={{ width: 290, height: 170 }}>
+            <Stack style={{ width: 280, height: 170 }}>
               <img
                 src="/images/Rectangle 17.png"
                 alt=""

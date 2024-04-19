@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Divider, Stack, Typography } from "@mui/material";
 import Aos from "aos";
 import { useTranslation } from "react-i18next";
 
@@ -13,14 +13,16 @@ const Footer = () => {
     <Box
       sx={{
         background: "#2F2F2F",
-        height: { lg: "250px", md: "100%", xs: "100%" },
+        height: { lg: "200px", md: "100%", xs: "100%" },
         backgroundImage: "url('/images/AboutHorizontal.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         color: "#fff",
         display: "flex",
         alignItems: "center",
+        flexDirection: "column",
         width: "100%",
+        pt: 2,
       }}
       id="Footer"
     >
@@ -53,7 +55,6 @@ const Footer = () => {
               direction="row"
               data-aos="fade-down"
               data-aos-delay="300"
-              // width={{ lg: 420, md: 400, xs: 320 }}
               alignItems="center"
               width="100%"
               spacing={1}
@@ -69,7 +70,6 @@ const Footer = () => {
               data-aos="fade-down"
               data-aos-delay="400"
               direction="row"
-              // width={{ lg: 420, md: 400, xs: 320 }}
               width="100%"
               alignItems="center"
               spacing={1}
@@ -90,7 +90,6 @@ const Footer = () => {
               data-aos="fade-down"
               data-aos-delay="500"
               direction="row"
-              // width={{ lg: 420, md: 400, xs: 320 }}
               width="100%"
               alignItems="center"
               spacing={1}
@@ -141,7 +140,7 @@ const Footer = () => {
           direction="row"
           mt={{ xs: 4, lg: 0 }}
           flexWrap="wrap"
-          spacing={{ lg: 7, md: 5, sm: 3, xs: 1 }}
+          spacing={{ lg: 7, md: 5, sm: 4, xs: 2 }}
           alignItems="center"
           justifyContent="center"
         >
@@ -150,13 +149,16 @@ const Footer = () => {
               width: { lg: 180, md: 160, xs: 150 },
               height: { lg: 160, md: 150, xs: 140 },
             }}
+            pl={{ lg: 0, md: 0, sm: 25, xs: 0 }}
           >
-            <img
-              src="/images/image 68.png"
-              alt=""
-              data-aos="fade-down"
-              data-aos-delay="800"
-            />
+            <a href="https://2hac.page.link/KLFX">
+              <img
+                src="/images/image 68.png"
+                alt=""
+                data-aos="fade-down"
+                data-aos-delay="800"
+              />
+            </a>
           </Stack>
           <Stack
             sx={{
@@ -164,24 +166,37 @@ const Footer = () => {
               height: { lg: 126, md: 116, xs: 106 },
             }}
           >
-            <img
-              src="/images/image 51.png"
-              data-aos="fade-down"
-              data-aos-delay="900"
-              alt=""
-            />
+            <a href="/">
+              <img
+                src="/images/image 51.png"
+                data-aos="fade-down"
+                data-aos-delay="900"
+                alt=""
+              />
+            </a>
           </Stack>
         </Stack>
-        <Typography
-          width="100%"
-          data-aos="fade-down"
-          data-aos-delay="1000"
-          fontSize={16}
-          textAlign="center"
-        >
-          © Alem Tilsimat {new Date().getFullYear()}
-        </Typography>
       </Container>
+      <Divider
+        sx={{
+          color: "#fff",
+        }}
+      />
+      <Typography
+        width="100%"
+        data-aos="fade-down"
+        data-aos-delay="1000"
+        fontSize={16}
+        textAlign="center"
+      >
+        Copyright © {new Date().getFullYear()} Altyn Miras | Powered by{" "}
+        <a
+          href="https://alemtilsimat.com/"
+          style={{ textDecoration: "none", color: "#fff" }}
+        >
+          Alem Tilsimat
+        </a>
+      </Typography>
     </Box>
   );
 };
