@@ -357,7 +357,7 @@ const Licence = () => {
             {t("permit")}
           </Typography>
           <Stack
-            height={{ lg: 126, md: 86, sm: 76, xs: 142 }}
+            height={{ lg: 145, md: 86, sm: 76, xs: 142 }}
             alignItems="center"
             width={"100%"}
             justifyContent="center"
