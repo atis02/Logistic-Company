@@ -80,7 +80,7 @@ const resources = {
       period: "Period",
       permit: "Permit Authority",
       permit2:
-        "Agency for Transport and Communication under the Cabinet of Ministers of Turkmenistan.",
+        "Agency for Transport and Communica-<1/>tion under the Cabinet of Ministers of Turkmenis-<1/>tan.",
       medicaments: "Transportation of medicines (Europe - Turkmenistan)",
       mebels: "Transportation of furniture (Europe-Turkmenistan)",
       warn: "Fire-resistant bricks (Germany-Turkmenistan)",
@@ -118,7 +118,7 @@ const resources = {
       advText1:
         "У наших специалистов более 10 лет опыта в международных грузоперевозках.",
       advText2:
-        "Обширная география. Достовляем грузы по странам Европы и Азии.",
+        "Обширная география. Достaвляем грузы по странам Европы и Азии.",
       advText3:
         "Индивидуальный подход. Подберем наилучший способ доставки , исходя из особенностей вашего груза. ",
       advText4:
@@ -170,7 +170,7 @@ const resources = {
       period: "Период",
       permit: "Выдавший орган",
       permit2:
-        "Агентство транспорта и коммуникаций при Кабинете Министров Туркменистана.",
+        "Агентство транспорта и коммуни-<1/>каций при Кабинете Министров Туркменис-<1/>тана.",
       medicaments: "Перевозка медикоментов <1/> (Европа Туркменистан)",
       mebels: "Перевозка мебели <1/>(Европа Туркменистан)",
       warn: "Огнеупорные кирпичи <1/>(Германия-Туркменистан)",

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Stack, Typography } from "@mui/material";
 import Aos from "aos";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const Licence = () => {
   Aos.init({
@@ -40,7 +40,7 @@ const Licence = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
-          height: 435,
+          height: 535,
           gap: { lg: 10, md: 8, sm: 4, xs: 0.5 },
           width: "100%",
           background: "#2F2F2F",
@@ -147,7 +147,7 @@ const Licence = () => {
             justifyContent="center"
           >
             <Typography
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               data-aos="fade-up"
               data-aos-delay="350"
               width="auto"
@@ -166,7 +166,7 @@ const Licence = () => {
             justifyContent="center"
           >
             <Typography
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               data-aos="fade-up"
               data-aos-delay="400"
               textAlign="center"
@@ -181,7 +181,7 @@ const Licence = () => {
             justifyContent="center"
           >
             <Typography
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               data-aos="fade-up"
               data-aos-delay="450"
               textAlign="center"
@@ -203,7 +203,11 @@ const Licence = () => {
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             textAlign="center"
             color="#dbb45a"
-            height={76}
+            height={{
+              ...(i18n.language == "ru"
+                ? { lg: 76, md: 76, sm: 76, xs: 85 }
+                : { lg: 76, md: 76, sm: 76, xs: 96 }),
+            }}
 
             // pb={{ lg: 0, xs: 1.5 }}
           >
@@ -218,7 +222,7 @@ const Licence = () => {
             <Typography
               data-aos="fade-up"
               data-aos-delay="400"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               textAlign="center"
               width="auto"
 
@@ -236,7 +240,7 @@ const Licence = () => {
             <Typography
               data-aos="fade-up"
               data-aos-delay="500"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               width="auto"
               textAlign="center"
             >
@@ -252,7 +256,7 @@ const Licence = () => {
             <Typography
               data-aos="fade-up"
               data-aos-delay="600"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               width="auto"
               textAlign="center"
             >
@@ -286,7 +290,7 @@ const Licence = () => {
             <Typography
               data-aos="fade-up"
               data-aos-delay="400"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               textAlign="center"
               width="auto"
             >
@@ -302,7 +306,7 @@ const Licence = () => {
             <Typography
               data-aos="fade-up"
               data-aos-delay="500"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               textAlign="center"
               width="auto"
             >
@@ -318,7 +322,7 @@ const Licence = () => {
             <Typography
               data-aos="fade-up"
               data-aos-delay="600"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               textAlign="center"
               width="auto"
             >
@@ -353,7 +357,7 @@ const Licence = () => {
             {t("permit")}
           </Typography>
           <Stack
-            height={76}
+            height={{ lg: 126, md: 86, sm: 76, xs: 142 }}
             alignItems="center"
             width={"100%"}
             justifyContent="center"
@@ -361,11 +365,11 @@ const Licence = () => {
             <Typography
               data-aos="fade-up"
               data-aos-delay="500"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               textAlign="center"
               width={{ lg: "auto", md: "auto", sm: "auto", xs: 75 }}
             >
-              {t("permit2")}
+              <Trans i18nKey="permit2" components={{ 1: <br /> }} />
             </Typography>
           </Stack>
         </Stack>
