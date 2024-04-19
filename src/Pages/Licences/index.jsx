@@ -318,11 +318,26 @@ const Licence = () => {
             <Typography
               data-aos="fade-up"
               data-aos-delay="500"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
+              sx={{
+                fontSize: { lg: 18, md: 16, xs: 14 },
+                display: { lg: "none", md: "none", sm: "none", xs: "block" },
+              }}
               textAlign="start"
               width={{ lg: "auto", md: "auto", sm: "auto", xs: 75 }}
             >
               <Trans i18nKey="permit2" components={{ 1: <br /> }} />
+            </Typography>
+            <Typography
+              data-aos="fade-up"
+              data-aos-delay="500"
+              sx={{
+                fontSize: { lg: 18, md: 16, xs: 14 },
+                display: { lg: "block", md: "block", sm: "block", xs: "none" },
+              }}
+              textAlign="start"
+              width={{ lg: "auto", md: "auto", sm: "auto", xs: 75 }}
+            >
+              {t("permit3")}
             </Typography>
           </Stack>
         </Stack>

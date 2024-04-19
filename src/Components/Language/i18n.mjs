@@ -81,6 +81,9 @@ const resources = {
       permit: "Permit Authority",
       permit2:
         "Agency for Transport and Communica-<1/>tion under the Cabinet of Ministers of Turkmenis-<1/>tan.",
+      permit3:
+        "Agency for Transport and Communication under the Cabinet of Ministers of Turkmenistan.",
+
       medicaments: "Transportation of medicines (Europe - Turkmenistan)",
       mebels: "Transportation of furniture (Europe-Turkmenistan)",
       warn: "Fire-resistant bricks (Germany-Turkmenistan)",
@@ -171,6 +174,8 @@ const resources = {
       permit: "Выдавший орган",
       permit2:
         "Агентство транспорта и коммуни-<1/>каций при Кабинете Министров Туркменис-<1/>тана.",
+      permit3:
+        "Агентство транспорта и коммуникаций при Кабинете Министров Туркменистана.",
       medicaments: "Перевозка медикоментов <1/> (Европа Туркменистан)",
       mebels: "Перевозка мебели <1/>(Европа Туркменистан)",
       warn: "Огнеупорные кирпичи <1/>(Германия-Туркменистан)",

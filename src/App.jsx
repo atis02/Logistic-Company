@@ -22,13 +22,7 @@ function App() {
   }, []);
   return (
     <>
-      <Suspense
-        fallback={
-          <Stack alignItems="center" width="100vw" height="100vh">
-            <CircularProgress sx={{ background: "#fff" }} />
-          </Stack>
-        }
-      >
+      <Suspense fallback={<p>Loading...</p>}>
         <Box
           sx={{
             background: "#1E1E1E",
