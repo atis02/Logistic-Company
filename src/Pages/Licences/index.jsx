@@ -41,7 +41,6 @@ const Licence = () => {
       <Stack
         width={{ lg: "70%", md: "85%", sm: "80%", xs: "90%" }}
         direction={{ lg: "row", md: "row", sm: "column", xs: "column" }}
-        justifyContent="center"
         sx={{
           height: 535,
           gap: { lg: 10, md: 8, sm: 4, xs: 0.5 },
@@ -53,7 +52,7 @@ const Licence = () => {
         <Stack
           width={{ lg: "80%", md: "80%", sm: "100%", xs: "100%" }}
           direction="row"
-          mt={10}
+          mt={3}
           justifyContent="space-between"
         >
           <Stack>
@@ -63,7 +62,7 @@ const Licence = () => {
               sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
               textAlign="start"
               color="#dbb45a"
-              height={{ lg: 76, md: 56, sm: 36, xs: 16 }}
+              height={{ lg: 82, md: 56, sm: 36, xs: 16 }}
               fontFamily="Montserrat"
               mr={1}
             >
@@ -71,7 +70,11 @@ const Licence = () => {
             </Typography>
             <Stack
               width="100%"
-              height={76}
+              sx={{
+                ...(i18n.language == "ru"
+                  ? { height: "70px" }
+                  : { height: "65px" }),
+              }}
               alignItems="center"
               justifyContent="center"
             >
@@ -124,13 +127,15 @@ const Licence = () => {
               </Typography>
             </Stack>
           </Stack>
-          <Stack width={280} ml={{ lg: -7, md: 0, sm: 0, xs: 0 }}>
+          <Stack
+            sx={{
+              ...(i18n.language == "ru" ? { width: 280 } : { width: 200 }),
+            }}
+          >
             <Typography
               sx={{
                 fontSize: { lg: 18, md: 16, xs: 12 },
-                ...(i18n.language === "ru"
-                  ? { height: { lg: 86, md: 66, sm: 46, xs: 25 } }
-                  : { height: { lg: 76, md: 56, sm: 36, xs: 25 } }),
+                height: { lg: 80, md: 56, sm: 36, xs: 16 },
               }}
               textAlign="start"
               data-aos="fade-up"
@@ -141,7 +146,7 @@ const Licence = () => {
               {t("licenceDesc")}
             </Typography>
 
-            <Stack mt={-1} width="90%" height={76} justifyContent="center">
+            <Stack width="90%" height={76} justifyContent="center">
               <Typography
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 data-aos="fade-up"
@@ -186,25 +191,15 @@ const Licence = () => {
               textAlign="start"
               color="#dbb45a"
               fontFamily="Montserrat"
-              height={{
-                ...(i18n.language == "ru"
-                  ? { lg: 76, md: 55, sm: 40, xs: 25 }
-                  : { lg: 76, md: 76, sm: 40, xs: 25 }),
-              }}
+              height={{ lg: 78, md: 56, sm: 36, xs: 16 }}
             >
               {t("series")}
             </Typography>
-            <Stack
-              height={76}
-              width="100%"
-              mt={{ lg: 0, md: 0, sm: 0, xs: -1 }}
-              justifyContent="center"
-            >
+            <Stack height={76} width="100%" justifyContent="center">
               <Typography
                 data-aos="fade-up"
                 data-aos-delay="400"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-                textAlign="start"
                 fontFamily="Montserrat"
                 width="auto"
               >
@@ -242,7 +237,7 @@ const Licence = () => {
               data-aos-delay="300"
               sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
               textAlign="start"
-              height={{ lg: 76, md: 56, sm: 36, xs: 16 }}
+              height={{ lg: 74, md: 56, sm: 36, xs: 16 }}
               fontFamily="Montserrat"
               color="#dbb45a"
             >
@@ -286,7 +281,8 @@ const Licence = () => {
         <Stack
           width={{ lg: 250, md: "100%", sm: "100%", xs: "100%" }}
           height="100%"
-          justifyContent="center"
+          mt={{ lg: 3, md: 8, sm: 0, xs: 0 }}
+          ml={{ lg: -4, md: -3 }}
         >
           <Typography
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
