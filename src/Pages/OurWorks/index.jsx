@@ -18,7 +18,7 @@ const OurWorks = () => {
         alignItems: "center",
         justifyContent: "space-between",
         flexDirection: "column",
-        pt: "100px",
+        pt: "50px",
         pb: "60px",
         scrollMarginTop: "50px",
         width: "100%",

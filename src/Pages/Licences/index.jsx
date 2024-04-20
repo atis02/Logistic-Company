@@ -73,7 +73,7 @@ const Licence = () => {
               sx={{
                 ...(i18n.language == "ru"
                   ? { height: "70px" }
-                  : { height: "65px" }),
+                  : { height: "76px" }),
               }}
               alignItems="center"
               justifyContent="center"
