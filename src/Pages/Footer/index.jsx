@@ -49,7 +49,7 @@ const Footer = () => {
         >
           <Stack
             spacing={3}
-            width={{ lg: "62%", md: "72%", sm: "82%", xs: "100%" }}
+            width={{ lg: "60%", md: "72%", sm: "82%", xs: "100%" }}
           >
             <Stack
               direction="row"
@@ -64,7 +64,9 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography width="auto">{t("location")}</Typography>
+              <Typography fontFamily="Montserrat" width="auto">
+                {t("location")}
+              </Typography>
             </Stack>
             <Stack
               data-aos="fade-down"
@@ -80,7 +82,11 @@ const Footer = () => {
                 alt=""
               />
               <a
-                style={{ color: "#fff", textDecoration: "none" }}
+                style={{
+                  color: "#fff",
+                  textDecoration: "none",
+                  fontFamily: "Montserrat",
+                }}
                 href="tel: +993 12 473577"
               >
                 +993 12 473577
@@ -100,7 +106,9 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography width="auto">+993 12 471577</Typography>
+              <Typography width="auto" fontFamily="Montserrat">
+                +993 12 471577
+              </Typography>
             </Stack>
           </Stack>
           <Stack spacing={3}>
@@ -117,7 +125,9 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography>info@altynmiras.com</Typography>
+              <Typography fontFamily="Montserrat">
+                info@altynmiras.com
+              </Typography>
             </Stack>
             <Stack
               data-aos="fade-down"
@@ -132,7 +142,9 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography>www.altynmiras.com</Typography>
+              <Typography fontFamily="Montserrat">
+                www.altynmiras.com
+              </Typography>
             </Stack>
           </Stack>
         </Stack>
@@ -140,7 +152,7 @@ const Footer = () => {
           direction="row"
           mt={{ xs: 4, lg: 0 }}
           flexWrap="wrap"
-          spacing={{ lg: 7, md: 5, sm: 4, xs: 2 }}
+          spacing={{ lg: 7, md: 5, sm: 6, xs: 2 }}
           alignItems="center"
           justifyContent="center"
         >
@@ -149,7 +161,7 @@ const Footer = () => {
               width: { lg: 180, md: 160, xs: 150 },
               height: { lg: 160, md: 150, xs: 140 },
             }}
-            pl={{ lg: 0, md: 0, sm: 25, xs: 0 }}
+            pl={{ lg: 0, md: 0, sm: 25, xs: 4 }}
           >
             <a href="https://2hac.page.link/KLFX">
               <img
@@ -157,6 +169,7 @@ const Footer = () => {
                 alt=""
                 data-aos="fade-down"
                 data-aos-delay="800"
+                style={{ width: "100%", height: "100%" }}
               />
             </a>
           </Stack>
@@ -170,6 +183,7 @@ const Footer = () => {
               <img
                 src="/images/image 51.png"
                 data-aos="fade-down"
+                style={{ width: "100%", height: "100%" }}
                 data-aos-delay="900"
                 alt=""
               />
@@ -188,11 +202,13 @@ const Footer = () => {
         data-aos-delay="1000"
         fontSize={16}
         textAlign="center"
+        fontFamily="Montserrat"
+        color="gray"
       >
         Copyright © {new Date().getFullYear()} Altyn Miras | Powered by{" "}
         <a
           href="https://alemtilsimat.com/"
-          style={{ textDecoration: "none", color: "#fff" }}
+          style={{ textDecoration: "none", color: "gray" }}
         >
           Alem Tilsimat
         </a>

@@ -50,7 +50,7 @@ const Home = () => {
               direction="row"
               alignItems="center"
               spacing={2}
-              width="90%"
+              width={{ lg: "90%", md: "80%", sm: "70%", xs: "100%" }}
               height={35}
               pt={{ lg: "200px", md: "150px", sm: "130px", xs: "100px" }}
             >
@@ -61,6 +61,7 @@ const Home = () => {
                 fontWeight="600"
                 fontSize={{ lg: 48, md: 40, sm: 35, xs: 30 }}
                 className="title"
+                fontFamily="Montserrat"
               >
                 Altyn Miras
               </Typography>
@@ -70,7 +71,12 @@ const Home = () => {
                 data-aos-delay="100"
                 sx={{ width: "1px", height: "100%", background: "#fff" }}
               />
-              <Typography data-aos="fade-up" data-aos-delay="100" fontSize={12}>
+              <Typography
+                data-aos="fade-up"
+                fontFamily="Montserrat"
+                data-aos-delay="100"
+                fontSize={12}
+              >
                 logistic company
               </Typography>
             </Stack>
@@ -79,6 +85,8 @@ const Home = () => {
               width="auto"
               data-aos="fade-up"
               data-aos-delay="100"
+              fontFamily="Montserrat"
+              fontWeight={400}
             >
               {t("company")}
               <span className="title" style={{ fontWeight: "600" }}>
@@ -90,6 +98,7 @@ const Home = () => {
             <Button
               onClick={() => setHiddenText(!hiddenText)}
               sx={{
+                fontFamily: "Montserrat",
                 width: "125px",
                 heigth: "40px",
                 background: "#DBB45A",

@@ -24,7 +24,7 @@ const Services = () => {
         background: "#2F2F2F",
         height: "100%",
         p: "15px 6px",
-        color: "#fff",
+        color: "#d6d6d6",
         display: "flex",
         alignItems: "center",
       }}
@@ -49,7 +49,7 @@ const Services = () => {
               alignItems="center"
               justifyContent="space-between"
               spacing={{ lg: 6, md: 4, xs: 3 }}
-              mb={5}
+              mb={3}
               width="100%"
             >
               <Stack
@@ -77,11 +77,19 @@ const Services = () => {
                   fontWeight={700}
                   textAlign="center"
                   mb={2}
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
                   className="title"
                 >
                   {t("multiModal")}
                 </Typography>
-                <Typography fontSize={{ lg: 18, md: 14, xs: 12 }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
+                  fontSize={{ lg: 18, md: 14, xs: 12 }}
+                >
                   <Trans i18nKey="multiModalText" components={{ 1: <br /> }} />
                 </Typography>
               </Stack>
@@ -123,10 +131,18 @@ const Services = () => {
                   textAlign="center"
                   className="title"
                   mb={2}
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
                 >
                   {t("railway")}
                 </Typography>
-                <Typography fontSize={{ lg: 18, md: 14, xs: 12 }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
+                  fontSize={{ lg: 18, md: 14, xs: 12 }}
+                >
                   <Trans i18nKey="railwayText" components={{ 1: <br /> }} />
                 </Typography>
               </Stack>
@@ -166,12 +182,20 @@ const Services = () => {
                   fontSize={18}
                   fontWeight={700}
                   textAlign="center"
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
                   className="title"
                   mb={2}
                 >
                   {t("autoDeliver")}
                 </Typography>
-                <Typography fontSize={{ lg: 18, md: 14, xs: 12 }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
+                  fontSize={{ lg: 18, md: 14, xs: 12 }}
+                >
                   <Trans i18nKey="autoDeliverText" components={{ 1: <br /> }} />
                   <br />
                   <span className="title" style={{ fontWeight: "600" }}>
@@ -221,10 +245,18 @@ const Services = () => {
                   className="title"
                   textAlign="center"
                   mb={2}
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
                 >
                   {t("seaDelivery")}
                 </Typography>
-                <Typography fontSize={{ lg: 18, md: 14, xs: 12 }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
+                  fontSize={{ lg: 18, md: 14, xs: 12 }}
+                >
                   <Trans i18nKey="seaDeliveryText" components={{ 1: <br /> }} />
                 </Typography>
               </Stack>
@@ -266,10 +298,18 @@ const Services = () => {
                   className="title"
                   textAlign="center"
                   mb={2}
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
                 >
                   {t("planeDelivery")}
                 </Typography>
-                <Typography fontSize={{ lg: 18, md: 14, xs: 12 }}>
+                <Typography
+                  sx={{
+                    fontFamily: "Montserrat",
+                  }}
+                  fontSize={{ lg: 18, md: 14, xs: 12 }}
+                >
                   <Trans
                     i18nKey="planeDeliveryText"
                     components={{ 1: <br /> }}

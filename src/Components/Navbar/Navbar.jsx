@@ -110,7 +110,7 @@ const Navbar = () => {
             }}
             minHeight="32px"
           >
-            <Typography color="#fff" fontSize={18}>
+            <Typography color="#fff" fontFamily="Montserrat" fontSize={18}>
               {t("pages")}
             </Typography>
             <KeyboardArrowDownIcon
@@ -132,7 +132,6 @@ const Navbar = () => {
               "aris-labelledby": "basic-button",
               sx: {
                 backgroundColor: "#2F2F2F",
-                color: "#fff",
                 "&& .Mui-selected": {
                   backgroundColor: "#666666",
                   zIndex: "10000",

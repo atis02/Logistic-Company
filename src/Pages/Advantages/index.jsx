@@ -25,6 +25,7 @@ const Advantages = () => {
           flexDirection: "column",
           alignItems: "center",
           mt: "30px",
+          fontFamily: "Poppins",
           gap: "30px",
 
           width: "100%",
@@ -37,6 +38,7 @@ const Advantages = () => {
             fontSize={{ lg: 30, md: 28, xs: 25 }}
             fontWeight={700}
             data-aos="fade-up"
+            fontFamily="Montserrat"
             data-aos-delay="200"
           >
             {t("advantages")}
@@ -81,6 +83,7 @@ const Advantages = () => {
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
                 color="#dbb45a"
+                fontFamily="Poppins"
                 mr={2}
               >
                 1
@@ -96,6 +99,7 @@ const Advantages = () => {
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
+                fontFamily="Poppins"
                 color="#dbb45a"
                 mr={2}
               >
@@ -112,6 +116,7 @@ const Advantages = () => {
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
+                fontFamily="Poppins"
                 color="#dbb45a"
                 mr={2}
               >
@@ -128,6 +133,7 @@ const Advantages = () => {
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
+                fontFamily="Poppins"
                 color="#dbb45a"
                 mr={2}
               >
@@ -145,6 +151,7 @@ const Advantages = () => {
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
                 color="#dbb45a"
+                fontFamily="Poppins"
                 mr={2}
               >
                 5
@@ -161,6 +168,7 @@ const Advantages = () => {
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
                 color="#dbb45a"
+                fontFamily="Poppins"
                 mr={2}
               >
                 6
@@ -176,6 +184,7 @@ const Advantages = () => {
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
+                fontFamily="Poppins"
                 color="#dbb45a"
                 mr={2}
               >

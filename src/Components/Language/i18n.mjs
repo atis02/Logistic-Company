@@ -66,7 +66,7 @@ const resources = {
       seaDelivery: "SEA SHIPPING",
       seaDeliveryText:
         "The most cost-effective, but at the same time the longest type of transportation in terms of transit time.<1/>With regular transportation and good planning, it helps to save resources and smoothly supply the logistics chain of your enterprise. <1/>Our team of specialists will help you:<1/>– choose the most profitable sea freight;<1/>– make calculations of all port and transit costs;<1/> – safely reload your cargo at sea ports.<1/>Our partners include such major shipping lines as Hapag-lloyd, Maersk, and Evergreen, which have established themselves as leaders in this market.",
-      planeDelivery: "АIR TRANSPORTATION",
+      planeDelivery: "AIR TRANSPORTATION",
       planeDeliveryText:
         "The fastest and at the same time the most expensive method of freight.",
       planeDeliveryText2:
@@ -80,7 +80,7 @@ const resources = {
       period: "Period",
       permit: "Permit Authority",
       permit2:
-        "Agency for Transport and Communica-<1/>tion under the Cabinet of Ministers of Turkmenis-<1/>tan.",
+        "Agency for Transport and Communication under the Cabinet of Ministers of Turkmenistan.",
       permit3:
         "Agency for Transport and Communication under the Cabinet of Ministers of Turkmenistan.",
 
@@ -166,14 +166,14 @@ const resources = {
         "имеют опыт как при перевозках грузов общего типа, так и с грузами с температурными режимами и классом опасности.<1 /> Наши специалисты окажут вам следующие услуги: <1 /> – бронирование места в самолете; <1 />– доставка от терминала в аэропорт; <1 />– оформление авианакладной; <1 />– предполетный досмотр;<1 /> – оплата терминальных сборов; <1 /> – хранение, погрузочные и разгрузочные работы в аэропортах.",
       licence: "Лицензии на транспортные услуги",
       licenceDesc: "Наименование",
-      licenceDesc2: "Авто экспедиро-<1/>вание",
-      licenceDesc3: "Морское экспедиро-<1/>вание",
-      licenceDesc4: "Авиа экспедиро-<1/>вание",
+      licenceDesc2: "Авто экспедирование",
+      licenceDesc3: "Морское экспедирование",
+      licenceDesc4: "Авиа экспедирование",
       series: "Серия",
       period: "Период",
       permit: "Выдавший орган",
       permit2:
-        "Агентство транспорта и коммуни-<1/>каций при Кабинете Министров Туркменис-<1/>тана.",
+        "Агентство транспорта и коммуникаций при Кабинете Министров Туркменистана.",
       permit3:
         "Агентство транспорта и коммуникаций при Кабинете Министров Туркменистана.",
       medicaments: "Перевозка медикоментов <1/> (Европа Туркменистан)",

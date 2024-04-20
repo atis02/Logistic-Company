@@ -32,6 +32,7 @@ const OurWorks = () => {
         fontWeight={700}
         data-aos="fade-up"
         data-aos-delay="300"
+        fontFamily="Montserrat"
       >
         {t("ourWorks")}
       </Typography>
@@ -47,15 +48,15 @@ const OurWorks = () => {
         <Stack
           direction="row"
           alignItems="center"
-          justifyContent="center"
           height="100%"
           width="100%"
-          style={{ flexWrap: "wrap", gap: "30px" }}
+          style={{ flexWrap: "wrap", gap: "20px" }}
         >
           <Stack
             backgroundColor="#2F2F2F"
-            height="100%"
-            width="300px"
+            float="left"
+            height="450px"
+            maxWidth="370px"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -68,9 +69,10 @@ const OurWorks = () => {
               fontWeight={600}
               textAlign="center"
               mt={1}
+              fontFamily="Montserrat"
               mb={1}
               fontSize={16}
-              p="5px 30px 5px 30px"
+              p="5px 60px"
             >
               <Trans i18nKey="medicaments" components={{ 1: <br /> }} />
             </Typography>
@@ -79,8 +81,9 @@ const OurWorks = () => {
             data-aos="fade-up"
             data-aos-delay="400"
             backgroundColor="#2F2F2F"
-            height="375px"
-            width="300px"
+            float="left"
+            height="450px"
+            maxWidth="370px"
           >
             <img
               src="/images/Rectangle 13 (1).png"
@@ -91,9 +94,10 @@ const OurWorks = () => {
               fontWeight={600}
               textAlign="center"
               fontSize={16}
+              fontFamily="Montserrat"
               mt={1}
               mb={1}
-              p="5px 30px 5px 30px"
+              p="5px 60px"
             >
               <Trans i18nKey="mebels" components={{ 1: <br /> }} />
             </Typography>
@@ -102,8 +106,9 @@ const OurWorks = () => {
             data-aos="fade-up"
             data-aos-delay="500"
             backgroundColor="#2F2F2F"
-            height="375px"
-            width="300px"
+            float="left"
+            height="450px"
+            maxWidth="370px"
           >
             <img
               src="/images/Rectangle 13 (2).png"
@@ -114,9 +119,10 @@ const OurWorks = () => {
               fontWeight={600}
               textAlign="center"
               mt={1}
+              fontFamily="Montserrat"
               mb={1}
               fontSize={16}
-              p="5px 30px 5px 30px"
+              p="5px 60px"
             >
               <Trans i18nKey="warn" components={{ 1: <br /> }} />
             </Typography>
@@ -125,8 +131,9 @@ const OurWorks = () => {
             data-aos="fade-up"
             data-aos-delay="600"
             backgroundColor="#2F2F2F"
-            height="375px"
-            width="300px"
+            float="left"
+            height="450px"
+            maxWidth="370px"
           >
             <img
               src="/images/Rectangle 13 (3).png"
@@ -137,6 +144,7 @@ const OurWorks = () => {
               fontWeight={600}
               p="5px 30px 5px 30px"
               mt={1}
+              fontFamily="Montserrat"
               mb={1}
               textAlign="center"
               fontSize={16}
@@ -148,8 +156,9 @@ const OurWorks = () => {
             data-aos="fade-up"
             data-aos-delay="700"
             backgroundColor="#2F2F2F"
-            height="375px"
-            width="300px"
+            float="left"
+            height="450px"
+            maxWidth="370px"
           >
             <img
               src="/images/Rectangle 13 (4).png"
@@ -158,7 +167,8 @@ const OurWorks = () => {
             />
             <Typography
               fontWeight={600}
-              p="15px 30px 15px 30px"
+              p="5px 30px 5px 30px"
+              fontFamily="Montserrat"
               mt={1}
               mb={1}
               textAlign="center"
@@ -176,10 +186,11 @@ const OurWorks = () => {
           <Typography
             data-aos="fade-up"
             fontSize={{ lg: 16, md: 15, xs: 14 }}
+            fontFamily="Montserrat"
             data-aos-delay="300"
           >
             {t("ourCompany")}
-            <span style={{ color: "#dbb45a" }}> {t("nameCompany")}</span> -
+            <span style={{ color: "#dbb45a" }}> {t("nameCompany")}</span>
             <Trans i18nKey="ourCompnanyText" components={{ 1: <br /> }} />
           </Typography>
           <Stack

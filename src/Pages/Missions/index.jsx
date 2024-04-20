@@ -14,7 +14,7 @@ const Missions = () => {
       id="Goals"
       sx={{
         pt: { lg: "60px", md: "30px", sm: "30px", xs: "30px" },
-        color: "#fff",
+        color: "#d6d6d6",
         height: "100%",
         scrollMarginTop: "50px",
         width: "100%",
@@ -27,6 +27,7 @@ const Missions = () => {
         fontSize={{ lg: 30, md: 28, xs: 25 }}
         fontWeight={700}
         data-aos="fade-up"
+        fontFamily="Montserrat"
         data-aos-delay="300"
       >
         {t("missionsGoals")}
@@ -58,10 +59,18 @@ const Missions = () => {
             alt=""
           />
           <Stack maxWidth={725}>
-            <Typography fontSize={18} textAlign="center" fontWeight={600}>
+            <Typography
+              fontSize={18}
+              fontFamily="Montserrat"
+              textAlign="center"
+              fontWeight={600}
+            >
               {t("missionsCompany")}
             </Typography>
-            <Typography fontSize={{ lg: 14, md: 13, xs: 12 }}>
+            <Typography
+              fontFamily="Montserrat"
+              fontSize={{ lg: 16, md: 13, xs: 12 }}
+            >
               {t("missionText")}
               <br />
               {t("missionText2")}
@@ -72,16 +81,25 @@ const Missions = () => {
           data-aos="fade-up"
           data-aos-delay="700"
           direction="row"
-          ml={{ lg: 35, md: 20, xs: 0 }}
+          // ml={{ lg: 30, md: 20, xs: 0 }}
           alignItems="center"
+          justifyContent="flex-end"
           spacing={2}
           width="auto"
         >
-          <Stack maxWidth={725}>
-            <Typography fontSize={18} textAlign="center" fontWeight={600}>
+          <Stack maxWidth={720}>
+            <Typography
+              fontSize={18}
+              fontFamily="Montserrat"
+              textAlign="center"
+              fontWeight={600}
+            >
               {t("goals")}
             </Typography>
-            <Typography fontSize={{ lg: 14, md: 13, xs: 12 }}>
+            <Typography
+              fontFamily="Montserrat"
+              fontSize={{ lg: 16, md: 13, xs: 12 }}
+            >
               {t("goalsText1")}
               <br />
               {t("goalsText2")}
@@ -121,6 +139,7 @@ const Missions = () => {
           sx={{
             scrollMarginTop: "50px",
           }}
+          color="#fff"
           width="100%"
           height="100%"
         >
@@ -154,7 +173,9 @@ const Missions = () => {
                 src="/images/Frame 29 (1).png"
                 alt=""
               />
-              <Typography textAlign="center">{t("import")}</Typography>
+              <Typography fontFamily="Montserrat" textAlign="center">
+                {t("import")}
+              </Typography>
             </Stack>
             <Stack
               style={{ width: 140, height: 125 }}
@@ -168,7 +189,9 @@ const Missions = () => {
                 src="/images/Frame 29.png"
                 alt=""
               />
-              <Typography textAlign="center">{t("export")}</Typography>
+              <Typography fontFamily="Montserrat" textAlign="center">
+                {t("export")}
+              </Typography>
             </Stack>
             <Stack
               mt={{ xs: 6, lg: 0, md: 0, sm: 0 }}
@@ -183,7 +206,9 @@ const Missions = () => {
                 src="/images/Frame 34.png"
                 alt=""
               />
-              <Typography textAlign="center">{t("tranzit")}</Typography>
+              <Typography fontFamily="Montserrat" textAlign="center">
+                {t("tranzit")}
+              </Typography>
             </Stack>
             <Stack
               mt={{ xs: 6, lg: 0, md: 0, sm: 0 }}
@@ -198,7 +223,9 @@ const Missions = () => {
                 src="/images/Frame 30.png"
                 alt=""
               />
-              <Typography textAlign="center">{t("soprowozden")}</Typography>
+              <Typography fontFamily="Montserrat" textAlign="center">
+                {t("soprowozden")}
+              </Typography>
             </Stack>
           </Stack>
         </Box>

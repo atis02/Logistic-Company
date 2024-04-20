@@ -15,12 +15,13 @@ const About = () => {
       id="aboutCompany"
       sx={{
         background: "#2F2F2F",
-        height: { lg: "400px", md: "360px", sm: "300px", xs: "460px" },
+        height: { lg: "400px", md: "360px", sm: "300px", xs: "470px" },
         width: "100%",
         backgroundImage: "url('/images/AboutHorizontal.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        color: "#fff",
+        color: "#d6d6d6",
+
         display: "flex",
         alignItems: { lg: "center" },
         transition: " all ease 0.3s",
@@ -54,6 +55,7 @@ const About = () => {
             fontWeight={700}
             data-aos="fade-up"
             data-aos-delay="200"
+            fontFamily="Montserrat"
             className="title"
           >
             {t("aboutCompany")}
@@ -62,7 +64,8 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="400"
             fontSize={16}
-            color="#D6D6D6"
+            fontFamily="Montserrat"
+            color="#fff"
           >
             {t("aboutCompanyText")}
             <span className="title" style={{ fontWeight: "600" }}>
