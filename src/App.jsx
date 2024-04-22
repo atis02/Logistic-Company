@@ -2,7 +2,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import { Container, Box, Stack, CircularProgress } from "@mui/material";
+import {
+  Container,
+  Box,
+  Stack,
+  CircularProgress,
+  Typography,
+} from "@mui/material";
 import About from "./Pages/About";
 import Advantages from "./Pages/Advantages";
 import Missions from "./Pages/Missions";
@@ -22,7 +28,7 @@ function App() {
     setLoader(true);
     setTimeout(() => {
       setLoader(false);
-    }, 1500);
+    }, 2000);
   }, []);
 
   useEffect(() => {
@@ -36,8 +42,12 @@ function App() {
           justifyContent="center"
           alignItems="center"
           backgroundColor="#1E1E1E"
+          color="#fff"
         >
           <CircularProgress size={80} />
+          <Typography fontFamily="Montserrat" mt={2}>
+            Loading...
+          </Typography>
         </Stack>
       ) : (
         <Suspense fallback={<CircularProgress />}>
