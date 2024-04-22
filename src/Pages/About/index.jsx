@@ -68,7 +68,7 @@ const About = () => {
             color="#fff"
           >
             {t("aboutCompanyText")}
-            <span className="title" style={{ fontWeight: "600" }}>
+            <span className="title" style={{ fontWeight: "700" }}>
               {t("nameCompany")}
             </span>{" "}
             {t("aboutCompanyText2")}

@@ -27,8 +27,14 @@
 .nav-links{
   text-decoration: none;
   color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav-links2{
+  text-decoration: none;
+  color: #fff;
   font-size: 18px;
-  
+  font-weight: 500;
 }
 
 .swiper-button-next,
@@ -44,7 +50,9 @@
     width: 40px;
   height: 40px;
 }
-
+.swiper-button-prev{
+  left: 0;
+}
 .swiper-button-next::after,
 .swiper-button-prev::after{
   font-size: 20px;
@@ -64,7 +72,6 @@
   background: linear-gradient(to right,  #DBB45A, #FFF6AC) ;
   background-clip:text;
   -webkit-text-fill-color: transparent;
-  /* color: #dbb45a; */
 }
 .swiper-pagination-bullet-active {
   background-color: #dbb45a;
@@ -72,3 +79,19 @@
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
   background-color: #fff; 
 }
+.loader{
+    width: 100%;
+    height: 100%;
+    /* -webkit-animation: spin 3s linear infinite; */
+    /* -moz-animation: spin 3s linear infinite; */
+    /* animation: spin 3s linear infinite; */
+}
+/* @-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+} */

@@ -63,6 +63,7 @@ const Missions = () => {
               fontSize={18}
               fontFamily="Montserrat"
               textAlign="center"
+              color="#fff"
               fontWeight={600}
             >
               {t("missionsCompany")}
@@ -93,6 +94,7 @@ const Missions = () => {
               fontFamily="Montserrat"
               textAlign="center"
               fontWeight={600}
+              color="#fff"
             >
               {t("goals")}
             </Typography>
@@ -141,7 +143,8 @@ const Missions = () => {
           }}
           color="#fff"
           width="100%"
-          height="100%"
+          height="120%"
+          mb={4}
         >
           <Typography
             textAlign="center"
@@ -159,6 +162,7 @@ const Missions = () => {
             justifyContent="center"
             direction="row"
             mt={6}
+            sx={{ gap: { lg: "60px", md: "60px", sm: "20px", xs: "20px" } }}
             flexWrap="wrap"
           >
             <Stack
@@ -173,7 +177,11 @@ const Missions = () => {
                 src="/images/Frame 29 (1).png"
                 alt=""
               />
-              <Typography fontFamily="Montserrat" textAlign="center">
+              <Typography
+                fontSize={{ lg: 24, md: 22, sm: 20, xs: 20 }}
+                fontFamily="Montserrat"
+                textAlign="center"
+              >
                 {t("import")}
               </Typography>
             </Stack>
@@ -189,7 +197,11 @@ const Missions = () => {
                 src="/images/Frame 29.png"
                 alt=""
               />
-              <Typography fontFamily="Montserrat" textAlign="center">
+              <Typography
+                fontSize={{ lg: 24, md: 22, sm: 20, xs: 20 }}
+                fontFamily="Montserrat"
+                textAlign="center"
+              >
                 {t("export")}
               </Typography>
             </Stack>
@@ -206,15 +218,23 @@ const Missions = () => {
                 src="/images/Frame 34.png"
                 alt=""
               />
-              <Typography fontFamily="Montserrat" textAlign="center">
+              <Typography
+                fontSize={{ lg: 24, md: 22, sm: 20, xs: 20 }}
+                fontFamily="Montserrat"
+                textAlign="center"
+              >
                 {t("tranzit")}
               </Typography>
             </Stack>
             <Stack
+              ml={{ lg: -7, md: -7, sm: -3, xs: 0 }}
               mt={{ xs: 6, lg: 0, md: 0, sm: 0 }}
               alignItems="center"
               spacing={2}
-              style={{ width: 140, height: 125 }}
+              sx={{
+                width: { lg: 220, md: 200, sm: 180, xs: 140 },
+                height: 125,
+              }}
               data-aos="fade-up"
               data-aos-delay="1100"
             >
@@ -223,7 +243,11 @@ const Missions = () => {
                 src="/images/Frame 30.png"
                 alt=""
               />
-              <Typography fontFamily="Montserrat" textAlign="center">
+              <Typography
+                fontSize={{ lg: 24, md: 22, sm: 20, xs: 20 }}
+                fontFamily="Montserrat"
+                textAlign="center"
+              >
                 {t("soprowozden")}
               </Typography>
             </Stack>

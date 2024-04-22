@@ -42,7 +42,7 @@ const Home = () => {
           <Stack
             alignItems="start"
             spacing={3}
-            color="#fff"
+            color="#d6d6d6"
             width={{ lg: "65%", md: "85%", xs: "100%" }}
             pb={{ lg: 0, md: 0, xs: 1 }}
           >
@@ -86,10 +86,10 @@ const Home = () => {
               data-aos="fade-up"
               data-aos-delay="100"
               fontFamily="Montserrat"
-              fontWeight={400}
+              fontWeight={500}
             >
               {t("company")}
-              <span className="title" style={{ fontWeight: "600" }}>
+              <span className="title" style={{ fontWeight: "700" }}>
                 {t("nameCompany")}
               </span>{" "}
               {t("description")}
@@ -117,7 +117,7 @@ const Home = () => {
             hegiht={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
           >
             <img
-              src="/images/Home.png"
+              src="/images/pngwing 6.png"
               style={{
                 width: "100%",
                 height: "100%",

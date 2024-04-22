@@ -11,43 +11,61 @@ import Licence from "./Pages/Licences";
 import OurWorks from "./Pages/OurWorks";
 import Footer from "./Pages/Footer";
 import Navbar from "./Components/Navbar/Navbar";
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useState } from "react";
 function App() {
+  const [loader, setLoader] = useState(false);
   AOS.init({
     duration: 1800,
     offset: 0,
   });
   useEffect(() => {
+    setLoader(true);
+    setTimeout(() => {
+      setLoader(false);
+    }, 1500);
+  }, []);
+
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
-      <Suspense fallback={<CircularProgress />}>
-        <Box
-          sx={{
-            background: "#1E1E1E",
-          }}
+      {loader ? (
+        <Stack
+          height="100vh"
+          justifyContent="center"
+          alignItems="center"
+          backgroundColor="#1E1E1E"
         >
+          <CircularProgress size={80} />
+        </Stack>
+      ) : (
+        <Suspense fallback={<CircularProgress />}>
           <Box
             sx={{
-              backgroundImage: "url('/images/AllHeight.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
+              background: "#1E1E1E",
             }}
           >
-            <Navbar />
-
-            <Home />
-            <About />
-            <Advantages />
-            <Missions />
-            <Services />
-            <Licence />
-            <OurWorks />
-            <Footer />
+            <Box
+              sx={{
+                backgroundImage: "url('/images/AllHeight.png')",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
+              }}
+            >
+              <Navbar />
+              <Home />
+              <About />
+              <Advantages />
+              <Missions />
+              <Services />
+              <Licence />
+              <OurWorks />
+              <Footer />
+            </Box>
           </Box>
-        </Box>
-      </Suspense>
+        </Suspense>
+      )}
     </>
   );
 }

@@ -22,7 +22,7 @@ const Footer = () => {
         alignItems: "center",
         flexDirection: "column",
         width: "100%",
-        pt: 2,
+        p: "70px 0 10px 0",
       }}
       id="Footer"
     >
@@ -43,7 +43,7 @@ const Footer = () => {
         <Stack
           direction="row"
           flexWrap="wrap"
-          spacing={{ lg: 7.4, xs: 0 }}
+          spacing={{ lg: 5, xs: 0 }}
           width={{ lg: "60%", md: "60%", sm: "70%", xs: "100%" }}
           mt={2}
         >
@@ -64,7 +64,7 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography fontFamily="Montserrat" width="auto">
+              <Typography fontFamily="Montserrat" fontWeight={500} width="auto">
                 {t("location")}
               </Typography>
             </Stack>
@@ -86,6 +86,7 @@ const Footer = () => {
                   color: "#fff",
                   textDecoration: "none",
                   fontFamily: "Montserrat",
+                  fontWeight: 500,
                 }}
                 href="tel: +993 12 473577"
               >
@@ -106,7 +107,7 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography width="auto" fontFamily="Montserrat">
+              <Typography width="auto" fontWeight={500} fontFamily="Montserrat">
                 +993 12 471577
               </Typography>
             </Stack>
@@ -125,7 +126,7 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography fontFamily="Montserrat">
+              <Typography fontFamily="Montserrat" fontWeight={500}>
                 info@altynmiras.com
               </Typography>
             </Stack>
@@ -142,7 +143,7 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography fontFamily="Montserrat">
+              <Typography fontFamily="Montserrat" fontWeight={500}>
                 www.altynmiras.com
               </Typography>
             </Stack>
@@ -152,7 +153,7 @@ const Footer = () => {
           direction="row"
           mt={{ xs: 4, lg: 0 }}
           flexWrap="wrap"
-          spacing={{ lg: 7, md: 5, sm: 6, xs: 2 }}
+          spacing={{ lg: 2, md: 5, sm: 6, xs: 2 }}
           alignItems="center"
           justifyContent="center"
         >
@@ -204,6 +205,7 @@ const Footer = () => {
         textAlign="center"
         fontFamily="Montserrat"
         color="gray"
+        fontWeight={500}
       >
         Copyright © {new Date().getFullYear()} Altyn Miras | Powered by{" "}
         <a

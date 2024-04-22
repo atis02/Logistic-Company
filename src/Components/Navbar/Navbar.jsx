@@ -62,7 +62,7 @@ const Navbar = () => {
       zIndex="1000"
       backgroundColor="#1E1E1E"
       p={{
-        lg: "10px 180px 0 180px",
+        lg: "10px 185px 0 185px",
         md: "5px 100px 0 100px",
         xs: "4px 20px 0 20px",
       }}
@@ -89,10 +89,14 @@ const Navbar = () => {
         alignItems="center"
         sx={{
           ...(isMobile ? { display: "none" } : { display: "flex" }),
+          gap: "30px",
         }}
-        spacing={2}
       >
-        <a className="nav-links" href="#aboutCompany">
+        <a
+          className="nav-links2"
+          style={{ color: "#fff" }}
+          href="#aboutCompany"
+        >
           {t("aboutCompany")}
         </a>
         <Box sx={{ minWidth: 90 }}>
@@ -110,7 +114,12 @@ const Navbar = () => {
             }}
             minHeight="32px"
           >
-            <Typography color="#fff" fontFamily="Montserrat" fontSize={18}>
+            <Typography
+              color="#fff"
+              fontFamily="Montserrat"
+              fontWeight={500}
+              fontSize={18}
+            >
               {t("pages")}
             </Typography>
             <KeyboardArrowDownIcon
@@ -191,7 +200,7 @@ const Navbar = () => {
             </MenuItem>
           </Menu>
         </Box>
-        <a className="nav-links" href="#Footer">
+        <a className="nav-links2" style={{ color: "#fff" }} href="#Footer">
           {t("contacts")}
         </a>
         <Language />

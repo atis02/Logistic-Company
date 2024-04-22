@@ -77,14 +77,17 @@ const Advantages = () => {
               fontSize={15}
               direction="row"
               data-aos="fade-up"
+              fontWeight={500}
               data-aos-delay="300"
               alignItems="center"
+              color="#d6d6d6"
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
                 color="#dbb45a"
                 fontFamily="Poppins"
-                mr={2}
+                mr={2.9}
+                pl={0.5}
               >
                 1
               </Typography>
@@ -95,6 +98,8 @@ const Advantages = () => {
               data-aos-delay="400"
               fontSize={15}
               direction="row"
+              fontWeight={500}
+              color="#d6d6d6"
               alignItems="center"
             >
               <Typography
@@ -111,8 +116,10 @@ const Advantages = () => {
               data-aos="fade-up"
               data-aos-delay="500"
               fontSize={15}
+              color="#d6d6d6"
               direction="row"
               alignItems="center"
+              fontWeight={500}
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
@@ -127,8 +134,10 @@ const Advantages = () => {
             <Stack
               data-aos="fade-up"
               data-aos-delay="600"
+              color="#d6d6d6"
               fontSize={15}
               direction="row"
+              fontWeight={500}
               alignItems="center"
             >
               <Typography
@@ -145,13 +154,15 @@ const Advantages = () => {
               data-aos="fade-up"
               data-aos-delay="700"
               fontSize={15}
+              color="#d6d6d6"
               direction="row"
+              fontWeight={500}
               alignItems="center"
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
-                color="#dbb45a"
                 fontFamily="Poppins"
+                color="#dbb45a"
                 mr={2}
               >
                 5
@@ -161,7 +172,9 @@ const Advantages = () => {
             <Stack
               data-aos="fade-up"
               data-aos-delay="800"
+              color="#d6d6d6"
               fontSize={15}
+              fontWeight={500}
               direction="row"
               alignItems="center"
             >
@@ -177,6 +190,8 @@ const Advantages = () => {
             </Stack>
             <Stack
               fontSize={15}
+              color="#d6d6d6"
+              fontWeight={500}
               direction="row"
               data-aos="fade-up"
               data-aos-delay="900"

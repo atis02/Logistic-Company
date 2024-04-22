@@ -55,132 +55,142 @@ const Licence = () => {
           mt={3}
           justifyContent="space-between"
         >
-          <Stack>
-            <Typography
-              data-aos="fade-up"
-              data-aos-delay="300"
-              sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
-              textAlign="start"
-              color="#dbb45a"
-              height={{ lg: 82, md: 56, sm: 36, xs: 16 }}
-              fontFamily="Montserrat"
-              mr={1}
-            >
-              №
-            </Typography>
-            <Stack
-              width="100%"
-              sx={{
-                ...(i18n.language == "ru"
-                  ? { height: "70px" }
-                  : { height: "76px" }),
-              }}
-              alignItems="center"
-              justifyContent="center"
-            >
+          <Stack direction="row" spacing={3}>
+            <Stack>
               <Typography
                 data-aos="fade-up"
-                data-aos-delay="350"
-                fontSize={{ lg: 40, md: 33, xs: 23 }}
+                data-aos-delay="300"
+                sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
                 textAlign="start"
                 color="#dbb45a"
+                height={{ lg: 82, md: 56, sm: 36, xs: 16 }}
                 fontFamily="Montserrat"
+                fontWeight={600}
                 mr={1}
               >
-                1
+                №
               </Typography>
-            </Stack>
-            <Stack
-              width="100%"
-              height={76}
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Typography
-                data-aos="fade-up"
-                data-aos-delay="400"
-                fontSize={{ lg: 40, md: 33, xs: 23 }}
-                textAlign="start"
-                color="#dbb45a"
-                mr={1}
-                fontFamily="Montserrat"
-              >
-                2
-              </Typography>
-            </Stack>
-            <Stack
-              width="100%"
-              height={76}
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Typography
-                data-aos="fade-up"
-                data-aos-delay="450"
-                fontSize={{ lg: 40, md: 33, xs: 23 }}
-                textAlign="start"
-                color="#dbb45a"
-                fontFamily="Montserrat"
-                mr={1}
-              >
-                3
-              </Typography>
-            </Stack>
-          </Stack>
-          <Stack
-            sx={{
-              ...(i18n.language == "ru" ? { width: 280 } : { width: 200 }),
-            }}
-          >
-            <Typography
-              sx={{
-                fontSize: { lg: 18, md: 16, xs: 12 },
-                height: { lg: 80, md: 56, sm: 36, xs: 16 },
-              }}
-              textAlign="start"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              color="#dbb45a"
-              fontFamily="Montserrat"
-            >
-              {t("licenceDesc")}
-            </Typography>
-
-            <Stack width="90%" height={76} justifyContent="center">
-              <Typography
-                sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-                data-aos="fade-up"
-                data-aos-delay="350"
-                width="auto"
-                direction="row"
+              <Stack
+                width="100%"
+                sx={{
+                  ...(i18n.language == "ru"
+                    ? { height: "70px" }
+                    : { height: "74px" }),
+                }}
                 alignItems="center"
-                fontFamily="Montserrat"
-                textAlign="start"
+                justifyContent="center"
               >
-                <Trans i18nKey="licenceDesc2" components={{ 1: <br /> }} />
-              </Typography>
+                <Typography
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  fontSize={{ lg: 35, md: 33, xs: 23 }}
+                  textAlign="start"
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  fontWeight={500}
+                  mr={1}
+                >
+                  1
+                </Typography>
+              </Stack>
+              <Stack
+                width="100%"
+                height={76}
+                alignItems="center"
+                justifyContent="center"
+              >
+                <Typography
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  fontSize={{ lg: 35, md: 33, xs: 23 }}
+                  textAlign="start"
+                  fontWeight={500}
+                  color="#dbb45a"
+                  mr={1}
+                  fontFamily="Montserrat"
+                >
+                  2
+                </Typography>
+              </Stack>
+              <Stack
+                width="100%"
+                height={76}
+                alignItems="center"
+                justifyContent="center"
+              >
+                <Typography
+                  data-aos="fade-up"
+                  data-aos-delay="450"
+                  fontSize={{ lg: 35, md: 33, xs: 23 }}
+                  textAlign="start"
+                  fontWeight={500}
+                  color="#dbb45a"
+                  fontFamily="Montserrat"
+                  mr={1}
+                >
+                  3
+                </Typography>
+              </Stack>
             </Stack>
-            <Stack width="90%" height={76} justifyContent="center">
+            <Stack
+              sx={{
+                ...(i18n.language == "ru" ? { width: 280 } : { width: 200 }),
+              }}
+            >
               <Typography
-                sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
-                data-aos="fade-up"
-                data-aos-delay="400"
-                fontFamily="Montserrat"
+                sx={{
+                  fontSize: { lg: 18, md: 16, xs: 12 },
+                  height: { lg: 80, md: 56, sm: 36, xs: 16 },
+                }}
                 textAlign="start"
-              >
-                <Trans i18nKey="licenceDesc3" components={{ 1: <br /> }} />
-              </Typography>
-            </Stack>
-            <Stack width="90%" height={76} justifyContent="center">
-              <Typography
-                sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 data-aos="fade-up"
-                data-aos-delay="450"
-                textAlign="start"
+                data-aos-delay="300"
+                color="#dbb45a"
+                fontWeight={600}
                 fontFamily="Montserrat"
               >
-                <Trans i18nKey="licenceDesc4" components={{ 1: <br /> }} />
+                {t("licenceDesc")}
               </Typography>
+
+              <Stack width="90%" height={76} justifyContent="center">
+                <Typography
+                  sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  width="auto"
+                  direction="row"
+                  alignItems="center"
+                  fontWeight={500}
+                  fontFamily="Montserrat"
+                  textAlign="start"
+                >
+                  <Trans i18nKey="licenceDesc2" components={{ 1: <br /> }} />
+                </Typography>
+              </Stack>
+              <Stack width="90%" height={76} justifyContent="center">
+                <Typography
+                  sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                  fontFamily="Montserrat"
+                  fontWeight={500}
+                  textAlign="start"
+                >
+                  <Trans i18nKey="licenceDesc3" components={{ 1: <br /> }} />
+                </Typography>
+              </Stack>
+              <Stack width="90%" height={76} justifyContent="center">
+                <Typography
+                  sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
+                  data-aos="fade-up"
+                  data-aos-delay="450"
+                  textAlign="start"
+                  fontWeight={500}
+                  fontFamily="Montserrat"
+                >
+                  <Trans i18nKey="licenceDesc4" components={{ 1: <br /> }} />
+                </Typography>
+              </Stack>
             </Stack>
           </Stack>
           <Stack width={140}>
@@ -190,6 +200,7 @@ const Licence = () => {
               sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
               textAlign="start"
               color="#dbb45a"
+              fontWeight={600}
               fontFamily="Montserrat"
               height={{ lg: 78, md: 56, sm: 36, xs: 16 }}
             >
@@ -201,6 +212,7 @@ const Licence = () => {
                 data-aos-delay="400"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 fontFamily="Montserrat"
+                fontWeight={500}
                 width="auto"
               >
                 №: 1-22-16-182
@@ -213,6 +225,7 @@ const Licence = () => {
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 width="auto"
                 fontFamily="Montserrat"
+                fontWeight={500}
                 textAlign="start"
               >
                 №: 1-22-16-216
@@ -226,6 +239,7 @@ const Licence = () => {
                 width="auto"
                 fontFamily="Montserrat"
                 textAlign="start"
+                fontWeight={500}
               >
                 №: 1-22-16-318
               </Typography>
@@ -240,6 +254,7 @@ const Licence = () => {
               height={{ lg: 74, md: 56, sm: 36, xs: 16 }}
               fontFamily="Montserrat"
               color="#dbb45a"
+              fontWeight={600}
             >
               {t("period")}
             </Typography>
@@ -250,6 +265,7 @@ const Licence = () => {
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 width="auto"
                 fontFamily="Montserrat"
+                fontWeight={500}
               >
                 2023-2026
               </Typography>
@@ -261,6 +277,7 @@ const Licence = () => {
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 width="auto"
                 fontFamily="Montserrat"
+                fontWeight={500}
               >
                 2023-2026
               </Typography>
@@ -272,6 +289,7 @@ const Licence = () => {
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 width="auto"
                 fontFamily="Montserrat"
+                fontWeight={500}
               >
                 2024-2027
               </Typography>
@@ -293,6 +311,7 @@ const Licence = () => {
             color="#dbb45a"
             mt={{ lg: 0, md: -5, sm: 0, xs: 0 }}
             fontFamily="Montserrat"
+            fontWeight={600}
           >
             {t("permit")}
           </Typography>
@@ -311,6 +330,7 @@ const Licence = () => {
               fontFamily="Montserrat"
               textAlign="start"
               width="auto"
+              fontWeight={500}
             >
               <Trans i18nKey="permit2" components={{ 1: <br /> }} />
             </Typography>
@@ -322,6 +342,7 @@ const Licence = () => {
                 fontSize: { lg: 18, md: 16, xs: 14 },
                 display: { lg: "block", md: "block", sm: "block", xs: "none" },
               }}
+              fontWeight={500}
               textAlign="start"
               width="auto"
             >

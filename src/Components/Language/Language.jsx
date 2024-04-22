@@ -81,23 +81,29 @@ export default function Language() {
           color: "#000",
           gap: { lg: "5px", md: "3px", xs: 0 },
         }}
-        p={{ lg: "0 15px ", xs: "0" }}
         minHeight="32px"
       >
         {localStorage.getItem("lng") === "ru" ? (
           <Stack direction="row" spacing={1}>
             <Typography
+              fontFamily="Montserrat"
               textTransform="capitalize"
+              fontWeight={500}
               sx={{ ...(isMobile ? { fontSize: 15 } : { fontSize: 16 }) }}
               color="#fff"
             >
-              RU
+              Рус
             </Typography>
           </Stack>
         ) : (
           <Stack direction="row" spacing={1}>
-            <Typography color="#fff" textTransform="capitalize">
-              EN
+            <Typography
+              fontWeight={500}
+              color="#fff"
+              fontFamily="Montserrat"
+              textTransform="capitalize"
+            >
+              Eng
             </Typography>
           </Stack>
         )}
