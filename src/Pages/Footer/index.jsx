@@ -131,7 +131,12 @@ const Footer = () => {
                 alt=""
               />
               <Typography fontFamily="Montserrat" fontWeight={500}>
-                info@altynmiras.com
+                <a
+                  style={{ textDecoration: "none", color: "#fff" }}
+                  href="mailto:info@altynmiras.com"
+                >
+                  info@altynmiras.com
+                </a>
               </Typography>
             </Stack>
             <Stack
