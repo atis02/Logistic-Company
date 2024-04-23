@@ -58,6 +58,7 @@ const Home = () => {
                 data-aos="fade-up"
                 data-aos-delay="100"
                 width="100%"
+                data-aos-once="true"
                 fontWeight="600"
                 fontSize={{ lg: 48, md: 40, sm: 35, xs: 30 }}
                 className="title"
@@ -67,12 +68,14 @@ const Home = () => {
               </Typography>
 
               <Divider
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 sx={{ width: "1px", height: "100%", background: "#fff" }}
               />
               <Typography
                 data-aos="fade-up"
+                data-aos-once="true"
                 fontFamily="Montserrat"
                 data-aos-delay="100"
                 fontSize={12}
@@ -83,6 +86,7 @@ const Home = () => {
             <Typography
               fontSize={14}
               width="auto"
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="100"
               fontFamily="Montserrat"
@@ -107,6 +111,7 @@ const Home = () => {
                 textTransform: "capitalize",
               }}
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="800"
             >
               {t("read")}

@@ -7,6 +7,7 @@ const About = () => {
   Aos.init({
     duration: 1500,
     offset: 0,
+    once: true,
   });
   const { t } = useTranslation();
 

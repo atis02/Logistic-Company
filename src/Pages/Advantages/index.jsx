@@ -36,6 +36,7 @@ const Advantages = () => {
             textAlign="center"
             className="title"
             fontSize={{ lg: 30, md: 28, xs: 25 }}
+            data-aos-once="true"
             fontWeight={700}
             data-aos="fade-up"
             fontFamily="Montserrat"
@@ -77,6 +78,7 @@ const Advantages = () => {
               fontSize={15}
               direction="row"
               data-aos="fade-up"
+              data-aos-once="true"
               fontWeight={500}
               data-aos-delay="300"
               alignItems="center"
@@ -97,6 +99,7 @@ const Advantages = () => {
               data-aos="fade-up"
               data-aos-delay="400"
               fontSize={15}
+              data-aos-once="true"
               direction="row"
               fontWeight={500}
               color="#d6d6d6"
@@ -113,6 +116,7 @@ const Advantages = () => {
               {t("advText2")}
             </Stack>
             <Stack
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="500"
               fontSize={15}
@@ -132,6 +136,7 @@ const Advantages = () => {
               {t("advText3")}
             </Stack>
             <Stack
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="600"
               color="#d6d6d6"
@@ -151,6 +156,7 @@ const Advantages = () => {
               {t("advText4")}
             </Stack>
             <Stack
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="700"
               fontSize={15}
@@ -170,6 +176,7 @@ const Advantages = () => {
               {t("advText5")}
             </Stack>
             <Stack
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="800"
               color="#d6d6d6"
@@ -193,6 +200,7 @@ const Advantages = () => {
               color="#d6d6d6"
               fontWeight={500}
               direction="row"
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="900"
               alignItems="center"

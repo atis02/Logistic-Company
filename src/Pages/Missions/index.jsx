@@ -27,6 +27,7 @@ const Missions = () => {
         fontSize={{ lg: 30, md: 28, xs: 25 }}
         fontWeight={700}
         data-aos="fade-up"
+        data-aos-once="true"
         fontFamily="Montserrat"
         data-aos-delay="300"
       >
@@ -47,6 +48,7 @@ const Missions = () => {
           mb={5}
           data-aos="fade-up"
           data-aos-delay="500"
+          data-aos-once="true"
           spacing={2}
           width="100%"
         >
@@ -79,6 +81,7 @@ const Missions = () => {
           </Stack>
         </Stack>
         <Stack
+          data-aos-once="true"
           data-aos="fade-up"
           data-aos-delay="700"
           direction="row"
@@ -122,10 +125,10 @@ const Missions = () => {
           mt={15}
           position="absolute"
           minHeight="260px"
-          top={{ lg: 1850, md: 1800, sm: 1900, xs: 2050 }}
-          left={{ lg: 120 }}
+          top={{ lg: 2050, md: 1750, sm: 1950, xs: 2020 }}
+          left={{ lg: 200 }}
           width="auto"
-          height={{ xl: "100%", lg: "100%", md: "90%", sm: "80%", xs: "40%" }}
+          height={{ xl: "85%", lg: "100%", md: "90%", sm: "80%", xs: "40%" }}
           sx={{
             opacity: "0.2",
           }}
@@ -153,6 +156,7 @@ const Missions = () => {
             fontSize={{ lg: 30, md: 28, xs: 25 }}
             mt="60px"
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="800"
           >
             {t("services")}
@@ -170,6 +174,7 @@ const Missions = () => {
               style={{ width: 140, height: 125 }}
               alignItems="center"
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="1200"
             >
               <img
@@ -189,6 +194,7 @@ const Missions = () => {
               style={{ width: 140, height: 125 }}
               spacing={2}
               alignItems="center"
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="900"
             >
@@ -209,6 +215,7 @@ const Missions = () => {
               mt={{ xs: 6, lg: 0, md: 0, sm: 0 }}
               spacing={2}
               style={{ width: 140, height: 125 }}
+              data-aos-once="true"
               data-aos="fade-up"
               alignItems="center"
               data-aos-delay="1000"
@@ -235,6 +242,7 @@ const Missions = () => {
                 width: { lg: 220, md: 200, sm: 180, xs: 140 },
                 height: 125,
               }}
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="1100"
             >

@@ -33,6 +33,7 @@ const Licence = () => {
         fontSize={{ lg: 30, md: 28, sm: 26, xs: 25 }}
         fontWeight={700}
         data-aos="fade-up"
+        data-aos-once="true"
         data-aos-delay="300"
         fontFamily="Montserrat"
       >
@@ -52,18 +53,18 @@ const Licence = () => {
         <Stack
           width={{ lg: "80%", md: "80%", sm: "100%", xs: "100%" }}
           direction="row"
-          mt={3}
           justifyContent="space-between"
         >
           <Stack direction="row" spacing={3}>
             <Stack>
               <Typography
                 data-aos="fade-up"
+                data-aos-once="true"
                 data-aos-delay="300"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
                 textAlign="start"
                 color="#dbb45a"
-                height={{ lg: 82, md: 56, sm: 36, xs: 16 }}
+                height={{ lg: 35, md: 26, sm: 20, xs: 16 }}
                 fontFamily="Montserrat"
                 fontWeight={600}
                 mr={1}
@@ -81,6 +82,7 @@ const Licence = () => {
                 justifyContent="center"
               >
                 <Typography
+                  data-aos-once="true"
                   data-aos="fade-up"
                   data-aos-delay="350"
                   fontSize={{ lg: 35, md: 33, xs: 23 }}
@@ -100,6 +102,7 @@ const Licence = () => {
                 justifyContent="center"
               >
                 <Typography
+                  data-aos-once="true"
                   data-aos="fade-up"
                   data-aos-delay="400"
                   fontSize={{ lg: 35, md: 33, xs: 23 }}
@@ -120,6 +123,7 @@ const Licence = () => {
               >
                 <Typography
                   data-aos="fade-up"
+                  data-aos-once="true"
                   data-aos-delay="450"
                   fontSize={{ lg: 35, md: 33, xs: 23 }}
                   textAlign="start"
@@ -134,15 +138,18 @@ const Licence = () => {
             </Stack>
             <Stack
               sx={{
-                ...(i18n.language == "ru" ? { width: 280 } : { width: 200 }),
+                ...(i18n.language == "ru"
+                  ? { width: { lg: 280, md: 280, sm: 180, xs: 160 } }
+                  : { width: 200 }),
               }}
             >
               <Typography
                 sx={{
                   fontSize: { lg: 18, md: 16, xs: 12 },
-                  height: { lg: 80, md: 56, sm: 36, xs: 16 },
+                  height: { lg: 30, md: 26, sm: 20, xs: 16 },
                 }}
                 textAlign="start"
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="300"
                 color="#dbb45a"
@@ -156,6 +163,7 @@ const Licence = () => {
                 <Typography
                   sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                   data-aos="fade-up"
+                  data-aos-once="true"
                   data-aos-delay="350"
                   width="auto"
                   direction="row"
@@ -167,10 +175,11 @@ const Licence = () => {
                   <Trans i18nKey="licenceDesc2" components={{ 1: <br /> }} />
                 </Typography>
               </Stack>
-              <Stack width="90%" height={76} justifyContent="center">
+              <Stack width="100%" height={76} justifyContent="center">
                 <Typography
                   sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                   data-aos="fade-up"
+                  data-aos-once="true"
                   data-aos-delay="400"
                   fontFamily="Montserrat"
                   fontWeight={500}
@@ -183,6 +192,7 @@ const Licence = () => {
                 <Typography
                   sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                   data-aos="fade-up"
+                  data-aos-once="true"
                   data-aos-delay="450"
                   textAlign="start"
                   fontWeight={500}
@@ -195,6 +205,7 @@ const Licence = () => {
           </Stack>
           <Stack width={140}>
             <Typography
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="300"
               sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
@@ -202,12 +213,13 @@ const Licence = () => {
               color="#dbb45a"
               fontWeight={600}
               fontFamily="Montserrat"
-              height={{ lg: 78, md: 56, sm: 36, xs: 16 }}
+              height={{ lg: 30, md: 26, sm: 20, xs: 16 }}
             >
               {t("series")}
             </Typography>
             <Stack height={76} width="100%" justifyContent="center">
               <Typography
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="400"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
@@ -221,6 +233,7 @@ const Licence = () => {
             <Stack height={76} width="100%" justifyContent="center">
               <Typography
                 data-aos="fade-up"
+                data-aos-once="true"
                 data-aos-delay="500"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 width="auto"
@@ -234,6 +247,7 @@ const Licence = () => {
             <Stack height={76} width="100%" justifyContent="center">
               <Typography
                 data-aos="fade-up"
+                data-aos-once="true"
                 data-aos-delay="600"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
                 width="auto"
@@ -248,10 +262,11 @@ const Licence = () => {
           <Stack width={140}>
             <Typography
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="300"
               sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
               textAlign="start"
-              height={{ lg: 74, md: 56, sm: 36, xs: 16 }}
+              height={{ lg: 30, md: 26, sm: 20, xs: 16 }}
               fontFamily="Montserrat"
               color="#dbb45a"
               fontWeight={600}
@@ -260,6 +275,7 @@ const Licence = () => {
             </Typography>
             <Stack height={76} width="100%" justifyContent="center">
               <Typography
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="400"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
@@ -272,6 +288,7 @@ const Licence = () => {
             </Stack>
             <Stack height={76} width="100%" justifyContent="center">
               <Typography
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="500"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
@@ -284,6 +301,7 @@ const Licence = () => {
             </Stack>
             <Stack height={76} width="100%" justifyContent="center">
               <Typography
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="600"
                 sx={{ fontSize: { lg: 18, md: 16, xs: 12 } }}
@@ -299,15 +317,16 @@ const Licence = () => {
         <Stack
           width={{ lg: 250, md: "100%", sm: "100%", xs: "100%" }}
           height="100%"
-          mt={{ lg: 3, md: 8, sm: 0, xs: 0 }}
+          mt={{ lg: 0, md: 5, sm: 0, xs: 0 }}
           ml={{ lg: -4, md: -3 }}
         >
           <Typography
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="300"
             textAlign={{ lg: "start", md: "start", sm: "start", xs: "center" }}
-            height={{ lg: 95, md: 80, sm: 60, xs: 56 }}
+            height={{ lg: 53, md: 51, sm: 30, xs: 56 }}
             color="#dbb45a"
             mt={{ lg: 0, md: -5, sm: 0, xs: 0 }}
             fontFamily="Montserrat"
@@ -322,6 +341,7 @@ const Licence = () => {
           >
             <Typography
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay="500"
               sx={{
                 fontSize: { lg: 18, md: 16, xs: 14 },
@@ -335,6 +355,7 @@ const Licence = () => {
               <Trans i18nKey="permit2" components={{ 1: <br /> }} />
             </Typography>
             <Typography
+              data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="500"
               fontFamily="Montserrat"

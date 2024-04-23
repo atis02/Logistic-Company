@@ -30,6 +30,7 @@ const OurWorks = () => {
         className="title"
         fontSize={{ lg: 30, md: 28, sm: 26, xs: 25 }}
         fontWeight={700}
+        data-aos-once="true"
         data-aos="fade-up"
         data-aos-delay="300"
         fontFamily="Montserrat"
@@ -58,6 +59,7 @@ const OurWorks = () => {
             height="450px"
             maxWidth="370px"
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="300"
           >
             <img
@@ -78,6 +80,7 @@ const OurWorks = () => {
             </Typography>
           </Stack>
           <Stack
+            data-aos-once="true"
             data-aos="fade-up"
             data-aos-delay="400"
             backgroundColor="#2F2F2F"
@@ -94,7 +97,7 @@ const OurWorks = () => {
               fontWeight={600}
               fontSize={16}
               fontFamily="Montserrat"
-              mt={1}
+              mt={1.7}
               mb={1}
               width="100%"
               height={77}
@@ -104,6 +107,7 @@ const OurWorks = () => {
             </Typography>
           </Stack>
           <Stack
+            data-aos-once="true"
             data-aos="fade-up"
             data-aos-delay="500"
             backgroundColor="#2F2F2F"
@@ -118,7 +122,7 @@ const OurWorks = () => {
             />
             <Typography
               fontWeight={600}
-              mt={1}
+              mt={1.3}
               fontFamily="Montserrat"
               height={77}
               mb={1}
@@ -129,6 +133,7 @@ const OurWorks = () => {
             </Typography>
           </Stack>
           <Stack
+            data-aos-once="true"
             data-aos="fade-up"
             data-aos-delay="600"
             backgroundColor="#2F2F2F"
@@ -144,7 +149,7 @@ const OurWorks = () => {
             <Typography
               fontWeight={600}
               p="15px 10px"
-              mt={1}
+              mt={1.7}
               fontFamily="Montserrat"
               height={77}
               mb={1}
@@ -155,6 +160,7 @@ const OurWorks = () => {
           </Stack>
           <Stack
             data-aos="fade-up"
+            data-aos-once="true"
             data-aos-delay="700"
             backgroundColor="#2F2F2F"
             float="left"
@@ -170,7 +176,7 @@ const OurWorks = () => {
               fontWeight={600}
               p="15px 10px"
               fontFamily="Montserrat"
-              mt={1}
+              mt={1.7}
               height={77}
               mb={1}
               fontSize={16}
@@ -187,6 +193,7 @@ const OurWorks = () => {
           <Typography
             data-aos="fade-up"
             fontSize={{ lg: 16, md: 15, xs: 14 }}
+            data-aos-once="true"
             fontFamily="Montserrat"
             data-aos-delay="300"
             fontWeight={500}
@@ -210,6 +217,7 @@ const OurWorks = () => {
               <img
                 src="/images/Rectangle 18.png"
                 alt=""
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="300"
               />
@@ -218,6 +226,7 @@ const OurWorks = () => {
               <img
                 src="/images/Rectangle 16.png"
                 alt=""
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="500"
               />
@@ -226,6 +235,7 @@ const OurWorks = () => {
               <img
                 src="/images/Rectangle 17.png"
                 alt=""
+                data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="700"
               />

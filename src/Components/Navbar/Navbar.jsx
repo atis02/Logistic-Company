@@ -151,6 +151,7 @@ const Navbar = () => {
             <MenuItem
               sx={{
                 "&:hover": { backgroundColor: "#666666" },
+                width: 175,
               }}
               value="Преимущества"
             >

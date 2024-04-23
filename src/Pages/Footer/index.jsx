@@ -54,6 +54,7 @@ const Footer = () => {
             <Stack
               direction="row"
               data-aos="fade-down"
+              data-aos-once="true"
               data-aos-delay="300"
               alignItems="center"
               width="100%"
@@ -69,6 +70,7 @@ const Footer = () => {
               </Typography>
             </Stack>
             <Stack
+              data-aos-once="true"
               data-aos="fade-down"
               data-aos-delay="400"
               direction="row"
@@ -95,6 +97,7 @@ const Footer = () => {
             </Stack>
             <Stack
               data-aos="fade-down"
+              data-aos-once="true"
               data-aos-delay="500"
               direction="row"
               width="100%"
@@ -115,6 +118,7 @@ const Footer = () => {
           <Stack spacing={3}>
             <Stack
               direction="row"
+              data-aos-once="true"
               data-aos="fade-down"
               data-aos-delay="600"
               width="auto"
@@ -131,6 +135,7 @@ const Footer = () => {
               </Typography>
             </Stack>
             <Stack
+              data-aos-once="true"
               data-aos="fade-down"
               data-aos-delay="700"
               direction="row"
@@ -167,6 +172,7 @@ const Footer = () => {
             <a href="https://2hac.page.link/KLFX">
               <img
                 src="/images/image 68.png"
+                data-aos-once="true"
                 alt=""
                 data-aos="fade-down"
                 data-aos-delay="800"
@@ -183,6 +189,7 @@ const Footer = () => {
             <a href="/">
               <img
                 src="/images/image 51.png"
+                data-aos-once="true"
                 data-aos="fade-down"
                 style={{ width: "100%", height: "100%" }}
                 data-aos-delay="900"
@@ -199,6 +206,7 @@ const Footer = () => {
       />
       <Typography
         width="100%"
+        data-aos-once="true"
         data-aos="fade-down"
         data-aos-delay="1000"
         fontSize={16}
