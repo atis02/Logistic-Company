@@ -40,7 +40,7 @@ const Licence = () => {
         {t("licence")}
       </Typography>
       <Stack
-        width={{ lg: "70%", md: "85%", sm: "80%", xs: "90%" }}
+        width={{ lg: "75%", md: "85%", sm: "80%", xs: "90%" }}
         direction={{ lg: "row", md: "row", sm: "column", xs: "column" }}
         sx={{
           height: 535,
@@ -51,7 +51,7 @@ const Licence = () => {
         }}
       >
         <Stack
-          width={{ lg: "80%", md: "80%", sm: "100%", xs: "100%" }}
+          width={{ lg: "100%", md: "80%", sm: "100%", xs: "100%" }}
           direction="row"
           justifyContent="space-between"
         >
@@ -67,7 +67,7 @@ const Licence = () => {
                 height={{ lg: 35, md: 26, sm: 20, xs: 16 }}
                 fontFamily="Montserrat"
                 fontWeight={600}
-                mr={1}
+                mr={{ lg: 1, xs: 0 }}
               >
                 №
               </Typography>
@@ -90,7 +90,7 @@ const Licence = () => {
                   color="#dbb45a"
                   fontFamily="Montserrat"
                   fontWeight={500}
-                  mr={1}
+                  mr={{ lg: 1, xs: 0 }}
                 >
                   1
                 </Typography>
@@ -109,7 +109,7 @@ const Licence = () => {
                   textAlign="start"
                   fontWeight={500}
                   color="#dbb45a"
-                  mr={1}
+                  mr={{ lg: 1, xs: 0 }}
                   fontFamily="Montserrat"
                 >
                   2
@@ -130,7 +130,7 @@ const Licence = () => {
                   fontWeight={500}
                   color="#dbb45a"
                   fontFamily="Montserrat"
-                  mr={1}
+                  mr={{ lg: 1, xs: 0 }}
                 >
                   3
                 </Typography>
@@ -140,7 +140,7 @@ const Licence = () => {
               sx={{
                 ...(i18n.language == "ru"
                   ? { width: { lg: 280, md: 280, sm: 180, xs: 160 } }
-                  : { width: 200 }),
+                  : { width: { lg: 150, md: 130, sm: 120, xs: 110 } }),
               }}
             >
               <Typography
@@ -203,7 +203,7 @@ const Licence = () => {
               </Stack>
             </Stack>
           </Stack>
-          <Stack width={140}>
+          <Stack width={150}>
             <Typography
               data-aos-once="true"
               data-aos="fade-up"
@@ -318,7 +318,7 @@ const Licence = () => {
           width={{ lg: 250, md: "100%", sm: "100%", xs: "100%" }}
           height="100%"
           mt={{ lg: 0, md: 5, sm: 0, xs: 0 }}
-          ml={{ lg: -4, md: -3 }}
+          // ml={{ lg: -6, md: -3 }}
         >
           <Typography
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}

@@ -13,7 +13,7 @@ const Footer = () => {
     <Box
       sx={{
         background: "#2F2F2F",
-        height: { lg: "200px", md: "100%", xs: "100%" },
+        height: { lg: "270px", md: "100%", xs: "100%" },
         backgroundImage: "url('/images/AboutHorizontal.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -22,7 +22,7 @@ const Footer = () => {
         alignItems: "center",
         flexDirection: "column",
         width: "100%",
-        p: "70px 0 10px 0",
+        p: { lg: "60px 0 10px 0", xs: "30px 0 10px 0" },
       }}
       id="Footer"
     >

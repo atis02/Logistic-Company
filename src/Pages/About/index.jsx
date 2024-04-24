@@ -16,7 +16,7 @@ const About = () => {
       id="aboutCompany"
       sx={{
         background: "#2F2F2F",
-        height: { lg: "400px", md: "360px", sm: "300px", xs: "470px" },
+        height: { lg: "420px", md: "360px", sm: "300px", xs: "470px" },
         width: "100%",
         backgroundImage: "url('/images/AboutHorizontal.png')",
         backgroundRepeat: "no-repeat",
@@ -26,7 +26,6 @@ const About = () => {
         display: "flex",
         alignItems: { lg: "center" },
         transition: " all ease 0.3s",
-        pt: { lg: "60px", md: "30px", xs: "10px" },
         scrollMarginTop: "70px",
       }}
     >
@@ -57,6 +56,7 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="200"
             fontFamily="Montserrat"
+            pt={{ lg: "50px", md: "30px", xs: "10px" }}
             className="title"
           >
             {t("aboutCompany")}
