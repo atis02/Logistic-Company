@@ -71,7 +71,7 @@ const Home = () => {
                 data-aos-once="true"
                 data-aos="fade-up"
                 data-aos-delay="100"
-                sx={{ width: "1px", height: "100%", background: "#fff" }}
+                sx={{ width: "1px", height: "40px", background: "#fff" }}
               />
               <Typography
                 data-aos="fade-up"
