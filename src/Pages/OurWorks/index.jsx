@@ -49,6 +49,12 @@ const OurWorks = () => {
         <Stack
           direction="row"
           alignItems="center"
+          justifyContent={{
+            lg: "start",
+            md: "center",
+            sm: "center",
+            xs: "center",
+          }}
           height="100%"
           width="100%"
           style={{ flexWrap: "wrap", gap: "20px" }}
@@ -74,7 +80,12 @@ const OurWorks = () => {
               height={75}
               mb={1}
               fontSize={16}
-              p="5px 110px 5px 10px"
+              p={{
+                lg: "5px 110px 5px 10px",
+                md: "5px 110px 5px 10px",
+                sm: "5px 110px 5px 10px",
+                xs: "5px 60px 5px 10px",
+              }}
             >
               <Trans i18nKey="medicaments" components={{ 1: <br /> }} />
             </Typography>
@@ -99,8 +110,8 @@ const OurWorks = () => {
               fontFamily="Montserrat"
               mt={1.7}
               mb={1}
-              width="100%"
               height={77}
+              width="70%"
               p="0 10px 0 10px "
             >
               <Trans i18nKey="mebels" components={{ 1: <br /> }} />
@@ -128,6 +139,7 @@ const OurWorks = () => {
               mb={1}
               fontSize={16}
               p="5px 10px"
+              width="70%"
             >
               <Trans i18nKey="warn" components={{ 1: <br /> }} />
             </Typography>

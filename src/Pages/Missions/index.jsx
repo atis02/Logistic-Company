@@ -125,7 +125,7 @@ const Missions = () => {
           mt={15}
           position="absolute"
           minHeight="260px"
-          top={{ lg: 2000, md: 1750, sm: 1950, xs: 2020 }}
+          top={{ lg: 1970, md: 1750, sm: 1950, xs: 2020 }}
           left={{ lg: 200 }}
           width="auto"
           height={{ xl: "85%", lg: "100%", md: "90%", sm: "80%", xs: "40%" }}

@@ -55,7 +55,7 @@ const Licence = () => {
           direction="row"
           justifyContent="space-between"
         >
-          <Stack direction="row" spacing={3}>
+          <Stack direction="row" spacing={1}>
             <Stack>
               <Typography
                 data-aos="fade-up"
@@ -139,8 +139,8 @@ const Licence = () => {
             <Stack
               sx={{
                 ...(i18n.language == "ru"
-                  ? { width: { lg: 280, md: 280, sm: 180, xs: 160 } }
-                  : { width: { lg: 150, md: 130, sm: 120, xs: 110 } }),
+                  ? { width: { lg: 280, md: 280, sm: 250, xs: 120 } }
+                  : { width: { lg: 150, md: 130, sm: 180, xs: 110 } }),
               }}
             >
               <Typography
@@ -318,7 +318,11 @@ const Licence = () => {
           width={{ lg: 250, md: "100%", sm: "100%", xs: "100%" }}
           height="100%"
           mt={{ lg: 0, md: 5, sm: 0, xs: 0 }}
-          // ml={{ lg: -6, md: -3 }}
+          ml={{
+            ...(i18n.language == "ru"
+              ? { lg: -5, md: -10 }
+              : { lg: 0, md: -10 }),
+          }}
         >
           <Typography
             sx={{ fontSize: { lg: 18, md: 16, xs: 14 } }}

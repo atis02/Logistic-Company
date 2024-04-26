@@ -65,7 +65,7 @@ const Footer = () => {
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography fontFamily="Montserrat" fontWeight={500} width="auto">
+              <Typography fontFamily="Montserrat" fontWeight={500} width="80%">
                 {t("location")}
               </Typography>
             </Stack>
