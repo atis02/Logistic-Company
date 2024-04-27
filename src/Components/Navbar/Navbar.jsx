@@ -269,26 +269,26 @@ const Navbar = () => {
               <a className="nav-links2" href="#aboutCompany">
                 {t("aboutCompany")}
               </a>
-              <a className="nav-links2" href="#advantages">
+              <a className="nav-links2" href="#Advantages">
                 {t("advantages")}
               </a>
-              <a className="nav-links2" href="#goals">
+              <a className="nav-links2" href="#Goals">
                 {" "}
                 {t("goals")}
               </a>
-              <a className="nav-links2" href="#services">
+              <a className="nav-links2" href="#Services">
                 {" "}
                 {t("services")}
               </a>
-              <a className="nav-links2" href="#licences">
+              <a className="nav-links2" href="#Licences">
                 {" "}
                 {t("licences")}
               </a>
-              <a className="nav-links2" href="#ourWorks">
+              <a className="nav-links2" href="#OurWorks">
                 {" "}
                 {t("ourWorks")}
               </a>
-              <a className="nav-links2" href="#contacts">
+              <a className="nav-links2" href="#Footer">
                 {t("contacts")}
               </a>
             </Stack>

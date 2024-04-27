@@ -81,9 +81,9 @@ const OurWorks = () => {
               mb={1}
               fontSize={16}
               p={{
-                lg: "5px 110px 5px 10px",
-                md: "5px 110px 5px 10px",
-                sm: "5px 110px 5px 10px",
+                lg: "5px 100px 5px 10px",
+                md: "5px 100px 5px 10px",
+                sm: "5px 100px 5px 10px",
                 xs: "5px 60px 5px 10px",
               }}
             >

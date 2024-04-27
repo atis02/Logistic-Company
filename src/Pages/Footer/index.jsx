@@ -17,6 +17,7 @@ const Footer = () => {
         backgroundImage: "url('/images/AboutHorizontal.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        backgroundPositionY: "-100px",
         color: "#fff",
         display: "flex",
         alignItems: "center",

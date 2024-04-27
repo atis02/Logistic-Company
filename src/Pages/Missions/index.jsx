@@ -60,7 +60,7 @@ const Missions = () => {
             }}
             alt=""
           />
-          <Stack maxWidth={725}>
+          <Stack>
             <Typography
               fontSize={18}
               fontFamily="Montserrat"
@@ -91,7 +91,7 @@ const Missions = () => {
           spacing={2}
           width="auto"
         >
-          <Stack maxWidth={720}>
+          <Stack>
             <Typography
               fontSize={18}
               fontFamily="Montserrat"
@@ -125,7 +125,7 @@ const Missions = () => {
           mt={15}
           position="absolute"
           minHeight="260px"
-          top={{ lg: 1970, md: 1750, sm: 1950, xs: 2020 }}
+          top={{ lg: 2000, md: 1750, sm: 1950, xs: 2020 }}
           left={{ lg: 200 }}
           width="auto"
           height={{ xl: "85%", lg: "100%", md: "90%", sm: "80%", xs: "40%" }}
@@ -175,6 +175,7 @@ const Missions = () => {
               alignItems="center"
               data-aos="fade-up"
               data-aos-once="true"
+              zIndex={100}
               data-aos-delay="1200"
             >
               <img
@@ -195,6 +196,7 @@ const Missions = () => {
               spacing={2}
               alignItems="center"
               data-aos-once="true"
+              zIndex={100}
               data-aos="fade-up"
               data-aos-delay="900"
             >
@@ -217,6 +219,7 @@ const Missions = () => {
               style={{ width: 140, height: 125 }}
               data-aos-once="true"
               data-aos="fade-up"
+              zIndex={100}
               alignItems="center"
               data-aos-delay="1000"
             >
@@ -243,6 +246,7 @@ const Missions = () => {
                 height: 125,
               }}
               data-aos-once="true"
+              zIndex={100}
               data-aos="fade-up"
               data-aos-delay="1100"
             >

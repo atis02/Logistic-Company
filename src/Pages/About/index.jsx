@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Stack, Typography } from "@mui/material";
 import Aos from "aos";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 const About = () => {
   Aos.init({
@@ -48,7 +48,7 @@ const About = () => {
           width={560}
           height={145}
           spacing={2}
-          mt={{ lg: 3, md: 1, xs: 1 }}
+          mt={{ lg: 0, md: 1, xs: 1 }}
         >
           <Typography
             fontSize={24}
@@ -68,7 +68,7 @@ const About = () => {
             fontFamily="Montserrat"
             color="#fff"
           >
-            {t("aboutCompanyText")}
+            <Trans i18nKey="aboutCompanyText" components={{ 1: <br /> }} />
             <span className="title" style={{ fontWeight: "700" }}>
               {t("nameCompany")}
             </span>{" "}

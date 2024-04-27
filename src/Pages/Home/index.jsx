@@ -6,8 +6,10 @@ import {
   Container,
   Stack,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -19,6 +21,8 @@ const Home = () => {
     duration: 1000,
     offset: 0,
   });
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Container>
       <Box
@@ -52,7 +56,12 @@ const Home = () => {
               spacing={2}
               width={{ lg: "90%", md: "80%", sm: "70%", xs: "100%" }}
               height={35}
-              pt={{ lg: "200px", md: "150px", sm: "130px", xs: "100px" }}
+              pt={{
+                ...(hiddenText
+                  ? { lg: "100px", md: "100px", sm: "100px", xs: "80px" }
+                  : { lg: "200px", md: "150px", sm: "130px", xs: "100px" }),
+              }}
+              pb={{ lg: "25px", md: "23px", sm: "18px", xs: "15px" }}
             >
               <Typography
                 data-aos="fade-up"
@@ -83,22 +92,38 @@ const Home = () => {
                 logistic company
               </Typography>
             </Stack>
-            <Typography
-              fontSize={14}
-              width="auto"
-              data-aos-once="true"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              fontFamily="Montserrat"
-              fontWeight={500}
-            >
-              {t("company")}
-              <span className="title" style={{ fontWeight: "700" }}>
-                {t("nameCompany")}
-              </span>{" "}
-              {t("description")}
-              {hiddenText && <Stack>{t("hideDesc")}</Stack>}
-            </Typography>
+            <Stack>
+              <Typography
+                fontSize={14}
+                width="auto"
+                data-aos-once="true"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                fontFamily="Montserrat"
+                fontWeight={500}
+              >
+                {t("company")}
+                <span className="title" style={{ fontWeight: "700" }}>
+                  {t("nameCompany")}
+                </span>{" "}
+                {t("description")}
+              </Typography>
+              {hiddenText && (
+                <Stack
+                  fontSize={14}
+                  width="auto"
+                  data-aos-once="true"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  fontFamily="Montserrat"
+                  fontWeight={500}
+                  lineHeight="1.5"
+                  letterSpacing="0.00938em"
+                >
+                  <Trans i18nKey="hideDesc" components={{ 1: <br /> }} />
+                </Stack>
+              )}
+            </Stack>
             <Button
               onClick={() => setHiddenText(!hiddenText)}
               sx={{
@@ -120,6 +145,9 @@ const Home = () => {
           <Stack
             width={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
             hegiht={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
+            sx={{
+              ...(hiddenText && isMobile ? { display: "none" } : ""),
+            }}
           >
             <img
               src="/images/pngwing 6.png"
