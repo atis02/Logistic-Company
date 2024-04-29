@@ -17,14 +17,10 @@ const resources = {
       company: "Our company",
       description:
         "was founded in 2021. In this short time-period, our company has accumulated extensive experience and has created a wide network of partners around the world to carry out import, export and transit shipments. ",
-      // " was founded in 2021. In this short time-period, our company has accumulated extensive experience and has created a wide network of partners around the world to carry out import, export and transit shipments. We are professionals in the field of transportation organization and at present we provide a full spectrum of cargo delivery services related to container, sea, railway, road and air transportation across Europe and Asia, as well as the transportation of dangerous goods and temperature-controlled goods.",
-      // " was founded in 2021. We are professionals in the field of transportation organization and at  present we provide a full spectrum of cargo delivery services from any location in the world.",
       hideDesc:
-        // "Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and Your professional partner in the field of logistics.",
-        // "Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and professional. YOUR PARTNER IN THE FIELD OF LOGISTICS!",
         "We are professionals in the field of transportation organization and at present we provide a full spectrum of cargo delivery services related to container, sea, railway, road and air transportation across Europe and Asia, as well as the transportation of dangerous goods and temperature-controlled goods.<1/> Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and Your professional partner in the field of logistics. ",
       aboutCompanyText:
-        "We are experts in the field of transportation organization and today we provide a full range of cargo delivery services from anywhere in the world. We offer “ door to door ” delivery services, as well as other operations included within this service.<1/> All stages of the supply chain are carefully controlled by our specialists. Experienced specialists of ",
+        "We are experts in the field of transportation organization and today we provide a full range of cargo delivery services from anywhere in the world. We offer “door to door” delivery services, as well as other operations included within this service.<1/> All stages of the supply chain are carefully controlled by our specialists. Experienced specialists of ",
       aboutCompanyText2:
         " company are always ready to calculate various transportation options, provide information about the cargo location, planned delivery date, and provide assistance in registration of all necessary permits.",
       advantages: "Advantages",
@@ -115,13 +111,10 @@ const resources = {
       company: "Компания",
       description:
         " была основана в 2021 году. За этот короткий период наша компания накопила большой опыт и создала широкую сеть партнеров по всему миру для осуществления импортных, экспортных и транзитных перевозок.",
-      // " была основана в 2021 году. За этот короткий период наша компания накопила большой опыт и создала широкую сеть партнеров по всему миру для осуществления импортных, экспортных и транзитных перевозок. Мы являемся профессионалами в области организации перевозки и на сегодняшний день оказываем полный спектр услуг, связанных с контейнерными, морскими, железнодорожными, автомобильными и авиаперевозками  по странам Европы и Азии, а также перевозкой опасных грузов и грузов с температурным режимом.",
-      // " была основана в 2021 году. Мы являемся профессионалами в области организации перевозки и на сегодняшний  день  оказываем  полный  спектр услуг по доставке грузов из любой точки мира. ",
       hideDesc:
-        // "Несмотря на то, что мы являемся молодой и развивающейся компанией, мы с уверенностью можем зарекомендовать себя, как ответственного, добросовестного, надежного и профессионального - Вашего партнёра в сфере логистики!",
         "Мы являемся профессионалами в области организации перевозки и на сегодняшний день оказываем полный спектр услуг, связанных с контейнерными, морскими, железнодорожными, автомобильными и авиаперевозками  по странам Европы и Азии, а также перевозкой опасных грузов и грузов с температурным режимом.<1/>Несмотря на то, что мы являемся молодой и развивающейся компанией, мы с уверенностью можем зарекомендовать себя, как ответственного, добросовестного, надёжного и профессионального - Вашего партнёра в сфере логистики!",
       aboutCompanyText:
-        "Мы предлагаем услуги по доставке  “ от двери до двери ” а также отдельные операции, входящие в данный сервис. Все этапы логистической цепи  тщательно контролируются нашими специалистами. <1/> Опытные    специалисты   компании  ",
+        "Мы предлагаем услуги по доставке  “от двери до двери” а также отдельные операции, входящие в данный сервис. Все этапы логистической цепи  тщательно контролируются нашими специалистами. <1/> Опытные    специалисты   компании  ",
       aboutCompanyText2:
         "  всегда   готовы рассчитать различные варианты перевозок, предоставлять информацию о  местонахождении  груза,  о  планируемой  дате  доставки,  помощь  в оформлении всех необходимых разрешительных документов.",
       advantages: "Преимущества",

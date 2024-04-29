@@ -46,7 +46,7 @@ const Home = () => {
         >
           <Stack
             alignItems="start"
-            spacing={{ lg: 3, md: 3, sm: 3, xs: 1 }}
+            spacing={{ lg: 3, md: 3, sm: 3, xs: 2 }}
             color="#d6d6d6"
             width={{ lg: "65%", md: "85%", xs: "100%" }}
             pb={{ lg: 0, md: 0, xs: 1 }}
@@ -59,7 +59,7 @@ const Home = () => {
               height={35}
               pt={{
                 ...(hiddenText
-                  ? { lg: "100px", md: "100px", sm: "100px", xs: "10px" }
+                  ? { lg: "100px", md: "100px", sm: "100px", xs: "60px" }
                   : { lg: "200px", md: "150px", sm: "130px", xs: "100px" }),
               }}
               pb={{ lg: "25px", md: "23px", sm: "18px", xs: "15px" }}
