@@ -16,8 +16,11 @@ const resources = {
       nameCompany: " “Altyn Miras” ",
       company: "Our company",
       description:
-        " was founded in 2021. We are professionals in the field of transportation organization and at  present we provide a full spectrum of cargo delivery services from any location in the world.",
+        "was founded in 2021. In this short time-period, our company has accumulated extensive experience and has created a wide network of partners around the world to carry out import, export and transit shipments. ",
+      // " was founded in 2021. In this short time-period, our company has accumulated extensive experience and has created a wide network of partners around the world to carry out import, export and transit shipments. We are professionals in the field of transportation organization and at present we provide a full spectrum of cargo delivery services related to container, sea, railway, road and air transportation across Europe and Asia, as well as the transportation of dangerous goods and temperature-controlled goods.",
+      // " was founded in 2021. We are professionals in the field of transportation organization and at  present we provide a full spectrum of cargo delivery services from any location in the world.",
       hideDesc:
+        // "Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and Your professional partner in the field of logistics.",
         // "Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and professional. YOUR PARTNER IN THE FIELD OF LOGISTICS!",
         "We are professionals in the field of transportation organization and at present we provide a full spectrum of cargo delivery services related to container, sea, railway, road and air transportation across Europe and Asia, as well as the transportation of dangerous goods and temperature-controlled goods.<1/> Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and Your professional partner in the field of logistics. ",
       aboutCompanyText:
@@ -111,7 +114,9 @@ const resources = {
       read: "Читать",
       company: "Компания",
       description:
-        " была основана в 2021 году. Мы являемся профессионалами в области организации перевозки и на сегодняшний  день  оказываем  полный  спектр услуг по доставке грузов из любой точки мира. ",
+        " была основана в 2021 году. За этот короткий период наша компания накопила большой опыт и создала широкую сеть партнеров по всему миру для осуществления импортных, экспортных и транзитных перевозок.",
+      // " была основана в 2021 году. За этот короткий период наша компания накопила большой опыт и создала широкую сеть партнеров по всему миру для осуществления импортных, экспортных и транзитных перевозок. Мы являемся профессионалами в области организации перевозки и на сегодняшний день оказываем полный спектр услуг, связанных с контейнерными, морскими, железнодорожными, автомобильными и авиаперевозками  по странам Европы и Азии, а также перевозкой опасных грузов и грузов с температурным режимом.",
+      // " была основана в 2021 году. Мы являемся профессионалами в области организации перевозки и на сегодняшний  день  оказываем  полный  спектр услуг по доставке грузов из любой точки мира. ",
       hideDesc:
         // "Несмотря на то, что мы являемся молодой и развивающейся компанией, мы с уверенностью можем зарекомендовать себя, как ответственного, добросовестного, надежного и профессионального - Вашего партнёра в сфере логистики!",
         "Мы являемся профессионалами в области организации перевозки и на сегодняшний день оказываем полный спектр услуг, связанных с контейнерными, морскими, железнодорожными, автомобильными и авиаперевозками  по странам Европы и Азии, а также перевозкой опасных грузов и грузов с температурным режимом.<1/>Несмотря на то, что мы являемся молодой и развивающейся компанией, мы с уверенностью можем зарекомендовать себя, как ответственного, добросовестного, надёжного и профессионального - Вашего партнёра в сфере логистики!",
@@ -178,9 +183,9 @@ const resources = {
         "Агентство транспорта и коммуникаций при Кабинете Министров Туркменистана.",
       permit3:
         "Агентство транспорта и коммуникаций при Кабинете Министров Туркменистана.",
-      medicaments: "Перевозка медикоментов <1/> (Европа Туркменистан)",
-      mebels: "Перевозка мебели <1/>(Европа Туркменистан)",
-      warn: "Огнеупорные кирпичи <1/>(Германия-Туркменистан)",
+      medicaments: "Перевозка медикоментов <1/> (Европа - Туркменистан)",
+      mebels: "Перевозка мебели <1/>(Европа - Туркменистан)",
+      warn: "Огнеупорные кирпичи <1/>(Германия - Туркменистан)",
       railw: "Железнодорожные перевозки",
       automobile: "Автоперевозки",
       ourCompany: "Наша компания",
