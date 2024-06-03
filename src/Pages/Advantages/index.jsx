@@ -16,8 +16,9 @@ const Advantages = () => {
         width: "100%",
         height: "auto",
         color: "#fff",
+        scrollMarginTop: "50px",
       }}
-      id="Advantages"
+      id="services"
     >
       <Container
         sx={{
@@ -25,6 +26,7 @@ const Advantages = () => {
           flexDirection: "column",
           alignItems: "center",
           mt: "30px",
+          mb: "50px",
           fontFamily: "Poppins",
           gap: "30px",
 
@@ -42,7 +44,7 @@ const Advantages = () => {
             fontFamily="Montserrat"
             data-aos-delay="200"
           >
-            {t("advantages")}
+            {t("services")}
           </Typography>
         </Stack>
         <Stack
@@ -53,167 +55,157 @@ const Advantages = () => {
           alignItems="center"
         >
           <Stack
-            sx={{
-              width: "80%",
-              height: "80%",
-              zIndex: "100",
-            }}
-          >
-            <img
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              src="/images/Map.png"
-              alt=""
-            />
-          </Stack>
-          <Stack
-            width={{ lg: "60%", md: "70%", sm: "75%", xs: "100%" }}
-            spacing={1}
             mt={{ xs: 2 }}
             p={{ lg: 0, md: 0, xs: 1 }}
+            width="100%"
+            direction="row"
+            flexWrap="wrap"
+            justifyContent="space-between"
+            sx={{ gap: "30px" }}
           >
             <Stack
-              fontSize={15}
               direction="row"
               data-aos="fade-up"
               data-aos-once="true"
-              fontWeight={500}
               data-aos-delay="300"
-              alignItems="center"
-              color="#d6d6d6"
+              textAlign="justify"
+              color="#8F6340"
+              width={{ lg: "45%", md: "45%", sm: "45%", xs: "100%" }}
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
-                color="#dbb45a"
+                color="#758F93"
                 fontFamily="Poppins"
                 mr={2.9}
                 pl={0.5}
               >
                 1
               </Typography>
-              {t("advText1")}
+              <Typography fontFamily="Montserrat" fontSize={15}>
+                <span style={{ fontWeight: 600 }}>{t("servicesText1")}</span>{" "}
+                {t("servicesText2")}
+              </Typography>
             </Stack>
             <Stack
               data-aos="fade-up"
               data-aos-delay="400"
               fontSize={15}
               data-aos-once="true"
+              textAlign="justify"
               direction="row"
               fontWeight={500}
-              color="#d6d6d6"
-              alignItems="center"
+              color="#8F6340"
+              width={{ lg: "45%", md: "45%", sm: "45%", xs: "100%" }}
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
                 fontFamily="Poppins"
-                color="#dbb45a"
+                color="#758F93"
                 mr={2}
               >
                 2
               </Typography>
-              {t("advText2")}
+              <Typography fontFamily="Montserrat" fontSize={15}>
+                <span style={{ fontWeight: 600 }}>{t("servicesText3")}</span>{" "}
+                {t("servicesText4")}
+              </Typography>
             </Stack>
             <Stack
               data-aos-once="true"
+              textAlign="justify"
               data-aos="fade-up"
               data-aos-delay="500"
               fontSize={15}
-              color="#d6d6d6"
+              width={{ lg: "45%", md: "45%", sm: "45%", xs: "100%" }}
+              color="#8F6340"
               direction="row"
-              alignItems="center"
               fontWeight={500}
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
                 fontFamily="Poppins"
-                color="#dbb45a"
+                color="#758F93"
                 mr={2}
               >
                 3
               </Typography>
-              {t("advText3")}
+              <Typography fontFamily="Montserrat" fontSize={15}>
+                <span style={{ fontWeight: 600 }}>{t("servicesText5")}</span>{" "}
+                {t("servicesText6")}
+              </Typography>
             </Stack>
             <Stack
               data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="600"
-              color="#d6d6d6"
+              width={{ lg: "45%", md: "45%", sm: "45%", xs: "100%" }}
+              color="#8F6340"
               fontSize={15}
+              textAlign="justify"
               direction="row"
               fontWeight={500}
-              alignItems="center"
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
                 fontFamily="Poppins"
-                color="#dbb45a"
+                color="#758F93"
                 mr={2}
               >
                 4
               </Typography>
-              {t("advText4")}
+              <Typography fontFamily="Montserrat" fontSize={15}>
+                <span style={{ fontWeight: 600 }}>{t("servicesText7")}</span>{" "}
+                {t("servicesText8")}
+              </Typography>
             </Stack>
             <Stack
               data-aos-once="true"
               data-aos="fade-up"
               data-aos-delay="700"
               fontSize={15}
-              color="#d6d6d6"
+              width={{ lg: "45%", md: "45%", sm: "45%", xs: "100%" }}
+              textAlign="justify"
+              color="#8F6340"
               direction="row"
               fontWeight={500}
-              alignItems="center"
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
                 fontFamily="Poppins"
-                color="#dbb45a"
+                color="#758F93"
                 mr={2}
               >
                 5
               </Typography>
-              {t("advText5")}
+              <Typography fontFamily="Montserrat" fontSize={15}>
+                <span style={{ fontWeight: 600 }}>{t("servicesText9")}</span>{" "}
+                {t("servicesText10")}
+              </Typography>
             </Stack>
             <Stack
               data-aos-once="true"
               data-aos="fade-up"
+              textAlign="justify"
               data-aos-delay="800"
-              color="#d6d6d6"
+              width={{ lg: "45%", md: "45%", sm: "45%", xs: "100%" }}
+              color="#8F6340"
               fontSize={15}
               fontWeight={500}
               direction="row"
-              alignItems="center"
             >
               <Typography
                 fontSize={{ lg: 43, md: 37, xs: 30 }}
-                color="#dbb45a"
+                color="#758F93"
                 fontFamily="Poppins"
                 mr={2}
               >
                 6
               </Typography>
-              {t("advText6")}
-            </Stack>
-            <Stack
-              fontSize={15}
-              color="#d6d6d6"
-              fontWeight={500}
-              direction="row"
-              data-aos-once="true"
-              data-aos="fade-up"
-              data-aos-delay="900"
-              alignItems="center"
-            >
-              <Typography
-                fontSize={{ lg: 43, md: 37, xs: 30 }}
-                fontFamily="Poppins"
-                color="#dbb45a"
-                mr={2}
-              >
-                7
+
+              <Typography fontFamily="Montserrat" fontSize={15}>
+                <span style={{ fontWeight: 600 }}>{t("servicesText11")}</span>{" "}
+                {t("servicesText12")}
               </Typography>
-              {t("advText7")}
             </Stack>
           </Stack>
         </Stack>

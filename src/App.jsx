@@ -11,13 +11,12 @@ import {
 } from "@mui/material";
 import About from "./Pages/About";
 import Advantages from "./Pages/Advantages";
-import Missions from "./Pages/Missions";
-import Services from "./Pages/Services";
-import Licence from "./Pages/Licences";
-import OurWorks from "./Pages/OurWorks";
 import Footer from "./Pages/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import Preloader from "./Components/Preloader/Preloader";
 import { Suspense, useEffect, useState } from "react";
+import { RingLoader, ScaleLoader } from "react-spinners";
+
 function App() {
   const [loader, setLoader] = useState(false);
   AOS.init({
@@ -28,12 +27,16 @@ function App() {
     setLoader(true);
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 3000);
   }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const override = {
+    display: "block",
+    margin: "0 auto",
+  };
   return (
     <>
       {loader ? (
@@ -41,38 +44,30 @@ function App() {
           height="100vh"
           justifyContent="center"
           alignItems="center"
-          backgroundColor="#1E1E1E"
-          color="#fff"
+          backgroundColor="#fff"
+          color="#blue"
         >
-          <CircularProgress size={80} />
-          <Typography fontFamily="Montserrat" mt={2}>
+          <ScaleLoader
+            color="blue"
+            loading={loader}
+            cssOverride={override}
+            size={150}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+
+          <Typography fontFamily="sans-serif" fontFamily="Montserrat" mt={2}>
             Loading...
           </Typography>
         </Stack>
       ) : (
         <Suspense fallback={<CircularProgress />}>
-          <Box
-            sx={{
-              background: "#1E1E1E",
-            }}
-          >
-            <Box
-              sx={{
-                backgroundImage: "url('/images/AllHeight.png')",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "contain",
-              }}
-            >
-              <Navbar />
-              <Home />
-              <About />
-              <Advantages />
-              <Missions />
-              <Services />
-              <Licence />
-              <OurWorks />
-              <Footer />
-            </Box>
+          <Box sx={{ background: "#F0FFFF" }}>
+            <Navbar />
+            <Home />
+            <About />
+            <Advantages />
+            <Footer />
           </Box>
         </Suspense>
       )}

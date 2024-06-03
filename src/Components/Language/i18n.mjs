@@ -5,187 +5,182 @@ const resources = {
   en: {
     translation: {
       aboutCompany: "About us",
-      pages: "Pages",
-      advantages: "Advantages",
-      goals: "Missions and goals",
       services: "Our services",
-      licences: "Licences",
-      ourWorks: "Photo gallery",
       contacts: "Contacts",
       read: "Read More",
-      nameCompany: " “Altyn Miras” ",
+      nameCompany: " “Jebel Al Uhood” ",
       company: "Our company",
-      description:
-        "was founded in 2021. In this short time-period, our company has accumulated extensive experience and has created a wide network of partners around the world to carry out import, export and transit shipments. ",
+      desc: "Dreaming of a home makeover? We`re here to make it a reality! We offer a comprehensive range of services to transform your space, from the ground up (or walls in!). Our team of skilled professionals is dedicated to providing exceptional service and craftsmanship, ensuring a smooth and stress-free experience for you.",
       hideDesc:
-        "We are professionals in the field of transportation organization and at present we provide a full spectrum of cargo delivery services related to container, sea, railway, road and air transportation across Europe and Asia, as well as the transportation of dangerous goods and temperature-controlled goods.<1/> Despite the fact that we are a young and developing company, we can confidently establish ourselves as a responsible, honest, reliable and Your professional partner in the field of logistics. ",
-      aboutCompanyText:
-        "We are experts in the field of transportation organization and today we provide a full range of cargo delivery services from anywhere in the world. We offer “door to door” delivery services, as well as other operations included within this service.<1/> All stages of the supply chain are carefully controlled by our specialists. Experienced specialists of ",
-      aboutCompanyText2:
-        " company are always ready to calculate various transportation options, provide information about the cargo location, planned delivery date, and provide assistance in registration of all necessary permits.",
-      advantages: "Advantages",
-      advText1:
-        "Our specialists have more than 10 years of experience in international cargo transportation.",
-      advText2:
-        "Extensive geography. We deliver goods throughout Europe and Asia.",
-      advText3:
-        "Individual approach. We will select the best delivery method based on the characteristics of your cargo.",
-      advText4:
-        "Our team knows how to find new solutions to logistics processes, which is especially important in the modern realities.",
-      advText5:
-        "We optimize the routes to speed up transportation as much as possible and reduce delivery costs. We always strive to preserve our clients’ financial resources.",
-      advText6:
-        "Qualitative service. We pay special attention to careful loading, unloading and securing the cargo. We guarantee the top safety and absence of damage.",
-      advText7:
-        "Well qualified assistance in the preparation of customs documents.",
-      missionsGoals: "Mission and goals",
-      missionsCompany: "Mission",
-      missionText: "Organization of highly efficient business processes :",
-      missionText2:
-        "- Correct organization of the sequency of logistics operations, which makes it possible to achieve the transportations estimate and its settings specified for the planned period.",
-      goals: "Goals",
-      goalsText1:
-        "- Srengthening the export potential and logistics communications of Turkmenistan in the world stage.",
-      goalsText2:
-        "- Export of domestic goods to world markets thanks to the efficient logistics.",
-      export: "Export",
-      tranzit: "Transit",
-      soprowozden: "Logistics support",
-      import: "Import",
-      multiModal: "MULTIMODAL TRANSPORTATION",
-      multiModalText:
-        "Multimodal transportation is the calculation of shipment by combining several modes of transport. It helps to significantly reduce the overall costs of transportation.<1/> As part of multimodal transportation, we use railways, roads and sea shipping. <1/>We cooperate with warehouse terminals from all around the world for rail/sea/road logistics from Turkmenistan, which helps in the efficient calculation of the best transportation options.",
-      railway: "RAILWAY TRANSPORTATION",
-      railwayText:
-        "Railway shipping is one of the most economical ways to transport goods. This especially applies to sending of a heavy cargo over long distances.<1/>Our team carries out international freight transportation by rail in the CIS countries, Europe, and China.<1/>Wagon shipment and transportation as part of a direct container train is possible.<1/>We offer the following services:<1/>– sum of the most profitable railway routes;<1/>– provision of wagons;<1/>– calculation of freight tariffs;<1/>– assistance in obtaining documents during the registration of wagons.",
-      autoDeliver: "AUTO FREIGHT",
-      autoDeliverText:
-        "Freight transportation via highways is the most common type of logistics  services being practiced.<1/>Due to the wide coverage and a short delivery times, makes this type of cargo transportation very attractive.",
-      autoDeliverText2:
-        " company provides services:<1/>– during the transportation goods of general type and ones with the hazardous classes;<1/> – various consolidated shipments;<1/> – when transporting goods at temperature modes;<1/>– transfer arrangements for foreign freight trucks.",
-      seaDelivery: "SEA SHIPPING",
-      seaDeliveryText:
-        "The most cost-effective, but at the same time the longest type of transportation in terms of transit time.<1/>With regular transportation and good planning, it helps to save resources and smoothly supply the logistics chain of your enterprise. <1/>Our team of specialists will help you:<1/>– choose the most profitable sea freight;<1/>– make calculations of all port and transit costs;<1/> – safely reload your cargo at sea ports.<1/>Our partners include such major shipping lines as Hapag-lloyd, Maersk, and Evergreen, which have established themselves as leaders in this market.",
-      planeDelivery: "AIR TRANSPORTATION",
-      planeDeliveryText:
-        "The fastest and at the same time the most expensive method of freight.",
-      planeDeliveryText2:
-        " specialists have experience both in transporting general loads and cargo with temperature conditions and hazardous classes.<1/> Our specialists will assist you with:<1/>– booking a cargo space on an airplane;<1/>– delivery from the terminal to the airport;<1/>– registration of an air waybill;<1/>– pre-flight inspection;<1/>– payment of terminal fees;<1/>– storage, loading and unloading at airports. ",
-      licence: "Licenses",
-      licenceDesc: "Description",
-      licenceDesc2: "Auto forwarding",
-      licenceDesc3: "Sea forwarding",
-      licenceDesc4: "Air forwarding",
-      series: "Series",
-      period: "Period",
-      permit: "Permit Authority",
-      permit2:
-        "Agency for Transport and Communication under the Cabinet of Ministers of Turkmenistan.",
-      permit3:
-        "Agency for Transport and Communication under the Cabinet of Ministers of Turkmenistan.",
-
-      medicaments: "Pharmaceutical transportation (Europe - Turkmenistan)",
-      mebels: "Transportation of furniture (Europe-Turkmenistan)",
-      warn: "Fire-resistant bricks (Germany-Turkmenistan)",
-      railw: "Railway lines ",
-      automobile: "Auto transportation",
-      ourCompany: "",
-      ourCompnanyText:
-        "- offers optimal solutions in the field of logistics services. <1/>We have successfully accumulated experience in many industrial and large - scale projects in the country. <1/>We will be happy to meet for detailed talks and discuss options for cooperation.",
+        "Why Choose Us?<1/>One-Stop Shop: We handle all your renovation needs, saving you time and hassle.<1/>Experienced Professionals: Our team is highly skilled and dedicated to quality workmanship.<1/>Seamless Experience: We ensure clear communication and a smooth project flow.<1/>Competitive Rates: We offer fair pricing that reflects our expertise.",
+      aboutText:
+        "We handle every aspect of your home improvement project, from the ground up (or the walls!). Whether you need new plumbing, stunning tile, or a complete overhaul of your electrical and climate control systems, our team of experienced professionals is always ready to provide exceptional service and workmanship",
+      servicesText1: "Plumbing & Sanitary Installation:",
+      servicesText2:
+        "Our skilled plumbers handle everything from installing new fixtures to tackling leaks and repairs, ensuring your plumbing system functions flawlessly.",
+      servicesText3: "Floor & Wall Tiling Works: ",
+      servicesText4:
+        "Elevate your space with our expert floor and wall tiling services. We offer a wide variety of tiles to create a beautiful and durable foundation for any room.",
+      servicesText5:
+        "Electromechanical Equipment Installation and Maintenance:",
+      servicesText6:
+        "Keep your home`s systems running smoothly with our qualified technicians. We handle everything from generators and pumps to complex electromechanical equipment.",
+      servicesText7: "Wallpaper Fixing Works: ",
+      servicesText8:
+        "Add a touch of personality and style to your walls with our professional wallpaper fixing services. We offer a vast selection of wallpapers to match your unique aesthetic.",
+      servicesText9:
+        "Air-Conditioning, Ventilations & Air Filtration Systems Installation & Maintenance:",
+      servicesText10:
+        " Enjoy year-round comfort and clean air with our comprehensive AC, ventilation, and air filtration system services.",
+      servicesText11:
+        "Electrical Fittings & Fixtures Repairing & Maintenance: ",
+      servicesText12:
+        "Our electricians ensure the safety and functionality of your electrical system by handling repairs and maintenance for all your electrical fittings and fixtures.",
       location:
-        "main office Nurmukhamet Andalib ave., №: 70/2, Pc: 747017 Ashgabat, Turkmenistan",
+        "King Maryam Mohammed Ahmed Al Otaiba. Deira.<1/>Al Baraha. 024.F Office No.1",
     },
   },
   ru: {
     translation: {
       aboutCompany: "О компании",
-      pages: "Страницы",
-      advantages: "Преимущества",
-      goals: "Миссия и цели",
       services: "Услуги компании",
-      licences: "Лицензии",
-      ourWorks: "Наши работы",
       contacts: "Контакты",
-      nameCompany: " “Алтын Мирас” ",
       read: "Читать",
       company: "Компания",
-      description:
-        " была основана в 2021 году. За этот короткий период наша компания накопила большой опыт и создала широкую сеть партнеров по всему миру для осуществления импортных, экспортных и транзитных перевозок.",
+      desc: "Мечтаете о преображении дома? Мы здесь, чтобы воплотить это в жизнь! Мы предлагаем широкий спектр услуг по преобразованию вашего пространства с нуля (или стен!). Наша команда опытных профессионалов стремится предоставить исключительный сервис и мастерство, гарантируя вам приятный отдых без стресса.",
+
       hideDesc:
-        "Мы являемся профессионалами в области организации перевозки и на сегодняшний день оказываем полный спектр услуг, связанных с контейнерными, морскими, железнодорожными, автомобильными и авиаперевозками  по странам Европы и Азии, а также перевозкой опасных грузов и грузов с температурным режимом.<1/>Несмотря на то, что мы являемся молодой и развивающейся компанией, мы с уверенностью можем зарекомендовать себя, как ответственного, добросовестного, надёжного и профессионального - Вашего партнёра в сфере логистики!",
-      aboutCompanyText:
-        "Мы предлагаем услуги по доставке  “от двери до двери” а также отдельные операции, входящие в данный сервис. Все этапы логистической цепи  тщательно контролируются нашими специалистами. <1/> Опытные    специалисты   компании  ",
-      aboutCompanyText2:
-        "  всегда   готовы рассчитать различные варианты перевозок, предоставлять информацию о  местонахождении  груза,  о  планируемой  дате  доставки,  помощь  в оформлении всех необходимых разрешительных документов.",
-      advantages: "Преимущества",
-      advText1:
-        "У наших специалистов более 10 лет опыта в международных грузоперевозках.",
-      advText2:
-        "Обширная география. Достaвляем грузы по странам Европы и Азии.",
-      advText3:
-        "Индивидуальный подход. Подберем наилучший способ доставки , исходя из особенностей вашего груза. ",
-      advText4:
-        "Умеем находить новые решения логистических процессов, что особенно актуально в современных реалиях.",
-      advText5:
-        "Оптимизируем маршрут, чтобы максимально ускорить перевозку и снизить стоимость доставки. Мы всегда стремимся сохранить ресурсы наших клиентов.",
-      advText6:
-        "Качественный сервис. Уделяем особое внимание аккуратной загрузке, выгрузке и креплению грузов. Гарантируем сохранность и отсутствие повреждений.",
-      advText7: "Квалифицированная помощь в оформлении таможенных документов.",
-      missionsGoals: "Миссии и цели",
-      missionsCompany: "Миссия компании",
-      missionText: "Организация высокоэффективных бизнес процессов :",
-      missionText2:
-        "- правильная организация последовательности выполнения логистических операций, что позволяет достичь заданных на плановый период логистической сметы и ее настройки.",
-      goals: "Цели компании",
-      goalsText1:
-        "- Усиление экспортного потенциала, логистических коммуникаций Туркменистана на международной арене.",
-      goalsText2:
-        "- Вывоз товаров отечественной продукции на мировые рынки благодаря эффективной логистике.",
-      export: "Экспорт",
-      tranzit: "Транзит",
-      soprowozden: "Сопровождение",
-      import: "Импорт",
-      multiModal: "МУЛЬТИМОДАЛЬНЫЕ ПЕРЕВОЗКИ",
-      multiModalText:
-        " Мультимодальные перевозки – расчет перевозок комбинированием нескольких видов транспорта помогает существенно снизить стоимость перевозок.<1/> В рамках мультимодальных перевозок мы используем железнодорожный, автомобильный и морской транспорт. <1/> Мы сотрудничаем со складскими терминалами по всему миру для железнодорожныx / морских / авто транспортировок Туркменистана, что помогает в эффективном расчете перевозок.",
-      railway: "ЖЕЛЕЗНОДОРОЖНЫЕ ПЕРЕВОЗКИ",
-      railwayText:
-        "Железнодорожные перевозки – один из наиболее экономных способов транспортировки грузов. Особенно это относится к отправке тяжелых грузов на дальние расстояния. <1 /> Наша команда осуществляет международные грузовые перевозки железнодорожным транспортом по странам СНГ, Европы,Китая.<1 /> Возможна повагонная отправка и перевозка в составе прямого контейнерного поезда.<1 />Предлагаем следующие услуги :<1 /> - расчет наиболее выгодных ж/д маршрутов; <1 />- предоставление вагонов;<1 /> - расчет провозных тарифов;<1 /> - помощь в получении документов при оформлении вагонов.",
-      autoDeliver: "АВТОПЕРЕВОЗКИ",
-      autoDeliverText:
-        " Грузовые перевозки через автодороги являются наиболее распространённым видом перевозок. <1 /> Благодаря широкой географии и короткому транзитному времени делают этот вид грузоперевозок очень привлекательным.",
-      autoDeliverText2:
-        "оказывает услуги :<1 /> – при перевозке грузов общего типа и с классом опасности;<1 /> – консолидированные отправки;<1 /> – при перевозке грузов с температурными режимами;<1 />– организация перецепок для иностранных авто.",
-      seaDelivery: "МОРСКИЕ ПЕРЕВОЗКИ",
-      seaDeliveryText:
-        " Самый оптимальный по затратам, но в тоже время самый долгий по транзитному времени вид перевозок.<1 /> При регулярных перевозках и при хорошем планировании помогает сэкономить ресурсы и бесперебойно снабжать логистическую цепь вашего предприятия.<1 />Наша команда специалистов поможет вам :<1 /> – выбрать наиболее выгодный морской фрахт;<1 /> – сделать расчет всех портовых и транзитных расходов;<1 />– безопасно перегрузить ваш груз в морских портах. <1 /> В числе наших партнеров такие крупнейшие морские линии как Hapag-lloyd, Maersk и Evergreen, зарекомендовавшие себя лидерами данного рынка.",
-      planeDelivery: "АВИАПЕРЕВОЗКИ",
-      planeDeliveryText:
-        "Самый быстрый и в тоже время самый высокозатратный способ перевозок. <1 /> Специалисты",
-      planeDeliveryText2:
-        "имеют опыт как при перевозках грузов общего типа, так и с грузами с температурными режимами и классом опасности.<1 /> Наши специалисты окажут вам следующие услуги: <1 /> – бронирование места в самолете; <1 />– доставка от терминала в аэропорт; <1 />– оформление авианакладной; <1 />– предполетный досмотр;<1 /> – оплата терминальных сборов; <1 /> – хранение, погрузочные и разгрузочные работы в аэропортах.",
-      licence: "Лицензии на транспортные услуги",
-      licenceDesc: "Наименование",
-      licenceDesc2: "Авто экспедирование",
-      licenceDesc3: "Морское экспедирование",
-      licenceDesc4: "Авиа экспедирование",
-      series: "Серия",
-      period: "Период",
-      permit: "Выдавший орган",
-      permit2:
-        "Агентство транспорта и коммуникаций при Кабинете Министров Туркменистана.",
-      permit3:
-        "Агентство транспорта и коммуникаций при Кабинете Министров Туркменистана.",
-      medicaments: "Перевозка медикоментов <1/> (Европа - Туркменистан)",
-      mebels: "Перевозка мебели <1/>(Европа - Туркменистан)",
-      warn: "Огнеупорные кирпичи <1/>(Германия - Туркменистан)",
-      railw: "Железнодорожные перевозки",
-      automobile: "Автоперевозки",
-      ourCompany: "Наша компания",
-      ourCompnanyText:
-        " предлагает оптимальные решения в области логистики. <1 /> Мы накопили опыт во многих промышленных и масштабных проектах страны с достойным успехом.<1 /> Мы будем рады встретиться для проведения детальных переговоров и обсудить варианты сотрудничества вместе с Вами.",
+        "Почему выбрали нас?<1/>Единый центр обслуживания: мы решаем все ваши задачи по ремонту, экономя ваше время и нервы.<1/>Опытные специалисты: Наша команда имеет высокую квалификацию и стремится к качеству изготовления.<1/>Бесперебойный опыт: мы обеспечиваем четкую коммуникацию и бесперебойную работу проекта.<1/>Конкурентоспособные цены: мы предлагаем справедливые цены, соответствующие нашему опыту.",
+      aboutText:
+        "Мы занимаемся каждым аспектом вашего проекта по благоустройству дома, с нуля (или стен!). Если вам нужна новая сантехника, потрясающая плитка или полный ремонт ваших электрических систем и систем климат-контроля, наша команда опытных профессионалов всегда готова предоставить исключительный сервис и мастерство.",
+      servicesText1: "Сантехнические и сантехнические работы:",
+      servicesText2:
+        "Наши опытные сантехники справятся со всем: от установки новой сантехники до устранения протечек и ремонта, гарантируя безупречную работу вашей сантехнической системы.",
+      servicesText3: "Работы по укладке напольной и настенной плитки:",
+      servicesText4:
+        "Увеличьте свое пространство с помощью наших профессиональных услуг по укладке напольной и настенной плитки. Мы предлагаем широкий выбор плитки для создания красивой и прочной основы для любого помещения.",
+      servicesText5: "Монтаж и обслуживание электромеханического оборудования:",
+      servicesText6:
+        "Обеспечьте бесперебойную работу систем вашего дома с помощью наших квалифицированных специалистов. Мы занимаемся всем: от генераторов и насосов до сложного электромеханического оборудования.",
+      servicesText7: "Работы по ремонту обоев:",
+      servicesText8:
+        "Добавьте индивидуальности и стиля своим стенам с помощью наших профессиональных услуг по наклейке обоев. Мы предлагаем широкий выбор обоев, которые подчеркнут вашу уникальную эстетику.",
+      servicesText9:
+        "Монтаж и обслуживание систем кондиционирования, вентиляции и фильтрации воздуха:",
+      servicesText10:
+        "Наслаждайтесь комфортом и чистым воздухом круглый год благодаря нашим комплексным услугам по системам кондиционирования, вентиляции и фильтрации воздуха.",
+      servicesText11: "Ремонт и обслуживание электрооборудования:",
+      servicesText12:
+        "Наши электрики обеспечивают безопасность и функциональность вашей электрической системы, выполняя ремонт и техническое обслуживание всей вашей электрической арматуры и приспособлений.",
       location:
-        "Центральный офис пр. Нурмухаммета Андалиба №: 70/2, Па: 747017 .",
+        "Королева Марьям Мохаммед Ахмед Аль Отайба. Дейра.<1/>Аль Бараха. 024.Ф Офис №1",
+    },
+  },
+  de: {
+    translation: {
+      aboutCompany: "Über uns",
+      services: "Unsere Dienstleistungen",
+      contacts: "Kontakte",
+      read: "Mehr lesen",
+      nameCompany: " “Jebel Al Uhood” ",
+      company: "Unser Unternehmen",
+      desc: "Träumen Sie von einer Renovierung Ihres Hauses? Wir sind hier, um es Wirklichkeit werden zu lassen! Wir bieten eine umfassende Palette an Dienstleistungen, um Ihren Raum vom Grund auf (oder von den Wänden hinein!) zu verwandeln. Unser Team aus qualifizierten Fachleuten ist bestrebt, außergewöhnlichen Service und handwerkliches Können zu bieten und Ihnen ein reibungsloses und stressfreies Erlebnis zu gewährleisten.",
+      hideDesc:
+        "Warum uns wählen?<1/>One-Stop-Shop: Wir kümmern uns um alle Ihre Renovierungsbedürfnisse und sparen Ihnen Zeit und Ärger.<1/>Erfahrene Fachleute: Unser Team ist hochqualifiziert und engagiert sich für hochwertige Verarbeitung.<1/>Nahtlose Erfahrung: Wir sorgen für klare Kommunikation und einen reibungslosen Projektablauf.<1/>Wettbewerbsfähige Preise: Wir bieten faire Preise, die unser Fachwissen widerspiegeln.",
+      aboutText:
+        "Wir kümmern uns um jeden Aspekt Ihres Heimwerkerprojekts, vom Grund auf (oder den Wänden!). Ganz gleich, ob Sie neue Sanitäranlagen, atemberaubende Fliesen oder eine komplette Überholung Ihrer Elektro- und Klimatisierungssysteme benötigen, unser Team aus erfahrenen Fachleuten ist immer bereit, außergewöhnlichen Service und handwerkliche Qualität zu bieten",
+      servicesText1: "Sanitär- und Sanitärinstallation:",
+      servicesText2:
+        "Unsere erfahrenen Klempner kümmern sich um alles, von der Installation neuer Armaturen bis hin zur Behebung von Lecks und Reparaturen, und sorgen dafür, dass Ihr Sanitärsystem einwandfrei funktioniert.",
+      servicesText3: "Boden- und Wandfliesenarbeiten:",
+      servicesText4:
+        "Werten Sie Ihren Raum mit unseren fachmännischen Boden- und Wandfliesenarbeiten auf. Wir bieten eine große Auswahl an Fliesen, um für jeden Raum eine schöne und dauerhafte Grundlage zu schaffen.",
+      servicesText5: "Installation und Wartung elektromechanischer Geräte:",
+      servicesText6:
+        "Sorgen Sie mit unseren qualifizierten Technikern dafür, dass die Systeme Ihres Zuhauses reibungslos funktionieren. Wir kümmern uns um alles, von Generatoren und Pumpen bis hin zu komplexen elektromechanischen Geräten.",
+      servicesText7: "Tapetenreparaturarbeiten:",
+      servicesText8:
+        "Verleihen Sie Ihren Wänden mit unserem professionellen Tapetenklebeservice einen Hauch von Persönlichkeit und Stil. Wir bieten eine große Auswahl an Tapeten, die zu Ihrer einzigartigen Ästhetik passen.",
+      servicesText9:
+        "Installation und Wartung von Klimaanlagen, Lüftungs- und Luftfiltersystemen:",
+      servicesText10:
+        "Genießen Sie das ganze Jahr über Komfort und saubere Luft mit unseren umfassenden Dienstleistungen für Klimaanlagen, Belüftung und Luftfiltersysteme.",
+      servicesText11:
+        "Reparatur und Wartung von elektrischen Armaturen und Vorrichtungen:",
+      servicesText12:
+        "Unsere Elektriker sorgen für die Sicherheit und Funktionalität Ihrer elektrischen Anlage, indem sie Reparaturen und Wartung aller Ihrer elektrischen Anlagen und Vorrichtungen durchführen.",
+      location:
+        "König Maryam Mohammed Ahmed Al Otaiba. Deira.<1/>Al Baraha. 024.F Büro Nr.1",
+    },
+  },
+  chinese: {
+    translation: {
+      aboutCompany: "关于我们",
+      services: "我们的服务",
+      contacts: "联系方式",
+      read: "阅读更多",
+      nameCompany: " “Jebel Al Uhood” ",
+      company: "我们公司",
+      desc: "梦想改造家居？我们来这里是为了让它成为现实！我们提供全面的服务，从头开始（或墙壁！）改造您的空间。我们技术精湛的专业团队致力于提供卓越的服务和工艺，确保为您提供顺畅、无压力的体验。",
+      hideDesc:
+        "为什么选择我们？<1/>一站式服务：我们满足您所有的装修需求，为您节省时间和麻烦。<1/>经验丰富的专业人士：我们的团队技术精湛，致力于高品质工艺。<1/>无缝体验：我们确保清晰的沟通和顺畅的项目流程。<1/>有竞争力的价格：我们提供反映我们专业知识的公平价格。",
+      servicesText1: "管道和卫生安装：",
+      servicesText2:
+        "我们熟练的管道工负责处理从安装新固定装置到解决泄漏和维修的所有事宜，确保您的管道系统完美运行。",
+      servicesText3: "地板和墙壁瓷砖工程：",
+      servicesText4:
+        "通过我们专业的地板和墙面瓷砖服务提升您的空间。我们提供各种瓷砖，为任何房间打造美观耐用的地基。",
+      servicesText5: "机电设备安装与维护：",
+      servicesText6:
+        "我们合格的技术人员让您的家庭系统保持平稳运行。我们处理从发电机和泵到复杂机电设备的一切。",
+      servicesText7: "壁纸修复工程：",
+      servicesText8:
+        "通过我们专业的壁纸固定服务，为您的墙壁增添一抹个性和风格。我们提供多种壁纸供您选择，以满足您独特的审美。",
+      servicesText9: "空调、通风和空气过滤系统安装和维护：",
+      servicesText10:
+        "通过我们全面的空调、通风和空气过滤系统服务，享受全年舒适和清洁的空气。",
+      servicesText11: "电气配件和固定装置维修和保养：",
+      servicesText12:
+        "我们的电工通过对您所有的电气配件和固定装置进行维修和维护，确保您的电气系统的安全和功能。",
+      aboutText:
+        "我们从头开始（或墙壁！）处理您家居装修项目的各个方面。无论您需要新的管道、漂亮的瓷砖，还是对电气和气候控制系统进行彻底检修，我们经验丰富的专业团队随时准备提供卓越的服务和工艺",
+      location:
+        "玛丽亚姆·穆罕默德·艾哈迈德·奥泰巴国王。德伊拉。<1/>阿尔·巴拉哈。 024.F 1号办公室",
+    },
+  },
+  arabic: {
+    translation: {
+      aboutCompany: "معلومات عنا",
+      services: "خدماتنا",
+      contacts: "جهات الاتصال",
+      read: "اقرأ أكثر",
+      nameCompany: " “Jebel Al Uhood” ",
+      company: "شركتنا",
+      desc: "هل تحلم بتجديد المنزل؟ نحن هنا لنجعل الأمر حقيقة! نحن نقدم مجموعة شاملة من الخدمات لتحويل المساحة الخاصة بك، من الألف إلى الياء (أو الجدران!). فريقنا من المهنيين المهرة مكرس لتقديم خدمة استثنائية وحرفية، مما يضمن لك تجربة سلسة وخالية من التوتر.",
+      hideDesc:
+        "لماذا أخترتنا؟<1/> متجر شامل: نحن نتعامل مع جميع احتياجات التجديد الخاصة بك، مما يوفر لك الوقت والمتاعب.<1/>        المهنيين ذوي الخبرة: يتمتع فريقنا بمهارات عالية ومكرس لجودة العمل.<1/> تجربة سلسة: نحن نضمن التواصل الواضح والتدفق السلس للمشروع.<1/> أسعار تنافسية: نحن نقدم أسعارًا عادلة تعكس خبرتنا.",
+      servicesText1: "السباكة والتمديدات الصحية:",
+      servicesText2:
+        "يتعامل السباكون المهرة لدينا مع كل شيء بدءًا من تركيب التركيبات الجديدة وحتى معالجة التسريبات والإصلاحات، مما يضمن أن نظام السباكة الخاص بك يعمل بشكل لا تشوبه شائبة.",
+      servicesText3: "أعمال تبليط الأرضيات والجدران:",
+      servicesText4:
+        "ارفع مساحتك من خلال خدماتنا المتخصصة في بلاط الأرضيات والجدران. نحن نقدم مجموعة واسعة من البلاط لإنشاء أساس جميل ودائم لأي غرفة.",
+      servicesText5: "تركيب وصيانة المعدات الكهروميكانيكية:",
+      servicesText6:
+        "حافظ على تشغيل أنظمة منزلك بسلاسة مع الفنيين المؤهلين لدينا. نحن نتعامل مع كل شيء بدءًا من المولدات والمضخات وحتى المعدات الكهروميكانيكية المعقدة.",
+      servicesText7: "أعمال تثبيت ورق الحائط:",
+      servicesText8:
+        "أضف لمسة من الشخصية والأناقة إلى جدرانك من خلال خدمات تثبيت ورق الحائط الاحترافية لدينا. نحن نقدم مجموعة واسعة من الخلفيات لتتناسب مع جماليتك الفريدة.",
+      servicesText9: "تركيب وصيانة أنظمة تكييف الهواء والتهوية وتنقية الهواء:",
+      servicesText10:
+        "استمتع بالراحة والهواء النظيف على مدار العام مع خدماتنا الشاملة لنظام التكييف والتهوية وتنقية الهواء.",
+      servicesText11: "إصلاح وصيانة التركيبات الكهربائية:",
+      servicesText12:
+        "يضمن كهربائيونا سلامة وأداء النظام الكهربائي الخاص بك عن طريق التعامل مع الإصلاحات والصيانة لجميع التركيبات والتجهيزات الكهربائية الخاصة بك.",
+      aboutText:
+        "نحن نتعامل مع كل جانب من جوانب مشروع تحسين منزلك، من الألف إلى الياء (أو الجدران!). سواء كنت بحاجة إلى سباكة جديدة، أو بلاط مذهل، أو إصلاح شامل لأنظمة التحكم الكهربائية والمناخية لديك، فإن فريقنا من المحترفين ذوي الخبرة على استعداد دائمًا لتقديم خدمة وحرفية استثنائية",
+      location:
+        "الملك مريم محمد أحمد العتيبة. ديرة.<1/> البراحة. 024.F مكتب رقم 1",
     },
   },
 };
@@ -196,7 +191,6 @@ i18n.use(initReactI18next).init({
   interpolation: {
     escapeValue: false,
   },
-  debug: true,
   initImmediate: false,
 });
 export default i18n;

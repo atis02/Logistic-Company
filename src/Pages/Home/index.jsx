@@ -29,7 +29,7 @@ const Home = () => {
         sx={{
           pt: "25px",
           width: "100%",
-          height: "90vh",
+          height: "91vh",
         }}
       >
         <Stack
@@ -43,11 +43,12 @@ const Home = () => {
           width="auto"
           heigh="100%"
           justifyContent="center"
+          spacing={3}
         >
           <Stack
             alignItems="start"
             spacing={{ lg: 3, md: 3, sm: 3, xs: 2 }}
-            color="#d6d6d6"
+            color="#8F6340"
             width={{ lg: "65%", md: "85%", xs: "100%" }}
             pb={{ lg: 0, md: 0, xs: 1 }}
           >
@@ -55,7 +56,6 @@ const Home = () => {
               direction="row"
               alignItems="center"
               spacing={2}
-              width={{ lg: "90%", md: "80%", sm: "70%", xs: "100%" }}
               height={35}
               pt={{
                 ...(hiddenText
@@ -74,7 +74,7 @@ const Home = () => {
                 className="title"
                 fontFamily="Montserrat"
               >
-                Altyn Miras
+                Jebel Al Uhood
               </Typography>
 
               <Divider
@@ -83,15 +83,6 @@ const Home = () => {
                 data-aos-delay="100"
                 sx={{ width: "1px", height: "40px", background: "#fff" }}
               />
-              <Typography
-                data-aos="fade-up"
-                data-aos-once="true"
-                fontFamily="Montserrat"
-                data-aos-delay="100"
-                fontSize={12}
-              >
-                logistic company
-              </Typography>
             </Stack>
             <Stack width="100%">
               <Typography
@@ -103,11 +94,7 @@ const Home = () => {
                 fontFamily="Montserrat"
                 fontWeight={500}
               >
-                {t("company")}
-                <span className="title" style={{ fontWeight: "700" }}>
-                  {t("nameCompany")}
-                </span>{" "}
-                {t("description")}
+                {t("desc")}
               </Typography>
               {hiddenText && (
                 <Stack
@@ -131,10 +118,13 @@ const Home = () => {
                 fontFamily: "Montserrat",
                 width: "125px",
                 heigth: "40px",
-                background: "#DBB45A",
+                ...(hiddenText
+                  ? { backgroundColor: "#8F6340" }
+                  : { backgroundColor: "#758F93" }),
                 color: "#fff",
                 borderRadius: "26px",
                 textTransform: "capitalize",
+                "&:hover": { background: "#8F6340" },
               }}
               data-aos="fade-up"
               data-aos-once="true"
@@ -144,14 +134,15 @@ const Home = () => {
             </Button>
           </Stack>
           <Stack
-            width={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
-            hegiht={{ lg: "100%", md: "100%", sm: "50%", xs: "80%" }}
+            width={{ lg: "90%", md: "90%", sm: "100%", xs: "80%" }}
+            hegiht={{ lg: "90%", md: "90%", sm: "100%", xs: "80%" }}
             sx={{
               ...(hiddenText && isMobile ? { display: "none" } : ""),
             }}
+            pt={{ lg: "50px", md: "50px", sm: "50px", xs: "0" }}
           >
             <img
-              src="/images/pngwing 6.png"
+              src="/images/Main.png"
               style={{
                 width: "100%",
                 height: "100%",

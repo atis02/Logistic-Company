@@ -60,7 +60,6 @@ const Navbar = () => {
       position="sticky"
       top={0}
       zIndex="1000"
-      backgroundColor="#1E1E1E"
       p={{
         lg: "10px 185px 0 185px",
         md: "5px 100px 0 100px",
@@ -68,13 +67,16 @@ const Navbar = () => {
       }}
       sx={{
         ...(scrolled
-          ? { boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.75)" }
+          ? { boxShadow: "0px 5px 5px 0px rgba(0,0,0,0.15)" }
           : { boxShadow: "0" }),
+        background: "#F0FFFF",
       }}
     >
       <Stack
-        width={{ lg: 86, md: 80, sm: 70, xs: 50 }}
-        height={{ lg: 80, md: 75, sm: 70, xs: 55 }}
+        width={{ lg: 86, md: 80, sm: 75, xs: 70 }}
+        height={{ lg: 65, md: 60, sm: 55, xs: 55 }}
+        alignItems="center"
+        justifyContent="center"
       >
         <a href="/">
           <img
@@ -94,114 +96,15 @@ const Navbar = () => {
       >
         <a
           className="nav-links2"
-          style={{ color: "#fff" }}
+          style={{ color: "#8F6340" }}
           href="#aboutCompany"
         >
           {t("aboutCompany")}
         </a>
-        <Box sx={{ minWidth: 90 }}>
-          <Stack
-            cursor="pointer"
-            variant="text"
-            direction="row"
-            alignItems="center"
-            justifyContent="center"
-            onClick={handleClick}
-            sx={{
-              cursor: "pointer",
-              color: "#000",
-              gap: { lg: "2px", md: "3px", xs: 0 },
-            }}
-            minHeight="32px"
-          >
-            <Typography
-              color="#fff"
-              fontFamily="Montserrat"
-              fontWeight={500}
-              fontSize={18}
-            >
-              {t("pages")}
-            </Typography>
-            <KeyboardArrowDownIcon
-              sx={{
-                color: "#fff",
-                ...(open ? { transform: "rotate(180deg)" } : ""),
-                width: { lg: 24, md: 20, xs: 18 },
-                height: { lg: 24, md: 20, xs: 18 },
-              }}
-            />
-          </Stack>
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            sx={{ zIndex: "100000", position: "fixed", width: "100%" }}
-            MenuListProps={{
-              "aris-labelledby": "basic-button",
-              sx: {
-                backgroundColor: "#2F2F2F",
-                "&& .Mui-selected": {
-                  backgroundColor: "#666666",
-                  zIndex: "10000",
-                },
-              },
-            }}
-          >
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-                width: 175,
-              }}
-              value="Преимущества"
-            >
-              <a className="nav-links" href="#Advantages">
-                {t("advantages")}
-              </a>
-            </MenuItem>
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-              }}
-              value="Миссия и цели"
-            >
-              <a className="nav-links" href="#Goals">
-                {t("goals")}
-              </a>
-            </MenuItem>
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-              }}
-              value="Услуги компании"
-            >
-              <a className="nav-links" href="#Services">
-                {t("services")}
-              </a>
-            </MenuItem>
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-              }}
-              value="Лицензии"
-            >
-              <a className="nav-links" href="#Licences">
-                {t("licences")}
-              </a>
-            </MenuItem>
-            <MenuItem
-              sx={{
-                "&:hover": { backgroundColor: "#666666" },
-              }}
-              value="Наши работы"
-            >
-              <a className="nav-links" href="#OurWorks">
-                {t("ourWorks")}
-              </a>
-            </MenuItem>
-          </Menu>
-        </Box>
-        <a className="nav-links2" style={{ color: "#fff" }} href="#Footer">
+        <a className="nav-links2" style={{ color: "#8F6340" }} href="#services">
+          {t("services")}
+        </a>
+        <a className="nav-links2" style={{ color: "#8F6340" }} href="#Footer">
           {t("contacts")}
         </a>
         <Language />
@@ -221,7 +124,7 @@ const Navbar = () => {
             p: 0,
           }}
         >
-          <MenuIcon sx={{ color: "#fff" }} />
+          <MenuIcon sx={{ color: "#8F6340" }} />
         </IconButton>
 
         <Language />
@@ -239,7 +142,7 @@ const Navbar = () => {
         <Box
           className="mobile-menu"
           sx={{
-            bg: "#fff",
+            bg: "#8F6340",
             height: "100%",
             mt: "220px",
             padding: "16px 0",
@@ -266,29 +169,25 @@ const Navbar = () => {
               </svg>
             </Button>
             <Stack direction="column" alignItems="center" spacing={2}>
-              <a className="nav-links2" href="#aboutCompany">
+              <a
+                className="nav-links2"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#aboutCompany"
+              >
                 {t("aboutCompany")}
               </a>
-              <a className="nav-links2" href="#Advantages">
-                {t("advantages")}
-              </a>
-              <a className="nav-links2" href="#Goals">
-                {" "}
-                {t("goals")}
-              </a>
-              <a className="nav-links2" href="#Services">
-                {" "}
+              <a
+                className="nav-links2"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#services"
+              >
                 {t("services")}
               </a>
-              <a className="nav-links2" href="#Licences">
-                {" "}
-                {t("licences")}
-              </a>
-              <a className="nav-links2" href="#OurWorks">
-                {" "}
-                {t("ourWorks")}
-              </a>
-              <a className="nav-links2" href="#Footer">
+              <a
+                className="nav-links2"
+                onClick={() => setMobileMenuOpen(false)}
+                href="#Footer"
+              >
                 {t("contacts")}
               </a>
             </Stack>

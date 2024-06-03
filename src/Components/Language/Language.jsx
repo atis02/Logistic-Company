@@ -40,10 +40,10 @@ export default function Language() {
   };
 
   const lang =
-    i18n.language === "tm"
+    i18n.language === "de"
       ? {
           color: "#fff",
-          backgroundColor: "#666666",
+          backgroundColor: "gray",
           "&:hover": { backgroundColor: "#666666" },
         }
       : {};
@@ -51,7 +51,7 @@ export default function Language() {
     i18n.language === "ru"
       ? {
           color: "#fff",
-          backgroundColor: "#666666",
+          backgroundColor: "gray",
           "&:hover": { backgroundColor: "#666666" },
         }
       : {};
@@ -59,7 +59,23 @@ export default function Language() {
     i18n.language === "en"
       ? {
           color: "#fff",
-          backgroundColor: "#666666",
+          backgroundColor: "gray",
+          "&:hover": { backgroundColor: "#666666" },
+        }
+      : {};
+  const lang6 =
+    i18n.language === "chinese"
+      ? {
+          color: "#fff",
+          backgroundColor: "gray",
+          "&:hover": { backgroundColor: "#666666" },
+        }
+      : {};
+  const lang5 =
+    i18n.language === "arabic"
+      ? {
+          color: "#fff",
+          backgroundColor: "gray",
           "&:hover": { backgroundColor: "#666666" },
         }
       : {};
@@ -88,28 +104,61 @@ export default function Language() {
             <Typography
               fontFamily="Montserrat"
               textTransform="capitalize"
-              fontWeight={500}
+              fontWeight={600}
               sx={{ ...(isMobile ? { fontSize: 15 } : { fontSize: 16 }) }}
-              color="#fff"
+              color="#8F6340"
             >
               Рус
             </Typography>
           </Stack>
-        ) : (
+        ) : localStorage.getItem("lng") === "en" ? (
           <Stack direction="row" spacing={1}>
             <Typography
-              fontWeight={500}
-              color="#fff"
+              fontWeight={600}
+              color="#8F6340"
               fontFamily="Montserrat"
               textTransform="capitalize"
             >
               Eng
             </Typography>
           </Stack>
+        ) : localStorage.getItem("lng") === "de" ? (
+          <Stack direction="row" spacing={1}>
+            <Typography
+              fontWeight={600}
+              color="#8F6340"
+              fontFamily="Montserrat"
+              textTransform="capitalize"
+            >
+              De
+            </Typography>
+          </Stack>
+        ) : localStorage.getItem("lng") === "chinese" ? (
+          <Stack direction="row" spacing={1}>
+            <Typography
+              fontWeight={600}
+              color="#8F6340"
+              fontFamily="Montserrat"
+              textTransform="capitalize"
+            >
+              中國人
+            </Typography>
+          </Stack>
+        ) : (
+          <Stack direction="row" spacing={1}>
+            <Typography
+              fontWeight={600}
+              color="#8F6340"
+              fontFamily="Montserrat"
+              textTransform="capitalize"
+            >
+              عربي
+            </Typography>
+          </Stack>
         )}
         <KeyboardArrowDownIcon
           sx={{
-            color: "#fff",
+            color: "#8F6340",
             ...(open ? { transform: "rotate(180deg)" } : ""),
             width: { lg: 24, md: 20, xs: 18 },
             height: { lg: 24, md: 20, xs: 18 },
@@ -121,7 +170,11 @@ export default function Language() {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        sx={{ zIndex: "100000", position: "fixed" }}
+        sx={{
+          zIndex: "100000",
+          position: "fixed",
+          "& .MuiMenu-paper": { backgroundColor: "#8F6340" },
+        }}
         MenuListProps={{
           "aris-labelledby": "basic-button",
         }}
@@ -134,6 +187,21 @@ export default function Language() {
         <MenuItem sx={lang3} onClick={() => handleLanguageChange("en")}>
           <Stack direction="row" spacing={1}>
             <Typography>English</Typography>
+          </Stack>
+        </MenuItem>
+        <MenuItem sx={lang} onClick={() => handleLanguageChange("de")}>
+          <Stack direction="row" spacing={1}>
+            <Typography>Deutsch</Typography>
+          </Stack>
+        </MenuItem>
+        <MenuItem sx={lang5} onClick={() => handleLanguageChange("arabic")}>
+          <Stack direction="row" spacing={1}>
+            <Typography>عربي</Typography>
+          </Stack>
+        </MenuItem>
+        <MenuItem sx={lang6} onClick={() => handleLanguageChange("chinese")}>
+          <Stack direction="row" spacing={1}>
+            <Typography>中國人</Typography>
           </Stack>
         </MenuItem>
       </Menu>

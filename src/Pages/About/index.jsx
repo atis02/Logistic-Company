@@ -15,18 +15,13 @@ const About = () => {
     <Box
       id="aboutCompany"
       sx={{
-        background: "#2F2F2F",
-        height: { lg: "420px", md: "360px", sm: "300px", xs: "470px" },
+        background: "#F0FFFF ",
+        height: { lg: "250px", md: "360px", sm: "300px", xs: "300px" },
         width: "100%",
-        backgroundImage: "url('/images/AboutHorizontal.png')",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        color: "#d6d6d6",
-
         display: "flex",
         alignItems: { lg: "center" },
         transition: " all ease 0.3s",
-        scrollMarginTop: "70px",
+        scrollMarginTop: "150px",
       }}
     >
       <Container
@@ -39,13 +34,13 @@ const About = () => {
       >
         <Stack sx={{ display: { lg: "block", md: "block", xs: "none" } }}>
           <img
-            src="/images/pngwing 9.png"
-            style={{ width: "530px", height: "360px" }}
+            src="/images/JebelAbout.jpg"
+            style={{ width: "530px", height: "360px", borderRadius: "7px" }}
             alt=""
           />
         </Stack>
         <Stack
-          width={560}
+          width={{ lg: 560, md: 560, sm: "100%", xs: "100%" }}
           height={145}
           spacing={2}
           mt={{ lg: 0, md: 1, xs: 1 }}
@@ -56,6 +51,7 @@ const About = () => {
             data-aos="fade-up"
             data-aos-delay="200"
             fontFamily="Montserrat"
+            textAlign="center"
             pt={{ lg: "50px", md: "30px", xs: "10px" }}
             className="title"
           >
@@ -66,13 +62,11 @@ const About = () => {
             data-aos-delay="400"
             fontSize={16}
             fontFamily="Montserrat"
-            color="#fff"
+            color="#8F6340"
+            fontWeight={600}
+            textAlign="justify"
           >
-            <Trans i18nKey="aboutCompanyText" components={{ 1: <br /> }} />
-            <span className="title" style={{ fontWeight: "700" }}>
-              {t("nameCompany")}
-            </span>{" "}
-            {t("aboutCompanyText2")}
+            {t("aboutText")}
           </Typography>
         </Stack>
       </Container>

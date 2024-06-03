@@ -1,29 +1,27 @@
 import React from "react";
 import { Box, Container, Divider, Stack, Typography } from "@mui/material";
 import Aos from "aos";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
+import LanguageIcon from "@mui/icons-material/Language";
 
 const Footer = () => {
-  Aos.init({
-    duration: 1500,
-    offset: 0,
-  });
   const { t } = useTranslation();
   return (
     <Box
       sx={{
-        background: "#2F2F2F",
+        background: "#F0FFFF",
+        background: "lightgray",
         height: { lg: "270px", md: "100%", xs: "100%" },
-        backgroundImage: "url('/images/AboutHorizontal.png')",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPositionY: "-100px",
-        color: "#fff",
+        color: "#8F6340",
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
         width: "100%",
-        p: { lg: "60px 0 10px 0", xs: "30px 0 10px 0" },
+        height: "100%",
+        p: { lg: "30px 0 10px 0", xs: "20px 0 10px 0" },
       }}
       id="Footer"
     >
@@ -37,7 +35,7 @@ const Footer = () => {
             sm: "space-between",
             xs: "start",
           },
-
+          pb: 2,
           width: "100%",
         }}
       >
@@ -45,183 +43,122 @@ const Footer = () => {
           direction="row"
           flexWrap="wrap"
           spacing={{ lg: 5, xs: 0 }}
-          width={{ lg: "60%", md: "60%", sm: "70%", xs: "100%" }}
+          width={{ lg: "60%", md: "60%", sm: "50%", xs: "100%" }}
           mt={2}
         >
           <Stack
             spacing={3}
             width={{ lg: "60%", md: "72%", sm: "82%", xs: "100%" }}
           >
-            <Stack
-              direction="row"
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-delay="300"
-              alignItems="center"
-              width="100%"
-              spacing={1}
-            >
-              <img
-                src="/images/Location.png"
-                style={{ width: 24, height: 24 }}
-                alt=""
-              />
+            <Stack direction="row" alignItems="center" width="100%" spacing={1}>
+              <LocationOnIcon />
+
               <Typography fontFamily="Montserrat" fontWeight={500} width="80%">
-                {t("location")}
+                <Trans i18nKey="location" components={{ 1: <br /> }} />
               </Typography>
             </Stack>
-            <Stack
-              data-aos-once="true"
-              data-aos="fade-down"
-              data-aos-delay="400"
-              direction="row"
-              width="100%"
-              alignItems="center"
-              spacing={1}
-            >
-              <img
-                src="/images/Call.png"
-                style={{ width: 24, height: 24 }}
-                alt=""
-              />
+            <Stack direction="row" width="100%" alignItems="center" spacing={1}>
+              <CallIcon />
+
               <a
                 style={{
-                  color: "#fff",
+                  color: "#8F6340",
                   textDecoration: "none",
                   fontFamily: "Montserrat",
                   fontWeight: 500,
                 }}
-                href="tel: +993 12 473577"
+                href="tel: +971585884978"
               >
-                +993 12 473577
+                +971 58 588 4978
               </a>
-            </Stack>
-            <Stack
-              data-aos="fade-down"
-              data-aos-once="true"
-              data-aos-delay="500"
-              direction="row"
-              width="100%"
-              alignItems="center"
-              spacing={1}
-              pb={{ lg: 0, xs: 3 }}
-            >
               <img
-                src="/images/Fax.png"
+                src="/images/whatsapp.png"
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
-              <Typography width="auto" fontWeight={500} fontFamily="Montserrat">
-                +993 12 471577
-              </Typography>
             </Stack>
           </Stack>
           <Stack spacing={3}>
             <Stack
               direction="row"
-              data-aos-once="true"
-              data-aos="fade-down"
-              data-aos-delay="600"
-              width="auto"
+              width="100%"
               alignItems="center"
               spacing={1}
+              pt={{ lg: 0, xs: 3 }}
             >
+              <CallIcon />
+              <a
+                style={{
+                  color: "#8F6340",
+                  textDecoration: "none",
+                  fontFamily: "Montserrat",
+                  fontWeight: 500,
+                }}
+                href="tel: +971589947881"
+              >
+                +971 58 994 7881
+              </a>
               <img
-                src="/images/Mail.png"
+                src="/images/whatsapp.png"
                 style={{ width: 24, height: 24 }}
                 alt=""
               />
+            </Stack>
+            <Stack direction="row" width="auto" alignItems="center" spacing={1}>
+              <EmailIcon />
+
               <Typography fontFamily="Montserrat" fontWeight={500}>
                 <a
-                  style={{ textDecoration: "none", color: "#fff" }}
-                  href="mailto:info@altynmiras.com"
+                  style={{ textDecoration: "none", color: "#8F6340" }}
+                  href="mailto:uhuddubai@gmail.com"
                 >
-                  info@altynmiras.com
+                  uhuddubai@gmail.com
                 </a>
               </Typography>
             </Stack>
-            <Stack
-              data-aos-once="true"
-              data-aos="fade-down"
-              data-aos-delay="700"
-              direction="row"
-              width="auto"
-              alignItems="center"
-              spacing={1}
-            >
-              <img
-                src="/images/Info.png"
-                style={{ width: 24, height: 24 }}
-                alt=""
-              />
+            <Stack direction="row" width="auto" alignItems="center" spacing={1}>
+              <LanguageIcon />
               <Typography fontFamily="Montserrat" fontWeight={500}>
-                www.altynmiras.com
+                <a
+                  style={{ textDecoration: "none", color: "#8F6340" }}
+                  href="https://jebelaluhood.com"
+                >
+                  www.jebelaluhood.com
+                </a>
               </Typography>
             </Stack>
           </Stack>
         </Stack>
         <Stack
-          direction="row"
-          mt={{ xs: 4, lg: 0 }}
-          flexWrap="wrap"
-          spacing={{ lg: 2, md: 5, sm: 6, xs: 2 }}
-          alignItems="center"
-          justifyContent="center"
+          sx={{
+            width: { lg: 280, md: "30%", sm: "80%", xs: "90%" },
+            height: { lg: 160, md: "30%", sm: "80%", xs: "90%" },
+          }}
+          mt={{ xs: 2, lg: 0 }}
+          mb={{ xs: 2, lg: 3 }}
+          pl={{ lg: 0, md: 0, sm: 6, xs: 4 }}
         >
-          <Stack
-            sx={{
-              width: { lg: 180, md: 160, xs: 150 },
-              height: { lg: 160, md: 150, xs: 140 },
-            }}
-            pl={{ lg: 0, md: 0, sm: 25, xs: 4 }}
-          >
-            <a href="https://2hac.page.link/KLFX">
-              <img
-                src="/images/image 68.png"
-                data-aos-once="true"
-                alt=""
-                data-aos="fade-down"
-                data-aos-delay="800"
-                style={{ width: "100%", height: "100%" }}
-              />
-            </a>
-          </Stack>
-          <Stack
-            sx={{
-              width: { lg: 137, md: 127, xs: 117 },
-              height: { lg: 126, md: 116, xs: 106 },
-            }}
-          >
-            <a href="/">
-              <img
-                src="/images/image 51.png"
-                data-aos-once="true"
-                data-aos="fade-down"
-                style={{ width: "100%", height: "100%" }}
-                data-aos-delay="900"
-                alt=""
-              />
-            </a>
-          </Stack>
+          <a href="/">
+            <img
+              src="/images/Logo.png"
+              alt=""
+              style={{ width: "100%", height: "100%" }}
+            />
+          </a>
         </Stack>
       </Container>
-      <Divider
-        sx={{
-          color: "#fff",
-        }}
-      />
+
       <Typography
         width="100%"
-        data-aos-once="true"
-        data-aos="fade-down"
-        data-aos-delay="1000"
-        fontSize={16}
+        fontSize={14}
         textAlign="center"
         fontFamily="Montserrat"
         color="gray"
         fontWeight={500}
+        borderTop="1px solid gray"
+        pt={1}
       >
-        Copyright © {new Date().getFullYear()} Altyn Miras | Powered by{" "}
+        Copyright © {new Date().getFullYear()} Jebel Al Uhood | Powered by{" "}
         <a
           href="https://alemtilsimat.com/"
           style={{ textDecoration: "none", color: "gray" }}
