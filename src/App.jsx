@@ -1,21 +1,13 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import {
-  Container,
-  Box,
-  Stack,
-  CircularProgress,
-  Typography,
-} from "@mui/material";
+import { Box, Stack, CircularProgress, Typography } from "@mui/material";
 import About from "./Pages/About";
 import Advantages from "./Pages/Advantages";
 import Footer from "./Pages/Footer";
 import Navbar from "./Components/Navbar/Navbar";
-import Preloader from "./Components/Preloader/Preloader";
 import { Suspense, useEffect, useState } from "react";
-import { RingLoader, ScaleLoader } from "react-spinners";
+import { ScaleLoader } from "react-spinners";
 
 function App() {
   const [loader, setLoader] = useState(false);
@@ -27,7 +19,7 @@ function App() {
     setLoader(true);
     setTimeout(() => {
       setLoader(false);
-    }, 3000);
+    }, 2500);
   }, []);
 
   useEffect(() => {
@@ -48,7 +40,7 @@ function App() {
           color="#blue"
         >
           <ScaleLoader
-            color="blue"
+            color="#8F6340"
             loading={loader}
             cssOverride={override}
             size={150}
@@ -56,8 +48,14 @@ function App() {
             data-testid="loader"
           />
 
-          <Typography fontFamily="sans-serif" mt={2}>
-            Loading...
+          <Typography
+            fontFamily="sans-serif"
+            color="#8F6340"
+            fontWeight={700}
+            fontSize={50}
+            mt={2}
+          >
+            Jebel Al Uhood
           </Typography>
         </Stack>
       ) : (

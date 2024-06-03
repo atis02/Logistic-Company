@@ -120,11 +120,11 @@ const Home = () => {
                 heigth: "40px",
                 ...(hiddenText
                   ? { backgroundColor: "#8F6340" }
-                  : { backgroundColor: "#758F93" }),
+                  : { backgroundColor: "#8F6340" }),
                 color: "#fff",
                 borderRadius: "26px",
                 textTransform: "capitalize",
-                "&:hover": { background: "#8F6340" },
+                "&:hover": { background: "#758F93" },
               }}
               data-aos="fade-up"
               data-aos-once="true"
