@@ -56,7 +56,7 @@ function App() {
             data-testid="loader"
           />
 
-          <Typography fontFamily="sans-serif" fontFamily="Montserrat" mt={2}>
+          <Typography fontFamily="sans-serif" mt={2}>
             Loading...
           </Typography>
         </Stack>
