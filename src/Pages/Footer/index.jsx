@@ -12,7 +12,6 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        background: "#F0FFFF",
         background: "lightgray",
         height: { lg: "270px", md: "100%", xs: "100%" },
         color: "#8F6340",
@@ -20,7 +19,6 @@ const Footer = () => {
         alignItems: "center",
         flexDirection: "column",
         width: "100%",
-        height: "100%",
         p: { lg: "30px 0 10px 0", xs: "20px 0 10px 0" },
       }}
       id="Footer"
