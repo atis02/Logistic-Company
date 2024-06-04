@@ -111,7 +111,7 @@ export default function Language() {
               Рус
             </Typography>
           </Stack>
-        ) : localStorage.getItem("lng") === "en" ? (
+        ) : localStorage.getItem("lng") === "arabic" ? (
           <Stack direction="row" spacing={1}>
             <Typography
               fontWeight={600}
@@ -119,7 +119,7 @@ export default function Language() {
               fontFamily="Montserrat"
               textTransform="capitalize"
             >
-              Eng
+              عربي
             </Typography>
           </Stack>
         ) : localStorage.getItem("lng") === "de" ? (
@@ -152,7 +152,7 @@ export default function Language() {
               fontFamily="Montserrat"
               textTransform="capitalize"
             >
-              عربي
+              Eng
             </Typography>
           </Stack>
         )}
