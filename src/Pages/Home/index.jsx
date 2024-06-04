@@ -49,13 +49,14 @@ const Home = () => {
             alignItems="start"
             spacing={{ lg: 3, md: 3, sm: 3, xs: 2 }}
             color="#8F6340"
-            width={{ lg: "65%", md: "85%", xs: "100%" }}
+            width={{ lg: "65%", md: "85%", sm: "100%", xs: "100%" }}
             pb={{ lg: 0, md: 0, xs: 1 }}
           >
             <Stack
               direction="row"
               alignItems="center"
               spacing={2}
+              width="100%"
               height={35}
               pt={{
                 ...(hiddenText
@@ -67,12 +68,18 @@ const Home = () => {
               <Typography
                 data-aos="fade-up"
                 data-aos-delay="100"
-                width="100%"
+                minWidth="99%"
                 data-aos-once="true"
                 fontWeight="600"
                 fontSize={{ lg: 48, md: 40, sm: 35, xs: 30 }}
                 className="title"
                 fontFamily="Montserrat"
+                textAlign={{
+                  lg: "start",
+                  md: "start",
+                  sm: "start",
+                  xs: "center",
+                }}
               >
                 Jebel Al Uhood
               </Typography>
