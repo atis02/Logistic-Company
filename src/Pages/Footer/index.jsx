@@ -77,31 +77,6 @@ const Footer = () => {
             </Stack>
           </Stack>
           <Stack spacing={3}>
-            <Stack
-              direction="row"
-              width="100%"
-              alignItems="center"
-              spacing={1}
-              pt={{ lg: 0, xs: 3 }}
-            >
-              <CallIcon />
-              <a
-                style={{
-                  color: "#8F6340",
-                  textDecoration: "none",
-                  fontFamily: "Montserrat",
-                  fontWeight: 500,
-                }}
-                href="tel: +971589947881"
-              >
-                +971 58 994 7881
-              </a>
-              <img
-                src="/images/whatsapp.png"
-                style={{ width: 24, height: 24 }}
-                alt=""
-              />
-            </Stack>
             <Stack direction="row" width="auto" alignItems="center" spacing={1}>
               <EmailIcon />
 
@@ -119,9 +94,9 @@ const Footer = () => {
               <Typography fontFamily="Montserrat" fontWeight={500}>
                 <a
                   style={{ textDecoration: "none", color: "#8F6340" }}
-                  href="https://jebelaluhood.com"
+                  href="https://juhudts.com"
                 >
-                  www.jebelaluhood.com
+                  www.juhudts.com
                 </a>
               </Typography>
             </Stack>
@@ -138,7 +113,7 @@ const Footer = () => {
         >
           <a href="/">
             <img
-              src="/images/Logo.png"
+              src="/images/UHOOD LOGO.png"
               alt=""
               style={{ width: "100%", height: "100%" }}
             />

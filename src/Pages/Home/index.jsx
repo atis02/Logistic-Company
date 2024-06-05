@@ -43,13 +43,13 @@ const Home = () => {
           width="auto"
           heigh="100%"
           justifyContent="center"
-          spacing={3}
+          spacing={{ lg: 3, md: 3, sm: 2, xs: 1 }}
         >
           <Stack
             alignItems="start"
             spacing={{ lg: 3, md: 3, sm: 3, xs: 2 }}
             color="#8F6340"
-            width={{ lg: "65%", md: "85%", sm: "100%", xs: "100%" }}
+            width={{ lg: "55%", md: "85%", sm: "100%", xs: "100%" }}
             pb={{ lg: 0, md: 0, xs: 1 }}
           >
             <Stack
@@ -60,8 +60,8 @@ const Home = () => {
               height={35}
               pt={{
                 ...(hiddenText
-                  ? { lg: "100px", md: "100px", sm: "100px", xs: "60px" }
-                  : { lg: "200px", md: "150px", sm: "130px", xs: "100px" }),
+                  ? { lg: "80px", md: "80px", sm: "80px", xs: "60px" }
+                  : { lg: "130px", md: "150px", sm: "130px", xs: "70px" }),
               }}
               pb={{ lg: "25px", md: "23px", sm: "18px", xs: "15px" }}
             >
@@ -100,6 +100,7 @@ const Home = () => {
                 data-aos-delay="100"
                 fontFamily="Montserrat"
                 fontWeight={500}
+                textAlign="justify"
               >
                 {t("desc")}
               </Typography>
@@ -141,15 +142,15 @@ const Home = () => {
             </Button>
           </Stack>
           <Stack
-            width={{ lg: "90%", md: "90%", sm: "100%", xs: "80%" }}
-            hegiht={{ lg: "90%", md: "90%", sm: "100%", xs: "80%" }}
+            width={{ lg: "55%", md: "60%", sm: "100%", xs: "80%" }}
+            height={{ lg: "55%", md: "60%", sm: "100%", xs: "80%" }}
             sx={{
               ...(hiddenText && isMobile ? { display: "none" } : ""),
             }}
-            pt={{ lg: "50px", md: "50px", sm: "50px", xs: "0" }}
+            pt={{ lg: "30px", md: "30px", sm: "30px", xs: "0" }}
           >
             <img
-              src="/images/Main.png"
+              src="/images/UHOOD LOGO.png"
               style={{
                 width: "100%",
                 height: "100%",
